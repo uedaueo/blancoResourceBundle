@@ -1,55 +1,55 @@
-blancoResourceBundle�́A�u���\�[�X�o���h����`���v�Ƃ��� *.xls�t�@�C���`���̋L�q���e�ɂ��������āA
-�v���p�e�B�t�@�C���̎��������ƃ��\�[�X�o���h�����o�͂������Ȃ� Java�\�[�X�R�[�h�̎��������������Ȃ��c�[���ł��B
+blancoResourceBundleは、「リソースバンドル定義書」という *.xlsファイル形式の記述内容にしたがって、
+プロパティファイルの自動生成とリソースバンドル入出力をおこなう Javaソースコードの自動生成をおこなうツールです。
 
-blancoResourceBundle���g���ƁAExcel�Ȃǂ̕\�v�Z�\�t�g���g���āu���\�[�X�o���h����`���v�ɕK�v���ڂ��L�����邾���ŉ��L�̌��ʂ������܂��B
- 1.�v���p�e�B�t�@�C�����ȒP�ɍ쐬���邱�Ƃ��ł��܂��B�������h�L�������g(*.xls)�ƃv���p�e�B�t�@�C���������I�Ɉ�v���܂��B
-   native2ascii�Ȃǂ̃c�[���́A�g���K�v�������Ȃ�̂ł��B
- 2.Java�\�[�X�R�[�h��̕�����̊O�������ȒP�ň��S�Ɏ��{���邱�Ƃ��ł��܂��B
-   �������AJava�A�N�Z�T�������Ď������������̂ŁA�����񒆂̒u��������̒u���Y��ȂǂƂ������Ƃ͋@�B�I�Ɋm���ɖh�~�ł���悤�ɂȂ�܂��B
- 3.ResourceBundle�ɂ܂���O�������C�ɂ���K�v���Ȃ��Ȃ�܂��B
-   ���\�[�X�o���h���^�v���p�e�B�t�@�C����ǂݍ��ލۂɋC�ɂ��Ȃ��Ă͂Ȃ�Ȃ��A���낢��ȃR�[�f�B���O�̑����� �����������ꂽ Java�\�[�X�R�[�h�������肵�Ă���܂��B
-   �v���p�e�B�t�@�C����������Ȃ��ꍇ�ł���A�K�؂ɓ��삷��悤�ɂȂ�̂����͓I�ł��B
+blancoResourceBundleを使うと、Excelなどの表計算ソフトを使って「リソースバンドル定義書」に必要項目を記入するだけで下記の効果が得られます。
+ 1.プロパティファイルを簡単に作成することができます。しかもドキュメント(*.xls)とプロパティファイルが自動的に一致します。
+   native2asciiなどのツールは、使う必要が無くなるのです。
+ 2.Javaソースコード上の文字列の外部化を簡単で安全に実施することができます。
+   しかも、Javaアクセサも併せて自動生成されるので、文字列中の置換文字列の置換忘れなどということは機械的に確実に防止できるようになります。
+ 3.ResourceBundleにまつわる例外処理を気にする必要がなくなります。
+   リソースバンドル／プロパティファイルを読み込む際に気にしなくてはならない、いろいろなコーディングの多くは 自動生成された Javaソースコードが肩代わりしてくれます。
+   プロパティファイルが見つからない場合ですら、適切に動作するようになるのも魅力的です。
 
-�`���[�g���A�����`���L���v�̂Ȃǂ́A���L��URL�œ��肷�邱�Ƃ��ł��܂��B
-��http://hp.vector.co.jp/authors/VA027994/blanco/blancoresourcebundle.html
+チュートリアルや定義書記入要領などは、下記のURLで入手することができます。
+●http://hp.vector.co.jp/authors/VA027994/blanco/blancoresourcebundle.html
 
-�Ȃ��A�����������ꂽ�\�[�X�R�[�h�́A����炪�Ɨ����ē��삷��悤�ɂȂ��Ă��܂��B
-�����^�C�����C�u�����Ȃǂ͕K�v����܂���B
+なお、自動生成されたソースコードは、それらが独立して動作するようになっています。
+ランタイムライブラリなどは必要ありません。
 
-���S�Ŋm���ȃ��\�[�X�o���h�������E�v���p�e�B�t�@�C���������K�v�ȕ��́A���� blancoResourceBundle�������Ă݂Ă��������B
-blancoResourceBundle�� Eclipse�v���O�C���`���܂��� Apache Ant�^�X�N�`���ɂ��z�z����Ă��܂��B
-Eclipse�v���O�C���`���Ƃ��Ă��񋟂���Ă���̂ŁA���Ȃ��̎茳�� Eclipse���ꎮ������΁A�v���O�C���Ƃ��ēo�^���邾���ł����Ɏg���Ă݂邱�Ƃ��ł��܂��B
+安全で確実なリソースバンドル処理・プロパティファイル処理が必要な方は、ぜひ blancoResourceBundleを試してみてください。
+blancoResourceBundleは Eclipseプラグイン形式または Apache Antタスク形式により配布されています。
+Eclipseプラグイン形式としても提供されているので、あなたの手元に Eclipse環境一式があれば、プラグインとして登録するだけですぐに使ってみることができます。
 
-���p�̂����܂��ȃX�e�b�v�͉��L�̂悤�ɂȂ�܂��B
- 1.Eclipse�v���O�C�����C���X�g�[������B
- 2.blancoResourceBundle�v���O�C�����N������B
- 3.blancoResourceBundle�v���O�C���� ���\�[�X�o���h����`��(*.xls)�t�@�C�����쐬����B
- 4.Excel�Ȃǂ̕\�v�Z�\�t�g���g���āA���\�[�X�o���h����`�����L������B
- 5.blancoResourceBundle�v���O�C���� �\�[�X�R�[�h�̎��������������Ȃ��B
- 6.�����������ꂽ�\�[�X�R�[�h���g���� ���\�[�X�o���h�������p�����v���O�������쐬����B
+利用のおおまかなステップは下記のようになります。
+ 1.Eclipseプラグインをインストールする。
+ 2.blancoResourceBundleプラグインを起動する。
+ 3.blancoResourceBundleプラグインで リソースバンドル定義書(*.xls)ファイルを作成する。
+ 4.Excelなどの表計算ソフトを使って、リソースバンドル定義書を記入する。
+ 5.blancoResourceBundleプラグインで ソースコードの自動生成をおこなう。
+ 6.自動生成されたソースコードを使って リソースバンドルを活用したプログラムを作成する。
 
-[�J����]
- 1.�ɉ�q�� (IGA Tosiki / �����҂��): �J������шێ������e�S���B
- 2.�R�{�k�i (ymoto) : �S�ʂɂ킽��d�l�����B�����[�X����S���B
- 3.���{���j (OKAMOTO Takashi): �d�l�����i�K�ł̎d�l��āB
+[開発者]
+ 1.伊賀敏樹 (IGA Tosiki / いがぴょん): 開発および維持メンテ担当。
+ 2.山本耕司 (ymoto) : 全般にわたる仕様検討。リリース判定担当。
+ 3.岡本隆史 (OKAMOTO Takashi): 仕様検討段階での仕様提案。
 
-[���C�Z���X]
- 1.blancoResourceBundle �� ���C�Z���X �Ƃ��� GNU Lesser General Public License ���̗p���Ă��܂��B
+[ライセンス]
+ 1.blancoResourceBundle は ライセンス として GNU Lesser General Public License を採用しています。
 
-[�ˑ����郉�C�u����]
-blancoResourceBundle�͉��L�̃��C�u�����𗘗p���Ă��܂��B
-   ���e�I�[�v���\�[�X�E�v���_�N�g�̒񋟎҂Ɋ��ӂ��܂��B
+[依存するライブラリ]
+blancoResourceBundleは下記のライブラリを利用しています。
+   ※各オープンソース・プロダクトの提供者に感謝します。
  1.JExcelApi - Java Excel API - A Java API to read, write and modify Excel spreadsheets
      http://jexcelapi.sourceforge.net/
      http://sourceforge.net/projects/jexcelapi/
      http://www.andykhan.com/jexcelapi/ 
-   �T�v: Java����Excel�u�b�N�`����ǂݏ������邽�߂̃��C�u�����ł��B
-   ���C�Z���X: GNU Lesser General Public License
+   概要: JavaからExcelブック形式を読み書きするためのライブラリです。
+   ライセンス: GNU Lesser General Public License
  2.blancoCg
-   �T�v: �\�[�X�R�[�h�������C�u����
-   ���C�Z���X: GNU Lesser General Public License
- 3.���̑��� blanco Framework
-   �T�v: ���̃v���_�N�g�� ���ꎩ�g�� blanco Framework�ɂ�莩����������Ă��܂��B
-         ���̃v���_�N�g�� ���s���� blanco Framework�e��v���_�N�g�Ɉˑ����ē��삵�܂��B
-   ���C�Z���X: GNU Lesser General Public License
+   概要: ソースコード生成ライブラリ
+   ライセンス: GNU Lesser General Public License
+ 3.その他の blanco Framework
+   概要: このプロダクトは それ自身が blanco Frameworkにより自動生成されています。
+         このプロダクトは 実行時に blanco Framework各種プロダクトに依存して動作します。
+   ライセンス: GNU Lesser General Public License
    

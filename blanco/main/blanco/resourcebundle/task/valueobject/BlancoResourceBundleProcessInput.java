@@ -10,294 +10,294 @@
 package blanco.resourcebundle.task.valueobject;
 
 /**
- * ˆ—ƒNƒ‰ƒX [BlancoResourceBundleProcess]‚Ì“ü—ÍƒoƒŠƒ…[ƒIƒuƒWƒFƒNƒgƒNƒ‰ƒX‚Å‚·B
+ * å‡¦ç†ã‚¯ãƒ©ã‚¹ [BlancoResourceBundleProcess]ã®å…¥åŠ›ãƒãƒªãƒ¥ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚¯ãƒ©ã‚¹ã§ã™ã€‚
  */
 public class BlancoResourceBundleProcessInput {
     /**
-     * verboseƒ‚[ƒh‚Å“®ì‚³‚¹‚é‚©‚Ç‚¤‚©B
+     * verboseãƒ¢ãƒ¼ãƒ‰ã§å‹•ä½œã•ã›ã‚‹ã‹ã©ã†ã‹ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh: [verbose]B
-     * ƒfƒtƒHƒ‹ƒg: [false]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰: [verbose]ã€‚
+     * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ: [false]ã€‚
      */
     private boolean fVerbose = false;
 
     /**
-     * ƒƒ^ƒfƒBƒŒƒNƒgƒŠ
+     * ãƒ¡ã‚¿ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª
      *
-     * ƒtƒB[ƒ‹ƒh: [metadir]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰: [metadir]ã€‚
      */
     private String fMetadir;
 
     /**
-     * o—ÍæƒtƒHƒ‹ƒ_‚ğw’è‚µ‚Ü‚·B–³w’è‚Ìê‡‚É‚ÍƒJƒŒƒ“ƒg’¼‰º‚Ìblanco‚ğ—p‚¢‚Ü‚·B
+     * å‡ºåŠ›å…ˆãƒ•ã‚©ãƒ«ãƒ€ã‚’æŒ‡å®šã—ã¾ã™ã€‚ç„¡æŒ‡å®šã®å ´åˆã«ã¯ã‚«ãƒ¬ãƒ³ãƒˆç›´ä¸‹ã®blancoã‚’ç”¨ã„ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh: [targetdir]B
-     * ƒfƒtƒHƒ‹ƒg: [blanco]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰: [targetdir]ã€‚
+     * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ: [blanco]ã€‚
      */
     private String fTargetdir = "blanco";
 
     /**
-     * ƒeƒ“ƒ|ƒ‰ƒŠƒtƒHƒ‹ƒ_‚ğw’è‚µ‚Ü‚·B–³w’è‚Ìê‡‚É‚ÍAƒJƒŒƒ“ƒg’¼‰º‚Ìtmp‚ğ—p‚¢‚Ü‚·B
+     * ãƒ†ãƒ³ãƒãƒ©ãƒªãƒ•ã‚©ãƒ«ãƒ€ã‚’æŒ‡å®šã—ã¾ã™ã€‚ç„¡æŒ‡å®šã®å ´åˆã«ã¯ã€ã‚«ãƒ¬ãƒ³ãƒˆç›´ä¸‹ã®tmpã‚’ç”¨ã„ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh: [tmpdir]B
-     * ƒfƒtƒHƒ‹ƒg: [tmp]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰: [tmpdir]ã€‚
+     * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ: [tmp]ã€‚
      */
     private String fTmpdir = "tmp";
 
     /**
-     * ©“®¶¬‚·‚éƒ\[ƒXƒtƒ@ƒCƒ‹‚Ì•¶šƒGƒ“ƒR[ƒfƒBƒ“ƒO‚ğw’è‚µ‚Ü‚·B
+     * è‡ªå‹•ç”Ÿæˆã™ã‚‹ã‚½ãƒ¼ã‚¹ãƒ•ã‚¡ã‚¤ãƒ«ã®æ–‡å­—ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã‚’æŒ‡å®šã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh: [encoding]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰: [encoding]ã€‚
      */
     private String fEncoding;
 
     /**
-     * ƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚Ì¶¬‚É‚Â‚¢‚ÄAƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚ÌƒRƒƒ“ƒg‚Éo—Í‚·‚é‚©‚Ç‚¤‚©ƒtƒ‰ƒOB
+     * ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã®ç”Ÿæˆæ™‚åˆ»ã«ã¤ã„ã¦ã€ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã®ã‚³ãƒ¡ãƒ³ãƒˆã«å‡ºåŠ›ã™ã‚‹ã‹ã©ã†ã‹ãƒ•ãƒ©ã‚°ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh: [commenttimestamp]B
-     * ƒfƒtƒHƒ‹ƒg: [true]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰: [commenttimestamp]ã€‚
+     * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ: [true]ã€‚
      */
     private boolean fCommenttimestamp = true;
 
     /**
-     * ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹•¶š—ñ‚ğMessageFormat‚É‚æ‚éƒp[ƒX‚ğs‚Á‚½Û‚ÉA—áŠO‚ª”­¶‚µ‚½‚çˆ—‚ğ’†’f‚·‚é‚©‚Ç‚¤‚©‚Ìƒtƒ‰ƒOBtrue‚È‚çˆ—’†’f‚µ‚Ä—áŠO‚ğ”­¶‚³‚¹‚Ü‚·Bfalse‚È‚çˆ—‘±s‚µA’uŠ·•¶š—ñ‚Í–³‚¢‚à‚Ì‚Æ‚İ‚È‚µ‚Ü‚·BJava‚Ìƒ\[ƒXƒR[ƒh‚ğˆ—‚·‚éÛ‚È‚Ç‚ÉA‚ ‚¦‚Ä false‚Éİ’è‚µ‚Ä”gŠ‡ŒÊ‚ğˆµ‚¤‚±‚Æ‚ª‚Å‚«‚é‚æ‚¤‚ÉØ‚è‘Ö‚¦‚éê‡‚ª‚ ‚è‚Ü‚·B
+     * ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«æ–‡å­—åˆ—ã‚’MessageFormatã«ã‚ˆã‚‹ãƒ‘ãƒ¼ã‚¹ã‚’è¡Œã£ãŸéš›ã«ã€ä¾‹å¤–ãŒç™ºç”Ÿã—ãŸã‚‰å‡¦ç†ã‚’ä¸­æ–­ã™ã‚‹ã‹ã©ã†ã‹ã®ãƒ•ãƒ©ã‚°ã€‚trueãªã‚‰å‡¦ç†ä¸­æ–­ã—ã¦ä¾‹å¤–ã‚’ç™ºç”Ÿã•ã›ã¾ã™ã€‚falseãªã‚‰å‡¦ç†ç¶šè¡Œã—ã€ç½®æ›æ–‡å­—åˆ—ã¯ç„¡ã„ã‚‚ã®ã¨ã¿ãªã—ã¾ã™ã€‚Javaã®ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã‚’å‡¦ç†ã™ã‚‹éš›ãªã©ã«ã€ã‚ãˆã¦ falseã«è¨­å®šã—ã¦æ³¢æ‹¬å¼§ã‚’æ‰±ã†ã“ã¨ãŒã§ãã‚‹ã‚ˆã†ã«åˆ‡ã‚Šæ›¿ãˆã‚‹å ´åˆãŒã‚ã‚Šã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh: [failonmessageformaterror]B
-     * ƒfƒtƒHƒ‹ƒg: [true]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰: [failonmessageformaterror]ã€‚
+     * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ: [true]ã€‚
      */
     private boolean fFailonmessageformaterror = true;
 
     /**
-     * ƒƒOo—Í‚ğ©“®¶¬‚³‚ê‚éƒ\[ƒXƒR[ƒh‚ÉŠÜ‚ß‚é‚©‚Ç‚¤‚©‚Ìƒtƒ‰ƒOBo—Í‚·‚éê‡‚É‚Í java.util.logging.Logger‚Ì‚İ‚É‘Î‰B
+     * ãƒ­ã‚°å‡ºåŠ›ã‚’è‡ªå‹•ç”Ÿæˆã•ã‚Œã‚‹ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã«å«ã‚ã‚‹ã‹ã©ã†ã‹ã®ãƒ•ãƒ©ã‚°ã€‚å‡ºåŠ›ã™ã‚‹å ´åˆã«ã¯ java.util.logging.Loggerã®ã¿ã«å¯¾å¿œã€‚
      *
-     * ƒtƒB[ƒ‹ƒh: [log]B
-     * ƒfƒtƒHƒ‹ƒg: [false]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰: [log]ã€‚
+     * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ: [false]ã€‚
      */
     private boolean fLog = false;
 
     /**
-     * ƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚ğƒfƒBƒŒƒNƒgƒŠ•t‚«‚Åo—Í‚·‚é‚©‚Ç‚¤‚©‚Ìƒtƒ‰ƒOB
+     * ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªä»˜ãã§å‡ºåŠ›ã™ã‚‹ã‹ã©ã†ã‹ã®ãƒ•ãƒ©ã‚°ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh: [propertieswithdirectory]B
-     * ƒfƒtƒHƒ‹ƒg: [true]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰: [propertieswithdirectory]ã€‚
+     * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ: [true]ã€‚
      */
     private boolean fPropertieswithdirectory = true;
 
     /**
-     * ƒtƒB[ƒ‹ƒh [verbose] ‚Ì’l‚ğİ’è‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [verbose] ã®å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [verboseƒ‚[ƒh‚Å“®ì‚³‚¹‚é‚©‚Ç‚¤‚©B]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [verboseãƒ¢ãƒ¼ãƒ‰ã§å‹•ä½œã•ã›ã‚‹ã‹ã©ã†ã‹ã€‚]ã€‚
      *
-     * @param argVerbose ƒtƒB[ƒ‹ƒh[verbose]‚Éİ’è‚·‚é’lB
+     * @param argVerbose ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[verbose]ã«è¨­å®šã™ã‚‹å€¤ã€‚
      */
     public void setVerbose(final boolean argVerbose) {
         fVerbose = argVerbose;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [verbose] ‚Ì’l‚ğæ“¾‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [verbose] ã®å€¤ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [verboseƒ‚[ƒh‚Å“®ì‚³‚¹‚é‚©‚Ç‚¤‚©B]B
-     * ƒfƒtƒHƒ‹ƒg: [false]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [verboseãƒ¢ãƒ¼ãƒ‰ã§å‹•ä½œã•ã›ã‚‹ã‹ã©ã†ã‹ã€‚]ã€‚
+     * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ: [false]ã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[verbose]‚©‚çæ“¾‚µ‚½’lB
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[verbose]ã‹ã‚‰å–å¾—ã—ãŸå€¤ã€‚
      */
     public boolean getVerbose() {
         return fVerbose;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [metadir] ‚Ì’l‚ğİ’è‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [metadir] ã®å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [ƒƒ^ƒfƒBƒŒƒNƒgƒŠ]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ãƒ¡ã‚¿ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª]ã€‚
      *
-     * @param argMetadir ƒtƒB[ƒ‹ƒh[metadir]‚Éİ’è‚·‚é’lB
+     * @param argMetadir ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[metadir]ã«è¨­å®šã™ã‚‹å€¤ã€‚
      */
     public void setMetadir(final String argMetadir) {
         fMetadir = argMetadir;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [metadir] ‚Ì’l‚ğæ“¾‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [metadir] ã®å€¤ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [ƒƒ^ƒfƒBƒŒƒNƒgƒŠ]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ãƒ¡ã‚¿ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª]ã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[metadir]‚©‚çæ“¾‚µ‚½’lB
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[metadir]ã‹ã‚‰å–å¾—ã—ãŸå€¤ã€‚
      */
     public String getMetadir() {
         return fMetadir;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [targetdir] ‚Ì’l‚ğİ’è‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [targetdir] ã®å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [o—ÍæƒtƒHƒ‹ƒ_‚ğw’è‚µ‚Ü‚·B–³w’è‚Ìê‡‚É‚ÍƒJƒŒƒ“ƒg’¼‰º‚Ìblanco‚ğ—p‚¢‚Ü‚·B]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [å‡ºåŠ›å…ˆãƒ•ã‚©ãƒ«ãƒ€ã‚’æŒ‡å®šã—ã¾ã™ã€‚ç„¡æŒ‡å®šã®å ´åˆã«ã¯ã‚«ãƒ¬ãƒ³ãƒˆç›´ä¸‹ã®blancoã‚’ç”¨ã„ã¾ã™ã€‚]ã€‚
      *
-     * @param argTargetdir ƒtƒB[ƒ‹ƒh[targetdir]‚Éİ’è‚·‚é’lB
+     * @param argTargetdir ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[targetdir]ã«è¨­å®šã™ã‚‹å€¤ã€‚
      */
     public void setTargetdir(final String argTargetdir) {
         fTargetdir = argTargetdir;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [targetdir] ‚Ì’l‚ğæ“¾‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [targetdir] ã®å€¤ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [o—ÍæƒtƒHƒ‹ƒ_‚ğw’è‚µ‚Ü‚·B–³w’è‚Ìê‡‚É‚ÍƒJƒŒƒ“ƒg’¼‰º‚Ìblanco‚ğ—p‚¢‚Ü‚·B]B
-     * ƒfƒtƒHƒ‹ƒg: [blanco]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [å‡ºåŠ›å…ˆãƒ•ã‚©ãƒ«ãƒ€ã‚’æŒ‡å®šã—ã¾ã™ã€‚ç„¡æŒ‡å®šã®å ´åˆã«ã¯ã‚«ãƒ¬ãƒ³ãƒˆç›´ä¸‹ã®blancoã‚’ç”¨ã„ã¾ã™ã€‚]ã€‚
+     * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ: [blanco]ã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[targetdir]‚©‚çæ“¾‚µ‚½’lB
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[targetdir]ã‹ã‚‰å–å¾—ã—ãŸå€¤ã€‚
      */
     public String getTargetdir() {
         return fTargetdir;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [tmpdir] ‚Ì’l‚ğİ’è‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [tmpdir] ã®å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [ƒeƒ“ƒ|ƒ‰ƒŠƒtƒHƒ‹ƒ_‚ğw’è‚µ‚Ü‚·B–³w’è‚Ìê‡‚É‚ÍAƒJƒŒƒ“ƒg’¼‰º‚Ìtmp‚ğ—p‚¢‚Ü‚·B]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ãƒ†ãƒ³ãƒãƒ©ãƒªãƒ•ã‚©ãƒ«ãƒ€ã‚’æŒ‡å®šã—ã¾ã™ã€‚ç„¡æŒ‡å®šã®å ´åˆã«ã¯ã€ã‚«ãƒ¬ãƒ³ãƒˆç›´ä¸‹ã®tmpã‚’ç”¨ã„ã¾ã™ã€‚]ã€‚
      *
-     * @param argTmpdir ƒtƒB[ƒ‹ƒh[tmpdir]‚Éİ’è‚·‚é’lB
+     * @param argTmpdir ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[tmpdir]ã«è¨­å®šã™ã‚‹å€¤ã€‚
      */
     public void setTmpdir(final String argTmpdir) {
         fTmpdir = argTmpdir;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [tmpdir] ‚Ì’l‚ğæ“¾‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [tmpdir] ã®å€¤ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [ƒeƒ“ƒ|ƒ‰ƒŠƒtƒHƒ‹ƒ_‚ğw’è‚µ‚Ü‚·B–³w’è‚Ìê‡‚É‚ÍAƒJƒŒƒ“ƒg’¼‰º‚Ìtmp‚ğ—p‚¢‚Ü‚·B]B
-     * ƒfƒtƒHƒ‹ƒg: [tmp]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ãƒ†ãƒ³ãƒãƒ©ãƒªãƒ•ã‚©ãƒ«ãƒ€ã‚’æŒ‡å®šã—ã¾ã™ã€‚ç„¡æŒ‡å®šã®å ´åˆã«ã¯ã€ã‚«ãƒ¬ãƒ³ãƒˆç›´ä¸‹ã®tmpã‚’ç”¨ã„ã¾ã™ã€‚]ã€‚
+     * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ: [tmp]ã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[tmpdir]‚©‚çæ“¾‚µ‚½’lB
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[tmpdir]ã‹ã‚‰å–å¾—ã—ãŸå€¤ã€‚
      */
     public String getTmpdir() {
         return fTmpdir;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [encoding] ‚Ì’l‚ğİ’è‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [encoding] ã®å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [©“®¶¬‚·‚éƒ\[ƒXƒtƒ@ƒCƒ‹‚Ì•¶šƒGƒ“ƒR[ƒfƒBƒ“ƒO‚ğw’è‚µ‚Ü‚·B]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [è‡ªå‹•ç”Ÿæˆã™ã‚‹ã‚½ãƒ¼ã‚¹ãƒ•ã‚¡ã‚¤ãƒ«ã®æ–‡å­—ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã‚’æŒ‡å®šã—ã¾ã™ã€‚]ã€‚
      *
-     * @param argEncoding ƒtƒB[ƒ‹ƒh[encoding]‚Éİ’è‚·‚é’lB
+     * @param argEncoding ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[encoding]ã«è¨­å®šã™ã‚‹å€¤ã€‚
      */
     public void setEncoding(final String argEncoding) {
         fEncoding = argEncoding;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [encoding] ‚Ì’l‚ğæ“¾‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [encoding] ã®å€¤ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [©“®¶¬‚·‚éƒ\[ƒXƒtƒ@ƒCƒ‹‚Ì•¶šƒGƒ“ƒR[ƒfƒBƒ“ƒO‚ğw’è‚µ‚Ü‚·B]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [è‡ªå‹•ç”Ÿæˆã™ã‚‹ã‚½ãƒ¼ã‚¹ãƒ•ã‚¡ã‚¤ãƒ«ã®æ–‡å­—ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã‚’æŒ‡å®šã—ã¾ã™ã€‚]ã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[encoding]‚©‚çæ“¾‚µ‚½’lB
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[encoding]ã‹ã‚‰å–å¾—ã—ãŸå€¤ã€‚
      */
     public String getEncoding() {
         return fEncoding;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [commenttimestamp] ‚Ì’l‚ğİ’è‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [commenttimestamp] ã®å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [ƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚Ì¶¬‚É‚Â‚¢‚ÄAƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚ÌƒRƒƒ“ƒg‚Éo—Í‚·‚é‚©‚Ç‚¤‚©ƒtƒ‰ƒOB]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã®ç”Ÿæˆæ™‚åˆ»ã«ã¤ã„ã¦ã€ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã®ã‚³ãƒ¡ãƒ³ãƒˆã«å‡ºåŠ›ã™ã‚‹ã‹ã©ã†ã‹ãƒ•ãƒ©ã‚°ã€‚]ã€‚
      *
-     * @param argCommenttimestamp ƒtƒB[ƒ‹ƒh[commenttimestamp]‚Éİ’è‚·‚é’lB
+     * @param argCommenttimestamp ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[commenttimestamp]ã«è¨­å®šã™ã‚‹å€¤ã€‚
      */
     public void setCommenttimestamp(final boolean argCommenttimestamp) {
         fCommenttimestamp = argCommenttimestamp;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [commenttimestamp] ‚Ì’l‚ğæ“¾‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [commenttimestamp] ã®å€¤ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [ƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚Ì¶¬‚É‚Â‚¢‚ÄAƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚ÌƒRƒƒ“ƒg‚Éo—Í‚·‚é‚©‚Ç‚¤‚©ƒtƒ‰ƒOB]B
-     * ƒfƒtƒHƒ‹ƒg: [true]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã®ç”Ÿæˆæ™‚åˆ»ã«ã¤ã„ã¦ã€ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã®ã‚³ãƒ¡ãƒ³ãƒˆã«å‡ºåŠ›ã™ã‚‹ã‹ã©ã†ã‹ãƒ•ãƒ©ã‚°ã€‚]ã€‚
+     * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ: [true]ã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[commenttimestamp]‚©‚çæ“¾‚µ‚½’lB
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[commenttimestamp]ã‹ã‚‰å–å¾—ã—ãŸå€¤ã€‚
      */
     public boolean getCommenttimestamp() {
         return fCommenttimestamp;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [failonmessageformaterror] ‚Ì’l‚ğİ’è‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [failonmessageformaterror] ã®å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹•¶š—ñ‚ğMessageFormat‚É‚æ‚éƒp[ƒX‚ğs‚Á‚½Û‚ÉA—áŠO‚ª”­¶‚µ‚½‚çˆ—‚ğ’†’f‚·‚é‚©‚Ç‚¤‚©‚Ìƒtƒ‰ƒOBtrue‚È‚çˆ—’†’f‚µ‚Ä—áŠO‚ğ”­¶‚³‚¹‚Ü‚·Bfalse‚È‚çˆ—‘±s‚µA’uŠ·•¶š—ñ‚Í–³‚¢‚à‚Ì‚Æ‚İ‚È‚µ‚Ü‚·BJava‚Ìƒ\[ƒXƒR[ƒh‚ğˆ—‚·‚éÛ‚È‚Ç‚ÉA‚ ‚¦‚Ä false‚Éİ’è‚µ‚Ä”gŠ‡ŒÊ‚ğˆµ‚¤‚±‚Æ‚ª‚Å‚«‚é‚æ‚¤‚ÉØ‚è‘Ö‚¦‚éê‡‚ª‚ ‚è‚Ü‚·B]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«æ–‡å­—åˆ—ã‚’MessageFormatã«ã‚ˆã‚‹ãƒ‘ãƒ¼ã‚¹ã‚’è¡Œã£ãŸéš›ã«ã€ä¾‹å¤–ãŒç™ºç”Ÿã—ãŸã‚‰å‡¦ç†ã‚’ä¸­æ–­ã™ã‚‹ã‹ã©ã†ã‹ã®ãƒ•ãƒ©ã‚°ã€‚trueãªã‚‰å‡¦ç†ä¸­æ–­ã—ã¦ä¾‹å¤–ã‚’ç™ºç”Ÿã•ã›ã¾ã™ã€‚falseãªã‚‰å‡¦ç†ç¶šè¡Œã—ã€ç½®æ›æ–‡å­—åˆ—ã¯ç„¡ã„ã‚‚ã®ã¨ã¿ãªã—ã¾ã™ã€‚Javaã®ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã‚’å‡¦ç†ã™ã‚‹éš›ãªã©ã«ã€ã‚ãˆã¦ falseã«è¨­å®šã—ã¦æ³¢æ‹¬å¼§ã‚’æ‰±ã†ã“ã¨ãŒã§ãã‚‹ã‚ˆã†ã«åˆ‡ã‚Šæ›¿ãˆã‚‹å ´åˆãŒã‚ã‚Šã¾ã™ã€‚]ã€‚
      *
-     * @param argFailonmessageformaterror ƒtƒB[ƒ‹ƒh[failonmessageformaterror]‚Éİ’è‚·‚é’lB
+     * @param argFailonmessageformaterror ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[failonmessageformaterror]ã«è¨­å®šã™ã‚‹å€¤ã€‚
      */
     public void setFailonmessageformaterror(final boolean argFailonmessageformaterror) {
         fFailonmessageformaterror = argFailonmessageformaterror;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [failonmessageformaterror] ‚Ì’l‚ğæ“¾‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [failonmessageformaterror] ã®å€¤ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹•¶š—ñ‚ğMessageFormat‚É‚æ‚éƒp[ƒX‚ğs‚Á‚½Û‚ÉA—áŠO‚ª”­¶‚µ‚½‚çˆ—‚ğ’†’f‚·‚é‚©‚Ç‚¤‚©‚Ìƒtƒ‰ƒOBtrue‚È‚çˆ—’†’f‚µ‚Ä—áŠO‚ğ”­¶‚³‚¹‚Ü‚·Bfalse‚È‚çˆ—‘±s‚µA’uŠ·•¶š—ñ‚Í–³‚¢‚à‚Ì‚Æ‚İ‚È‚µ‚Ü‚·BJava‚Ìƒ\[ƒXƒR[ƒh‚ğˆ—‚·‚éÛ‚È‚Ç‚ÉA‚ ‚¦‚Ä false‚Éİ’è‚µ‚Ä”gŠ‡ŒÊ‚ğˆµ‚¤‚±‚Æ‚ª‚Å‚«‚é‚æ‚¤‚ÉØ‚è‘Ö‚¦‚éê‡‚ª‚ ‚è‚Ü‚·B]B
-     * ƒfƒtƒHƒ‹ƒg: [true]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«æ–‡å­—åˆ—ã‚’MessageFormatã«ã‚ˆã‚‹ãƒ‘ãƒ¼ã‚¹ã‚’è¡Œã£ãŸéš›ã«ã€ä¾‹å¤–ãŒç™ºç”Ÿã—ãŸã‚‰å‡¦ç†ã‚’ä¸­æ–­ã™ã‚‹ã‹ã©ã†ã‹ã®ãƒ•ãƒ©ã‚°ã€‚trueãªã‚‰å‡¦ç†ä¸­æ–­ã—ã¦ä¾‹å¤–ã‚’ç™ºç”Ÿã•ã›ã¾ã™ã€‚falseãªã‚‰å‡¦ç†ç¶šè¡Œã—ã€ç½®æ›æ–‡å­—åˆ—ã¯ç„¡ã„ã‚‚ã®ã¨ã¿ãªã—ã¾ã™ã€‚Javaã®ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã‚’å‡¦ç†ã™ã‚‹éš›ãªã©ã«ã€ã‚ãˆã¦ falseã«è¨­å®šã—ã¦æ³¢æ‹¬å¼§ã‚’æ‰±ã†ã“ã¨ãŒã§ãã‚‹ã‚ˆã†ã«åˆ‡ã‚Šæ›¿ãˆã‚‹å ´åˆãŒã‚ã‚Šã¾ã™ã€‚]ã€‚
+     * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ: [true]ã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[failonmessageformaterror]‚©‚çæ“¾‚µ‚½’lB
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[failonmessageformaterror]ã‹ã‚‰å–å¾—ã—ãŸå€¤ã€‚
      */
     public boolean getFailonmessageformaterror() {
         return fFailonmessageformaterror;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [log] ‚Ì’l‚ğİ’è‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [log] ã®å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [ƒƒOo—Í‚ğ©“®¶¬‚³‚ê‚éƒ\[ƒXƒR[ƒh‚ÉŠÜ‚ß‚é‚©‚Ç‚¤‚©‚Ìƒtƒ‰ƒOBo—Í‚·‚éê‡‚É‚Í java.util.logging.Logger‚Ì‚İ‚É‘Î‰B]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ãƒ­ã‚°å‡ºåŠ›ã‚’è‡ªå‹•ç”Ÿæˆã•ã‚Œã‚‹ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã«å«ã‚ã‚‹ã‹ã©ã†ã‹ã®ãƒ•ãƒ©ã‚°ã€‚å‡ºåŠ›ã™ã‚‹å ´åˆã«ã¯ java.util.logging.Loggerã®ã¿ã«å¯¾å¿œã€‚]ã€‚
      *
-     * @param argLog ƒtƒB[ƒ‹ƒh[log]‚Éİ’è‚·‚é’lB
+     * @param argLog ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[log]ã«è¨­å®šã™ã‚‹å€¤ã€‚
      */
     public void setLog(final boolean argLog) {
         fLog = argLog;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [log] ‚Ì’l‚ğæ“¾‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [log] ã®å€¤ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [ƒƒOo—Í‚ğ©“®¶¬‚³‚ê‚éƒ\[ƒXƒR[ƒh‚ÉŠÜ‚ß‚é‚©‚Ç‚¤‚©‚Ìƒtƒ‰ƒOBo—Í‚·‚éê‡‚É‚Í java.util.logging.Logger‚Ì‚İ‚É‘Î‰B]B
-     * ƒfƒtƒHƒ‹ƒg: [false]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ãƒ­ã‚°å‡ºåŠ›ã‚’è‡ªå‹•ç”Ÿæˆã•ã‚Œã‚‹ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã«å«ã‚ã‚‹ã‹ã©ã†ã‹ã®ãƒ•ãƒ©ã‚°ã€‚å‡ºåŠ›ã™ã‚‹å ´åˆã«ã¯ java.util.logging.Loggerã®ã¿ã«å¯¾å¿œã€‚]ã€‚
+     * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ: [false]ã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[log]‚©‚çæ“¾‚µ‚½’lB
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[log]ã‹ã‚‰å–å¾—ã—ãŸå€¤ã€‚
      */
     public boolean getLog() {
         return fLog;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [propertieswithdirectory] ‚Ì’l‚ğİ’è‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [propertieswithdirectory] ã®å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [ƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚ğƒfƒBƒŒƒNƒgƒŠ•t‚«‚Åo—Í‚·‚é‚©‚Ç‚¤‚©‚Ìƒtƒ‰ƒOB]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªä»˜ãã§å‡ºåŠ›ã™ã‚‹ã‹ã©ã†ã‹ã®ãƒ•ãƒ©ã‚°ã€‚]ã€‚
      *
-     * @param argPropertieswithdirectory ƒtƒB[ƒ‹ƒh[propertieswithdirectory]‚Éİ’è‚·‚é’lB
+     * @param argPropertieswithdirectory ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[propertieswithdirectory]ã«è¨­å®šã™ã‚‹å€¤ã€‚
      */
     public void setPropertieswithdirectory(final boolean argPropertieswithdirectory) {
         fPropertieswithdirectory = argPropertieswithdirectory;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [propertieswithdirectory] ‚Ì’l‚ğæ“¾‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [propertieswithdirectory] ã®å€¤ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [ƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚ğƒfƒBƒŒƒNƒgƒŠ•t‚«‚Åo—Í‚·‚é‚©‚Ç‚¤‚©‚Ìƒtƒ‰ƒOB]B
-     * ƒfƒtƒHƒ‹ƒg: [true]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªä»˜ãã§å‡ºåŠ›ã™ã‚‹ã‹ã©ã†ã‹ã®ãƒ•ãƒ©ã‚°ã€‚]ã€‚
+     * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ: [true]ã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[propertieswithdirectory]‚©‚çæ“¾‚µ‚½’lB
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[propertieswithdirectory]ã‹ã‚‰å–å¾—ã—ãŸå€¤ã€‚
      */
     public boolean getPropertieswithdirectory() {
         return fPropertieswithdirectory;
     }
 
     /**
-     * ‚±‚ÌƒoƒŠƒ…[ƒIƒuƒWƒFƒNƒg‚Ì•¶š—ñ•\Œ»‚ğæ“¾‚µ‚Ü‚·B
+     * ã“ã®ãƒãƒªãƒ¥ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®æ–‡å­—åˆ—è¡¨ç¾ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
-     * <P>g—pã‚Ì’ˆÓ</P>
+     * <P>ä½¿ç”¨ä¸Šã®æ³¨æ„</P>
      * <UL>
-     * <LI>ƒIƒuƒWƒFƒNƒg‚ÌƒVƒƒƒ[”ÍˆÍ‚Ì‚İ•¶š—ñ‰»‚Ìˆ—‘ÎÛ‚Æ‚È‚è‚Ü‚·B
-     * <LI>ƒIƒuƒWƒFƒNƒg‚ªzŠÂQÆ‚µ‚Ä‚¢‚éê‡‚É‚ÍA‚±‚Ìƒƒ\ƒbƒh‚Íg‚í‚È‚¢‚Å‚­‚¾‚³‚¢B
+     * <LI>ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ã‚·ãƒ£ãƒ­ãƒ¼ç¯„å›²ã®ã¿æ–‡å­—åˆ—åŒ–ã®å‡¦ç†å¯¾è±¡ã¨ãªã‚Šã¾ã™ã€‚
+     * <LI>ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒå¾ªç’°å‚ç…§ã—ã¦ã„ã‚‹å ´åˆã«ã¯ã€ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã¯ä½¿ã‚ãªã„ã§ãã ã•ã„ã€‚
      * </UL>
      *
-     * @return ƒoƒŠƒ…[ƒIƒuƒWƒFƒNƒg‚Ì•¶š—ñ•\Œ»B
+     * @return ãƒãƒªãƒ¥ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®æ–‡å­—åˆ—è¡¨ç¾ã€‚
      */
     @Override
     public String toString() {

@@ -32,40 +32,40 @@ import blanco.resourcebundle.resourcebundle.BlancoResourceBundleResourceBundle;
 import blanco.resourcebundle.valueobject.BlancoResourceBundleBundleStructure;
 
 /**
- * W–ñŒã‚Ì’†ŠÔXMLƒtƒ@ƒCƒ‹‚Ì“à—e‘Ã“–«ƒ`ƒFƒbƒN‚ğs‚¢‚Ü‚·B
+ * é›†ç´„å¾Œã®ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã®å†…å®¹å¦¥å½“æ€§ãƒã‚§ãƒƒã‚¯ã‚’è¡Œã„ã¾ã™ã€‚
  * 
- * ‚±‚Ìƒ\[ƒXƒR[ƒh‚ÍblancoResourceBundle‚Ìˆê•”‚Å‚·B<br>
+ * ã“ã®ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã¯blancoResourceBundleã®ä¸€éƒ¨ã§ã™ã€‚<br>
  * 
  * @author IGA Tosiki
  */
 public class BlancoResourceBundleXmlValidator {
     /**
-     * ƒƒbƒZ[ƒWB
+     * ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã€‚
      */
     private final BlancoResourceBundleMessage fMsg = new BlancoResourceBundleMessage();
 
     /**
-     * ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹ƒAƒNƒZƒT‚ÌƒCƒ“ƒXƒ^ƒ“ƒXB
+     * ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«ã‚¢ã‚¯ã‚»ã‚µã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã€‚
      */
     private final BlancoResourceBundleResourceBundle fBundle = new BlancoResourceBundleResourceBundle();
 
     /**
-     * ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹•¶š—ñ‚ğMessageFormat‚É‚æ‚éƒp[ƒX‚ğs‚Á‚½Û‚ÉA—áŠO‚ª”­¶‚µ‚½‚çˆ—‚ğ’†’f‚·‚é‚©‚Ç‚¤‚©‚Ìƒtƒ‰ƒOB
+     * ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«æ–‡å­—åˆ—ã‚’MessageFormatã«ã‚ˆã‚‹ãƒ‘ãƒ¼ã‚¹ã‚’è¡Œã£ãŸéš›ã«ã€ä¾‹å¤–ãŒç™ºç”Ÿã—ãŸã‚‰å‡¦ç†ã‚’ä¸­æ–­ã™ã‚‹ã‹ã©ã†ã‹ã®ãƒ•ãƒ©ã‚°ã€‚
      * 
-     * true‚È‚çˆ—’†’f‚µ‚Ä—áŠO‚ğ”­¶‚³‚¹‚Ü‚·B<br>
-     * false‚È‚çˆ—‘±s‚µA’uŠ·•¶š—ñ‚Í–³‚¢‚à‚Ì‚Æ‚İ‚È‚µ‚Ü‚·B<br>
-     * Java‚Ìƒ\[ƒXƒR[ƒh‚ğˆ—‚·‚éÛ‚È‚Ç‚ÉA‚ ‚¦‚Ä false‚Éİ’è‚µ‚Ä”gŠ‡ŒÊ‚ğˆµ‚¤‚±‚Æ‚ª‚Å‚«‚é‚æ‚¤‚ÉØ‚è‘Ö‚¦‚éê‡‚ª‚ ‚è‚Ü‚·B<br>
-     * ƒfƒtƒHƒ‹ƒg’l[true]‚ªİ’è‚³‚ê‚Ä‚¢‚Ü‚·B
+     * trueãªã‚‰å‡¦ç†ä¸­æ–­ã—ã¦ä¾‹å¤–ã‚’ç™ºç”Ÿã•ã›ã¾ã™ã€‚<br>
+     * falseãªã‚‰å‡¦ç†ç¶šè¡Œã—ã€ç½®æ›æ–‡å­—åˆ—ã¯ç„¡ã„ã‚‚ã®ã¨ã¿ãªã—ã¾ã™ã€‚<br>
+     * Javaã®ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã‚’å‡¦ç†ã™ã‚‹éš›ãªã©ã«ã€ã‚ãˆã¦ falseã«è¨­å®šã—ã¦æ³¢æ‹¬å¼§ã‚’æ‰±ã†ã“ã¨ãŒã§ãã‚‹ã‚ˆã†ã«åˆ‡ã‚Šæ›¿ãˆã‚‹å ´åˆãŒã‚ã‚Šã¾ã™ã€‚<br>
+     * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤[true]ãŒè¨­å®šã•ã‚Œã¦ã„ã¾ã™ã€‚
      */
     private boolean fIsFailOnMessageFormatError = true;
 
     /**
-     * ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹•¶š—ñ‚ğMessageFormat‚É‚æ‚éƒp[ƒX‚ğs‚Á‚½Û‚ÉA—áŠO‚ª”­¶‚µ‚½‚çˆ—‚ğ’†’f‚·‚é‚©‚Ç‚¤‚©‚Ìƒtƒ‰ƒO‚ğİ’è‚µ‚Ü‚·B
+     * ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«æ–‡å­—åˆ—ã‚’MessageFormatã«ã‚ˆã‚‹ãƒ‘ãƒ¼ã‚¹ã‚’è¡Œã£ãŸéš›ã«ã€ä¾‹å¤–ãŒç™ºç”Ÿã—ãŸã‚‰å‡¦ç†ã‚’ä¸­æ–­ã™ã‚‹ã‹ã©ã†ã‹ã®ãƒ•ãƒ©ã‚°ã‚’è¨­å®šã—ã¾ã™ã€‚
      * 
-     * true‚È‚çˆ—’†’f‚µ‚Ä—áŠO‚ğ”­¶‚³‚¹‚Ü‚·B<br>
-     * false‚È‚çˆ—‘±s‚µA’uŠ·•¶š—ñ‚Í–³‚¢‚à‚Ì‚Æ‚İ‚È‚µ‚Ü‚·B<br>
-     * Java‚Ìƒ\[ƒXƒR[ƒh‚ğˆ—‚·‚éÛ‚È‚Ç‚ÉA‚ ‚¦‚Ä false‚Éİ’è‚µ‚Ä”gŠ‡ŒÊ‚ğˆµ‚¤‚±‚Æ‚ª‚Å‚«‚é‚æ‚¤‚ÉØ‚è‘Ö‚¦‚éê‡‚ª‚ ‚è‚Ü‚·B<br>
-     * ƒfƒtƒHƒ‹ƒg’l[true]‚ªİ’è‚³‚ê‚Ä‚¢‚Ü‚·B
+     * trueãªã‚‰å‡¦ç†ä¸­æ–­ã—ã¦ä¾‹å¤–ã‚’ç™ºç”Ÿã•ã›ã¾ã™ã€‚<br>
+     * falseãªã‚‰å‡¦ç†ç¶šè¡Œã—ã€ç½®æ›æ–‡å­—åˆ—ã¯ç„¡ã„ã‚‚ã®ã¨ã¿ãªã—ã¾ã™ã€‚<br>
+     * Javaã®ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã‚’å‡¦ç†ã™ã‚‹éš›ãªã©ã«ã€ã‚ãˆã¦ falseã«è¨­å®šã—ã¦æ³¢æ‹¬å¼§ã‚’æ‰±ã†ã“ã¨ãŒã§ãã‚‹ã‚ˆã†ã«åˆ‡ã‚Šæ›¿ãˆã‚‹å ´åˆãŒã‚ã‚Šã¾ã™ã€‚<br>
+     * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤[true]ãŒè¨­å®šã•ã‚Œã¦ã„ã¾ã™ã€‚
      * 
      * @param argIsFailOnMessageFormatError
      */
@@ -75,19 +75,19 @@ public class BlancoResourceBundleXmlValidator {
     }
 
     /**
-     * ’†ŠÔXMLƒtƒ@ƒCƒ‹‚©‚ç ƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹ƒAƒNƒZƒX—p‚ÌJavaƒ\[ƒXƒR[ƒh‚ğ¶¬‚µ‚Ü‚·B
+     * ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰ ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã‚¢ã‚¯ã‚»ã‚¹ç”¨ã®Javaã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
      * 
      * @param argFileSource
-     *            “ü—Í‚Æ‚È‚é’†ŠÔXMLƒtƒ@ƒCƒ‹B
+     *            å…¥åŠ›ã¨ãªã‚‹ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã€‚
      * @param argDirectoryTarget
-     *            ƒ\[ƒXƒR[ƒh‚ğo—Í‚·‚éÛ‚Ìo—ÍæƒfƒBƒŒƒNƒgƒŠB
+     *            ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã‚’å‡ºåŠ›ã™ã‚‹éš›ã®å‡ºåŠ›å…ˆãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã€‚
      */
     public void process(final File argFileSource, final File argDirectoryTarget) {
         final DOMResult result = BlancoXmlUtil.transformFile2Dom(argFileSource);
 
         final Node rootNode = result.getNode();
         if (rootNode instanceof Document) {
-            // ‚±‚ê‚ª³íŒnBƒhƒLƒ…ƒƒ“ƒgƒ‹[ƒg‚ğæ“¾
+            // ã“ã‚ŒãŒæ­£å¸¸ç³»ã€‚ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆãƒ«ãƒ¼ãƒˆã‚’å–å¾—
             final Document rootDocument = (Document) rootNode;
             final NodeList listSheet = rootDocument
                     .getElementsByTagName("sheet");
@@ -101,7 +101,7 @@ public class BlancoResourceBundleXmlValidator {
                         .getElementsByTagName(fBundle
                                 .getMeta2xmlElementCommon());
                 if (listCommon == null || listCommon.getLength() == 0) {
-                    // common‚ª–³‚¢ê‡‚É‚ÍƒXƒLƒbƒv‚µ‚Ü‚·B
+                    // commonãŒç„¡ã„å ´åˆã«ã¯ã‚¹ã‚­ãƒƒãƒ—ã—ã¾ã™ã€‚
                     continue;
                 }
 
@@ -116,7 +116,7 @@ public class BlancoResourceBundleXmlValidator {
                 }
 
                 if (BlancoXmlUtil.getTextContent(elementCommon, "packageName") == null) {
-                    // TODO ƒpƒbƒP[ƒW”²‚¯‚ÍƒGƒ‰[ˆµ‚¢‚·‚×‚«
+                    // TODO ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸æŠœã‘ã¯ã‚¨ãƒ©ãƒ¼æ‰±ã„ã™ã¹ã
                     continue;
                 }
 
@@ -159,18 +159,18 @@ public class BlancoResourceBundleXmlValidator {
                 }
 
                 expandSheet(elementSheet, elementCommon);
-                mapProcessedBaseName.put(structure.getName(), "ˆ—‚³‚ê‚Ü‚µ‚½");
+                mapProcessedBaseName.put(structure.getName(), "å‡¦ç†ã•ã‚Œã¾ã—ãŸ");
             }
         }
     }
 
     /**
-     * W–ñŒã‚Ì’†ŠÔXMLƒtƒ@ƒCƒ‹‚Ì“à—e‘Ã“–«ƒ`ƒFƒbƒN‚ğs‚¢‚Ü‚·B
+     * é›†ç´„å¾Œã®ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã®å†…å®¹å¦¥å½“æ€§ãƒã‚§ãƒƒã‚¯ã‚’è¡Œã„ã¾ã™ã€‚
      * 
      * @param argElementSheet
-     *            ƒV[ƒg‚ÌƒGƒŒƒƒ“ƒgB
+     *            ã‚·ãƒ¼ãƒˆã®ã‚¨ãƒ¬ãƒ¡ãƒ³ãƒˆã€‚
      * @param argElementCommon
-     *            ‹¤’Êî•ñ‚ÌƒGƒŒƒƒ“ƒgB
+     *            å…±é€šæƒ…å ±ã®ã‚¨ãƒ¬ãƒ¡ãƒ³ãƒˆã€‚
      */
     private void expandSheet(final Element argElementSheet,
             final Element argElementCommon) {
@@ -183,12 +183,12 @@ public class BlancoResourceBundleXmlValidator {
 
         final List<java.lang.String> listKnownLocale = new ArrayList<java.lang.String>();
         final Map<java.lang.String, java.lang.String> mapBundle = new HashMap<java.lang.String, java.lang.String>();
-        // —^‚¦‚ç‚ê‚½ƒpƒbƒP[ƒW–¼‚ğ‚»‚Ì‚Ü‚Ü—˜—p‚µ‚Ü‚·B
+        // ä¸ãˆã‚‰ã‚ŒãŸãƒ‘ãƒƒã‚±ãƒ¼ã‚¸åã‚’ãã®ã¾ã¾åˆ©ç”¨ã—ã¾ã™ã€‚
 
         final NodeList listCommonList = argElementSheet
                 .getElementsByTagName(fBundle.getMeta2xmlElementCommon());
         if (listCommonList == null || listCommonList.getLength() == 0) {
-            // common‚ª–³‚¢ê‡‚É‚ÍƒXƒLƒbƒv‚µ‚Ü‚·B
+            // commonãŒç„¡ã„å ´åˆã«ã¯ã‚¹ã‚­ãƒƒãƒ—ã—ã¾ã™ã€‚
             return;
         }
 
@@ -198,7 +198,7 @@ public class BlancoResourceBundleXmlValidator {
         final NodeList listResourceList = argElementSheet
                 .getElementsByTagName(fBundle.getMeta2xmlElementList());
         if (listResourceList == null || listResourceList.getLength() == 0) {
-            // –{‘Ì•”•ª‚ª–³‚¢‚à‚Ì‚É‚Â‚¢‚Ä‚Íˆ—‚ğƒXƒLƒbƒv‚µ‚Ü‚·B
+            // æœ¬ä½“éƒ¨åˆ†ãŒç„¡ã„ã‚‚ã®ã«ã¤ã„ã¦ã¯å‡¦ç†ã‚’ã‚¹ã‚­ãƒƒãƒ—ã—ã¾ã™ã€‚
             return;
         }
 
@@ -221,7 +221,7 @@ public class BlancoResourceBundleXmlValidator {
                     .getElementsByTagName("resourceString");
             if (nodeListResourceString == null
                     || nodeListResourceString.getLength() == 0) {
-                // ˆêŒ‚à–³‚¢ê‡‚É‚ÍƒXƒLƒbƒv‚µ‚Ü‚·B
+                // ä¸€ä»¶ã‚‚ç„¡ã„å ´åˆã«ã¯ã‚¹ã‚­ãƒƒãƒ—ã—ã¾ã™ã€‚
                 continue;
             }
 
@@ -232,7 +232,7 @@ public class BlancoResourceBundleXmlValidator {
     }
 
     /**
-     * ƒƒP[ƒ‹‚Ìd•¡‚ª‘¶İ‚µ‚È‚¢‚©‚Ç‚¤‚©‚ğƒ`ƒFƒbƒN‚µ‚Ü‚·B
+     * ãƒ­ã‚±ãƒ¼ãƒ«ã®é‡è¤‡ãŒå­˜åœ¨ã—ãªã„ã‹ã©ã†ã‹ã‚’ãƒã‚§ãƒƒã‚¯ã—ã¾ã™ã€‚
      * 
      * @param argBaseName
      * @param argDescription
@@ -243,7 +243,7 @@ public class BlancoResourceBundleXmlValidator {
             final String argDescription,
             final List<java.lang.String> argListKnownLocale,
             final NodeList argListCommonList) {
-        // ƒƒP[ƒ‹‚Ìd•¡ƒ`ƒFƒbƒN‚ğs‚¢‚Ü‚·B
+        // ãƒ­ã‚±ãƒ¼ãƒ«ã®é‡è¤‡ãƒã‚§ãƒƒã‚¯ã‚’è¡Œã„ã¾ã™ã€‚
         final NodeList listLocale = ((Element) argListCommonList.item(0))
                 .getElementsByTagName("locale");
         if (listLocale == null || listLocale.getLength() == 0) {
@@ -259,7 +259,7 @@ public class BlancoResourceBundleXmlValidator {
                 final String locale = BlancoStringUtil.null2Blank(BlancoXmlUtil
                         .getTextContent(elementLocale));
                 if (mapExistLocale.get(locale) != null) {
-                    // ƒƒP[ƒ‹‚Ìd•¡‚ª”­Œ©‚³‚ê‚Ü‚µ‚½B
+                    // ãƒ­ã‚±ãƒ¼ãƒ«ã®é‡è¤‡ãŒç™ºè¦‹ã•ã‚Œã¾ã—ãŸã€‚
                     throw new IllegalArgumentException(fMsg.getMbrbi006(
                             argBaseName
                                     + (argDescription == null ? "" : "/"
@@ -272,20 +272,20 @@ public class BlancoResourceBundleXmlValidator {
     }
 
     /**
-     * ƒƒbƒZ[ƒWƒtƒH[ƒ}ƒbƒg‚Ìƒp[ƒXŒ‹‰Ê‚ªƒƒP[ƒ‹ŠÔ‚É‚¨‚¢‚Ä‘Ã“–‚Èó‘Ô‚Å‚ ‚é‚©‚Ç‚¤‚©‚ğƒ`ƒFƒbƒN‚µ‚Ü‚·B
+     * ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆã®ãƒ‘ãƒ¼ã‚¹çµæœãŒãƒ­ã‚±ãƒ¼ãƒ«é–“ã«ãŠã„ã¦å¦¥å½“ãªçŠ¶æ…‹ã§ã‚ã‚‹ã‹ã©ã†ã‹ã‚’ãƒã‚§ãƒƒã‚¯ã—ã¾ã™ã€‚
      * 
-     * ƒƒP[ƒ‹ŠÔ‚Å‘Šˆá‚ª‚ ‚éê‡‚É‚Í—áŠO‚Åˆ—’†’f‚µ‚Ü‚·B
+     * ãƒ­ã‚±ãƒ¼ãƒ«é–“ã§ç›¸é•ãŒã‚ã‚‹å ´åˆã«ã¯ä¾‹å¤–ã§å‡¦ç†ä¸­æ–­ã—ã¾ã™ã€‚
      * 
      * @param argBaseName
-     *            Šî€–¼B
+     *            åŸºæº–åã€‚
      * @param argDescription
-     *            à–¾B—áŠO”­¶‚É—˜—p‚³‚ê‚Ü‚·B
+     *            èª¬æ˜ã€‚ä¾‹å¤–ç™ºç”Ÿæ™‚ã«åˆ©ç”¨ã•ã‚Œã¾ã™ã€‚
      * @param argMapBundle
      * @param argFieldResourceId
-     *            ƒŠƒ\[ƒXIDB
+     *            ãƒªã‚½ãƒ¼ã‚¹IDã€‚
      * @param argNodeListResourceString
      * @param argIsFailOnMessageFormatError
-     *            MessageFormat‚É‚æ‚éƒp[ƒX‚ÌŒ‹‰Ê‚Æ‚µ‚Ä—áŠO‚ª”­¶‚µ‚½ê‡‚Éˆ—’†’f‚·‚é‚©‚Ç‚¤‚©B
+     *            MessageFormatã«ã‚ˆã‚‹ãƒ‘ãƒ¼ã‚¹ã®çµæœã¨ã—ã¦ä¾‹å¤–ãŒç™ºç”Ÿã—ãŸå ´åˆã«å‡¦ç†ä¸­æ–­ã™ã‚‹ã‹ã©ã†ã‹ã€‚
      */
     private void checkMessageFormat(final String argBaseName,
             final String argDescription,
@@ -311,16 +311,16 @@ public class BlancoResourceBundleXmlValidator {
             final String locale = BlancoStringUtil
                     .null2Blank(elementResourceString.getAttribute("locale"));
             if (mapProcessedLocale.get(locale) != null) {
-                // Šù‚Éˆ—Ï‚ÌƒƒP[ƒ‹‚Å‚ ‚ê‚ÎƒŠƒ\[ƒXID‚ªd•¡‚µ‚Ä‚¢‚éƒGƒ‰[‚Å‚ ‚é‚Æ”»’f‚µ‚Ü‚·B
+                // æ—¢ã«å‡¦ç†æ¸ˆã®ãƒ­ã‚±ãƒ¼ãƒ«ã§ã‚ã‚Œã°ãƒªã‚½ãƒ¼ã‚¹IDãŒé‡è¤‡ã—ã¦ã„ã‚‹ã‚¨ãƒ©ãƒ¼ã§ã‚ã‚‹ã¨åˆ¤æ–­ã—ã¾ã™ã€‚
                 throw new IllegalArgumentException(fMsg.getMbrbi007(argBaseName
                         + (argDescription == null ? "" : "/" + argDescription),
                         locale, argFieldResourceId));
             }
 
-            // V‚½‚Éˆ—‘ÎÛ‚Æ‚·‚éƒƒP[ƒ‹‚Æ‚µ‚Ä‹L‰¯‚µ‚Ü‚·B
+            // æ–°ãŸã«å‡¦ç†å¯¾è±¡ã¨ã™ã‚‹ãƒ­ã‚±ãƒ¼ãƒ«ã¨ã—ã¦è¨˜æ†¶ã—ã¾ã™ã€‚
             mapProcessedLocale.put(locale, locale);
             if (argMapBundle.get(argFieldResourceId) == null) {
-                // ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹‚Ìƒ}ƒbƒv‚É‹L‰¯‚µ‚Ü‚·B
+                // ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«ã®ãƒãƒƒãƒ—ã«è¨˜æ†¶ã—ã¾ã™ã€‚
                 argMapBundle.put(argFieldResourceId, resourceString);
             }
 
@@ -338,10 +338,10 @@ public class BlancoResourceBundleXmlValidator {
             }
 
             if (indexResourceString == 0) {
-                // ‰‰ñ‚Í”äŠr‚ğs‚¢‚Ü‚¹‚ñB
+                // åˆå›ã¯æ¯”è¼ƒã‚’è¡Œã„ã¾ã›ã‚“ã€‚
             } else {
                 if (previousFormatList == null && formatList == null) {
-                    // ˆê’v‚µ‚Ä‚¢‚Ü‚·B–â‘è‚ ‚è‚Ü‚¹‚ñB
+                    // ä¸€è‡´ã—ã¦ã„ã¾ã™ã€‚å•é¡Œã‚ã‚Šã¾ã›ã‚“ã€‚
                 } else if (previousFormatList == null && formatList != null) {
                     throw new IllegalArgumentException(fMsg.getMbrbi009(
                             argBaseName
@@ -385,8 +385,8 @@ public class BlancoResourceBundleXmlValidator {
                     }
                 }
             }
-            // ‘O‰ñ‚ÌƒŠƒXƒg‚Æ‚µ‚Ä‹L‰¯‚µ‚Ü‚·B
-            // null‚¾‚ë‚¤‚ª‰½‚¾‚ë‚¤‚ª‹L‰¯‚·‚é“_‚ªƒ|ƒCƒ“ƒg‚Å‚·B
+            // å‰å›ã®ãƒªã‚¹ãƒˆã¨ã—ã¦è¨˜æ†¶ã—ã¾ã™ã€‚
+            // nullã ã‚ã†ãŒä½•ã ã‚ã†ãŒè¨˜æ†¶ã™ã‚‹ç‚¹ãŒãƒã‚¤ãƒ³ãƒˆã§ã™ã€‚
             previousFormatList = formatList;
         }
     }

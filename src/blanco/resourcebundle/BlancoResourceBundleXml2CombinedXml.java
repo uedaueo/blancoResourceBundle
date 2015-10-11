@@ -38,34 +38,34 @@ import blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStrin
 import blanco.resourcebundle.valueobject.BlancoResourceBundleBundleStructure;
 
 /**
- * ’†ŠÔXMLƒtƒ@ƒCƒ‹‚©‚ç W–ñ‚³‚ê‚½’†ŠÔXMLƒtƒ@ƒCƒ‹‚ğ¶¬‚µ‚Ü‚·B
+ * ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰ é›†ç´„ã•ã‚ŒãŸä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
  * 
- * ‚±‚Ìƒ\[ƒXƒR[ƒh‚ÍblancoResourceBundle‚Ìˆê•”‚Å‚·B<br>
+ * ã“ã®ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã¯blancoResourceBundleã®ä¸€éƒ¨ã§ã™ã€‚<br>
  * 
  * @author IGA Tosiki
  */
 public class BlancoResourceBundleXml2CombinedXml {
     /**
-     * ƒƒbƒZ[ƒWB
+     * ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã€‚
      */
     private final BlancoResourceBundleMessage fMsg = new BlancoResourceBundleMessage();
 
     /**
-     * ’†ŠÔXMLƒtƒ@ƒCƒ‹‚©‚ç W–ñ‚³‚ê‚½’†ŠÔXMLƒtƒ@ƒCƒ‹‚ğ¶¬‚µ‚Ü‚·B
+     * ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰ é›†ç´„ã•ã‚ŒãŸä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
      * 
      * @param argFileXmlSource
-     *            “ü—Í‚Æ‚È‚é’†ŠÔXMLƒtƒ@ƒCƒ‹B
+     *            å…¥åŠ›ã¨ãªã‚‹ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã€‚
      * @param argFileCombinedXmlTarget
-     *            o—Í‚Æ‚È‚éW–ñŒã’†ŠÔXMLƒtƒ@ƒCƒ‹B
+     *            å‡ºåŠ›ã¨ãªã‚‹é›†ç´„å¾Œä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã€‚
      * @throws IOException
-     *             “üo—Í—áŠO‚ª”­¶‚µ‚½ê‡B
+     *             å…¥å‡ºåŠ›ä¾‹å¤–ãŒç™ºç”Ÿã—ãŸå ´åˆã€‚
      * @throws TransformerException
-     *             XML•ÏŠ·—áŠO‚ª”­¶‚µ‚½ê‡B
+     *             XMLå¤‰æ›ä¾‹å¤–ãŒç™ºç”Ÿã—ãŸå ´åˆã€‚
      */
     public void process(final File argFileXmlSource,
             final File argFileCombinedXmlTarget) throws IOException,
             TransformerException {
-        // TODO ‚±‚ÌSAXƒ‰ƒCƒ^[‚ğíœ‚·‚é‚½‚ß‚É‚ÍA‚Ü‚¸ XmlSerializer‚ğÀ‘•‚·‚é•K—v‚ª‚ ‚è‚Ü‚·I
+        // TODO ã“ã®SAXãƒ©ã‚¤ã‚¿ãƒ¼ã‚’å‰Šé™¤ã™ã‚‹ãŸã‚ã«ã¯ã€ã¾ãš XmlSerializerã‚’å®Ÿè£…ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ï¼
         SAXResult result = new SAXResult(new BlancoResourceBundleXmlHandler() {
             private BlancoResourceBundleBundleStructure resourceBase = null;
 
@@ -83,7 +83,7 @@ public class BlancoResourceBundleXml2CombinedXml {
 
             public void endElementWorkbook(String uri, String localName,
                     String qName) throws SAXException {
-                // ‚±‚ÌêŠ‚ÅCombinedXML‚ğ¶¬‚µ‚Ü‚·B
+                // ã“ã®å ´æ‰€ã§CombinedXMLã‚’ç”Ÿæˆã—ã¾ã™ã€‚
                 OutputStream outStream = null;
                 try {
                     outStream = new BufferedOutputStream(new FileOutputStream(
@@ -101,7 +101,7 @@ public class BlancoResourceBundleXml2CombinedXml {
                             continue;
                         }
                         if (resourceBaseCurrent.getPackage() == null) {
-                            // ƒpƒbƒP[ƒW–¼‚ª–³‚¢ê‡‚É‚ÍƒGƒ‰[‚Æ‚µ‚Äˆµ‚¢‚Ü‚·B
+                            // ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸åãŒç„¡ã„å ´åˆã«ã¯ã‚¨ãƒ©ãƒ¼ã¨ã—ã¦æ‰±ã„ã¾ã™ã€‚
                             throw new SAXException(
                                     new IllegalArgumentException(fMsg
                                             .getMbrbi001(resourceBaseCurrent
@@ -161,7 +161,7 @@ public class BlancoResourceBundleXml2CombinedXml {
                                     .getItemList().get(index);
                             if (resourceItem == null
                                     || resourceItem.getKey() == null) {
-                                // ƒL[‚ª‚È‚¢ê‡‚É‚ÍƒXƒLƒbƒv‚µ‚Ü‚·B
+                                // ã‚­ãƒ¼ãŒãªã„å ´åˆã«ã¯ã‚¹ã‚­ãƒƒãƒ—ã—ã¾ã™ã€‚
                                 continue;
                             }
 
@@ -408,14 +408,14 @@ public class BlancoResourceBundleXml2CombinedXml {
                     if (resourceBase != null) {
                         if (BlancoStringUtil.null2Blank(
                                 resourceBase.getCurrentLocale()).length() == 0) {
-                            // ƒƒP[ƒ‹‚Ìw’è‚ª‚ ‚è‚Ü‚¹‚ñBƒGƒ‰[‚Æˆµ‚¢‚Ü‚·B
+                            // ãƒ­ã‚±ãƒ¼ãƒ«ã®æŒ‡å®šãŒã‚ã‚Šã¾ã›ã‚“ã€‚ã‚¨ãƒ©ãƒ¼ã¨æ‰±ã„ã¾ã™ã€‚
                             throw new IllegalArgumentException(fMsg
                                     .getMbrbi004(resourceBase.getName()));
                         }
                         if (resourceBase.getItemList() != null) {
                             if (resourceBase.getCurrentResourceString() == null) {
-                                // ’l‚ª‰½‚à“ü‚Á‚Ä‚¢‚È‚¢ê‡(NULL‚Ì‚Ü‚Ü)‚¾‚Æ‚ ‚Æ‚Å¢‚é‚Ì‚ÅA‹ó•¶š—ñ‚ğƒZƒbƒg‚µ‚Ü‚·B
-                                // ƒŠƒ\[ƒX•¶š—ñ‚Í•K‚¸’l‚ª“ü‚Á‚Ä‚¢‚é‚±‚Æ‚É‚È‚è‚Ü‚·B
+                                // å€¤ãŒä½•ã‚‚å…¥ã£ã¦ã„ãªã„å ´åˆ(NULLã®ã¾ã¾)ã ã¨ã‚ã¨ã§å›°ã‚‹ã®ã§ã€ç©ºæ–‡å­—åˆ—ã‚’ã‚»ãƒƒãƒˆã—ã¾ã™ã€‚
+                                // ãƒªã‚½ãƒ¼ã‚¹æ–‡å­—åˆ—ã¯å¿…ãšå€¤ãŒå…¥ã£ã¦ã„ã‚‹ã“ã¨ã«ãªã‚Šã¾ã™ã€‚
                                 resourceBase.setCurrentResourceString("");
                             }
                             BlancoResourceBundleBundleItemStructure foundItem = null;
@@ -424,8 +424,8 @@ public class BlancoResourceBundleXml2CombinedXml {
                                 BlancoResourceBundleBundleItemStructure itemLook = (BlancoResourceBundleBundleItemStructure) resourceBase
                                         .getItemList().get(index);
                                 if (itemLook.getKey() == null) {
-                                    // XML‚ÌƒRƒ“ƒoƒCƒ“‚Æ‚µ‚Ä‚ÍA‚±‚ê‚ğ“Ç‚İ”ò‚Î‚µ‚Ü‚·B
-                                    // ƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚ÌƒRƒƒ“ƒg‚ÍA‚±‚ê‚Æ‚Í•Ê‚ÌŒo˜H‚©‚çî•ñæ“¾‚µ‚Ü‚·B
+                                    // XMLã®ã‚³ãƒ³ãƒã‚¤ãƒ³ã¨ã—ã¦ã¯ã€ã“ã‚Œã‚’èª­ã¿é£›ã°ã—ã¾ã™ã€‚
+                                    // ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã®ã‚³ãƒ¡ãƒ³ãƒˆã¯ã€ã“ã‚Œã¨ã¯åˆ¥ã®çµŒè·¯ã‹ã‚‰æƒ…å ±å–å¾—ã—ã¾ã™ã€‚
                                     continue;
                                 }
                                 if (itemLook.getKey()
@@ -453,7 +453,7 @@ public class BlancoResourceBundleXml2CombinedXml {
                                 foundItem.getResourceStringList().add(item);
                             }
                         }
-                        // ƒŠƒ\[ƒX•¶š—ñ‚Í‚à‚¤—˜—pÏ‚İ‚È‚Ì‚Å ‚±‚ê‚ğƒNƒŠƒA‚µ‚Ü‚·B
+                        // ãƒªã‚½ãƒ¼ã‚¹æ–‡å­—åˆ—ã¯ã‚‚ã†åˆ©ç”¨æ¸ˆã¿ãªã®ã§ ã“ã‚Œã‚’ã‚¯ãƒªã‚¢ã—ã¾ã™ã€‚
                         resourceBase.setCurrentResourceString(null);
                     }
                 } catch (Exception ex) {

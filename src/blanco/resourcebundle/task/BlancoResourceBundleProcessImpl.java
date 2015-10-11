@@ -31,12 +31,12 @@ import blanco.resourcebundle.task.valueobject.BlancoResourceBundleProcessInput;
 public class BlancoResourceBundleProcessImpl implements
         BlancoResourceBundleProcess {
     /**
-     * ƒƒbƒZ[ƒWB
+     * ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã€‚
      */
     private final BlancoResourceBundleMessage fMsg = new BlancoResourceBundleMessage();
 
     /**
-     * ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹ƒAƒNƒZƒT‚ÌƒCƒ“ƒXƒ^ƒ“ƒXB
+     * ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«ã‚¢ã‚¯ã‚»ã‚µã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã€‚
      */
     private final BlancoResourceBundleResourceBundle fBundle = new BlancoResourceBundleResourceBundle();
 
@@ -59,11 +59,11 @@ public class BlancoResourceBundleProcessImpl implements
                 throw new BuildException(fMsg.getMbrba001(input.getMetadir()));
             }
 
-            // xlsƒtƒ@ƒCƒ‹‚ğxmlƒtƒ@ƒCƒ‹‚Ö‚Æ•ÏŠ·‚µ‚Ü‚·B
+            // xlsãƒ•ã‚¡ã‚¤ãƒ«ã‚’xmlãƒ•ã‚¡ã‚¤ãƒ«ã¸ã¨å¤‰æ›ã—ã¾ã™ã€‚
             new BlancoResourceBundleMeta2Xml().processDirectory(fileMetadir,
                     blancoTmpResourceBundleDirectory.getAbsolutePath());
 
-            // ƒeƒ“ƒ|ƒ‰ƒŠƒtƒHƒ‹ƒ_“à‚ÌXMLƒtƒ@ƒCƒ‹‚ğ‘g‚İ‘Ö‚¦‚Ä combinedxmlƒtƒ@ƒCƒ‹‚ğ¶¬‚µ‚Ü‚·B
+            // ãƒ†ãƒ³ãƒãƒ©ãƒªãƒ•ã‚©ãƒ«ãƒ€å†…ã®XMLãƒ•ã‚¡ã‚¤ãƒ«ã‚’çµ„ã¿æ›¿ãˆã¦ combinedxmlãƒ•ã‚¡ã‚¤ãƒ«ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
             final File[] fileMeta = blancoTmpResourceBundleDirectory
                     .listFiles();
             for (int index = 0; index < fileMeta.length; index++) {
@@ -74,7 +74,7 @@ public class BlancoResourceBundleProcessImpl implements
                 final File fileTmpTargetCombine = new File(
                         blancoTmpResourceBundleDirectory + "/"
                                 + fileMeta[index].getName() + ".combinedxml");
-                // ¶¬‚µ‚½XMLƒtƒ@ƒCƒ‹‚Ì‘g‚İ‘Ö‚¦‚ğs‚¢‚Ü‚·B
+                // ç”Ÿæˆã—ãŸXMLãƒ•ã‚¡ã‚¤ãƒ«ã®çµ„ã¿æ›¿ãˆã‚’è¡Œã„ã¾ã™ã€‚
                 new BlancoResourceBundleXml2CombinedXml().process(
                         fileMeta[index], fileTmpTargetCombine);
             }
@@ -91,25 +91,25 @@ public class BlancoResourceBundleProcessImpl implements
                     if ("true".equals(fBundle.getGenerateBundleSource())) {
                         final BlancoResourceBundleXml2JavaClass xml2javaclass = new BlancoResourceBundleXml2JavaClass();
                         xml2javaclass.setEncoding(input.getEncoding());
-                        // ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹ƒAƒNƒZƒT‚Ìƒ\[ƒXƒR[ƒh‚ğ¶¬‚·‚é‚©‚Ç‚¤‚©ƒtƒ‰ƒO‚ğƒZƒbƒgB
-                        // MessageFormatƒp[ƒX‚ÉƒGƒ‰[‚ª”­¶‚µ‚½ê‡‚Éˆ—’†’f‚·‚é‚©‚Ç‚¤‚©ƒtƒ‰ƒO‚ğƒZƒbƒgB
+                        // ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«ã‚¢ã‚¯ã‚»ã‚µã®ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã‚’ç”Ÿæˆã™ã‚‹ã‹ã©ã†ã‹ãƒ•ãƒ©ã‚°ã‚’ã‚»ãƒƒãƒˆã€‚
+                        // MessageFormatãƒ‘ãƒ¼ã‚¹æ™‚ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ãŸå ´åˆã«å‡¦ç†ä¸­æ–­ã™ã‚‹ã‹ã©ã†ã‹ãƒ•ãƒ©ã‚°ã‚’ã‚»ãƒƒãƒˆã€‚
                         xml2javaclass.setFailOnMessageFormatError(input
                                 .getFailonmessageformaterror());
 
-                        // ƒƒOo—Í‚ğƒ\[ƒXƒR[ƒh‚É©“®¶¬‚·‚é‚©‚Ç‚¤‚©‚ğİ’è‚µ‚Ü‚·B
+                        // ãƒ­ã‚°å‡ºåŠ›ã‚’ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã«è‡ªå‹•ç”Ÿæˆã™ã‚‹ã‹ã©ã†ã‹ã‚’è¨­å®šã—ã¾ã™ã€‚
                         xml2javaclass.setLog(input.getLog());
 
-                        // ƒfƒBƒŒƒNƒgƒŠ•t‚«‚ÅƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚ğo—Í‚·‚é‚©‚Ç‚¤‚©B
+                        // ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªä»˜ãã§ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã‚’å‡ºåŠ›ã™ã‚‹ã‹ã©ã†ã‹ã€‚
                         xml2javaclass.setPropertieswithdirectory(input.getPropertieswithdirectory());
                         
-                        // ÀÛ‚Ìƒ\[ƒXƒR[ƒh¶¬ˆ—‚ğÀsB
+                        // å®Ÿéš›ã®ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ç”Ÿæˆå‡¦ç†ã‚’å®Ÿè¡Œã€‚
                         xml2javaclass.process(fileTmp[index], new File(input
                                 .getTargetdir()));
                     }
 
                     if ("true".equals(fBundle.getGenerateConstantsSource())) {
-                        // ’è”ƒNƒ‰ƒX‚Ì¶¬ƒ‚[ƒh‚ªON‚Å‚·B
-                        // ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹’†ŠÔXMLƒtƒ@ƒCƒ‹‚ğ“ü—Í‚ÉA’è”ƒNƒ‰ƒX‚Ì’†ŠÔXMLƒtƒ@ƒCƒ‹‚ğ¶¬‚µ‚Ü‚·B
+                        // å®šæ•°ã‚¯ãƒ©ã‚¹ã®ç”Ÿæˆãƒ¢ãƒ¼ãƒ‰ãŒONã§ã™ã€‚
+                        // ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã‚’å…¥åŠ›ã«ã€å®šæ•°ã‚¯ãƒ©ã‚¹ã®ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
                         new BlancoResourceBundleXml2ConstantsXml().process(
                                 fileTmp[index],
                                 blancoTmpResourceBundleDirectory);
@@ -119,7 +119,7 @@ public class BlancoResourceBundleProcessImpl implements
                     xml2properties.setCommentTimestamp(input
                             .getCommenttimestamp());
 
-                    // ƒfƒBƒŒƒNƒgƒŠ•t‚«‚ÅƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚ğo—Í‚·‚é‚©‚Ç‚¤‚©B
+                    // ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªä»˜ãã§ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã‚’å‡ºåŠ›ã™ã‚‹ã‹ã©ã†ã‹ã€‚
                     xml2properties.setPropertieswithdirectory(input.getPropertieswithdirectory());
                     
                     xml2properties.process(fileTmp[index], new File(input
@@ -129,8 +129,8 @@ public class BlancoResourceBundleProcessImpl implements
             }
 
             if ("true".equals(fBundle.getGenerateConstantsSource())) {
-                // ’è”ƒNƒ‰ƒX‚Ì¶¬ƒ‚[ƒh‚ªON‚Å‚·B
-                // ’è”ƒNƒ‰ƒX‚Ì’†ŠÔXMLƒtƒ@ƒCƒ‹‚©‚çA’è”ƒNƒ‰ƒX‚ğ¶¬‚µ‚Ü‚·B
+                // å®šæ•°ã‚¯ãƒ©ã‚¹ã®ç”Ÿæˆãƒ¢ãƒ¼ãƒ‰ãŒONã§ã™ã€‚
+                // å®šæ•°ã‚¯ãƒ©ã‚¹ã®ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰ã€å®šæ•°ã‚¯ãƒ©ã‚¹ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
                 final File[] fileTmpConstants = new File(
                         blancoTmpResourceBundleDirectory.getAbsolutePath()
                                 + "/constants").listFiles();
@@ -148,7 +148,7 @@ public class BlancoResourceBundleProcessImpl implements
             
             return BlancoResourceBundleBatchProcess.END_SUCCESS;
         } catch (TransformerException ex) {
-            throw new IOException("XML•ÏŠ·‚Ì‰ß’ö‚Å—áŠO‚ª”­¶‚µ‚Ü‚µ‚½: " + ex.toString());
+            throw new IOException("XMLå¤‰æ›ã®éç¨‹ã§ä¾‹å¤–ãŒç™ºç”Ÿã—ã¾ã—ãŸ: " + ex.toString());
         }
     }
 

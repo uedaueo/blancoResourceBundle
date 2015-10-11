@@ -14,15 +14,15 @@ import java.text.MessageFormat;
 
 public class BlancoResourceBundleUtil {
     /**
-     * MessageFormat‚©‚çƒtƒH[ƒ}ƒbƒgî•ñ‚ğæ“¾‚µ‚Ü‚·B
+     * MessageFormatã‹ã‚‰ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆæƒ…å ±ã‚’å–å¾—ã—ã¾ã™ã€‚
      * 
-     * ‚±‚Ìƒƒ\ƒbƒh‚Í blancoResourceBundleˆÈŠO‚É blancoMessage‚©‚ç—˜—p‚³‚ê‚Ä‚¢‚Ü‚·B
+     * ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã¯ blancoResourceBundleä»¥å¤–ã« blancoMessageã‹ã‚‰åˆ©ç”¨ã•ã‚Œã¦ã„ã¾ã™ã€‚
      * 
      * @param argResourceString
-     *            ƒŠƒ\[ƒX•¶š—ñ
+     *            ãƒªã‚½ãƒ¼ã‚¹æ–‡å­—åˆ—
      * @param argIsFailOnMessageFormatError
-     *            MessageFormat‚Æ‚µ‚Äƒp[ƒX‚µ‚½ê‡‚ÉƒGƒ‰[‚Æ‚µ‚Äˆµ‚¤‚©‚Ç‚¤‚©B
-     * @return ‰ğÍŒã‚ÌƒtƒH[ƒ}ƒbƒg”z—ñB
+     *            MessageFormatã¨ã—ã¦ãƒ‘ãƒ¼ã‚¹ã—ãŸå ´åˆã«ã‚¨ãƒ©ãƒ¼ã¨ã—ã¦æ‰±ã†ã‹ã©ã†ã‹ã€‚
+     * @return è§£æå¾Œã®ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆé…åˆ—ã€‚
      */
     public static final Format[] getFormatsByArgumentIndex(
             final String argResourceString,
@@ -37,7 +37,7 @@ public class BlancoResourceBundleUtil {
                 throw ex;
             }
 
-            // ƒGƒ‰[‚ğ–³‹‚µ‚ÄA‰½–‚à‚È‚©‚Á‚½‚©‚Ì‚²‚Æ‚­U•‘‚¢‚Ü‚·B
+            // ã‚¨ãƒ©ãƒ¼ã‚’ç„¡è¦–ã—ã¦ã€ä½•äº‹ã‚‚ãªã‹ã£ãŸã‹ã®ã”ã¨ãæŒ¯èˆã„ã¾ã™ã€‚
             return new Format[0];
         }
     }

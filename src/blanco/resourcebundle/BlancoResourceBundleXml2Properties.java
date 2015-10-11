@@ -28,11 +28,11 @@ import blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure
 import blanco.resourcebundle.valueobject.BlancoResourceBundleBundleStructure;
 
 /**
- * ’†ŠÔXMLƒtƒ@ƒCƒ‹‚©‚ç ƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚ğ¶¬‚µ‚Ü‚·B
+ * ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰ ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
  * 
- * ‚±‚Ìƒ\[ƒXƒR[ƒh‚ÍblancoResourceBundle‚Ìˆê•”‚Å‚·B<br>
- * XML‚ğ“ü—Í‚µ‚ÄƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚Éo—Í‚ğs‚¢‚Ü‚·B<br>
- * ƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹d—l‚Æ‚µ‚ÄQÆ‚µ‚½î•ñŒ¹‚Í‰º‹L‚ÌPropertiesƒNƒ‰ƒXà–¾‚Å‚·B<br>
+ * ã“ã®ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã¯blancoResourceBundleã®ä¸€éƒ¨ã§ã™ã€‚<br>
+ * XMLã‚’å…¥åŠ›ã—ã¦ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã«å‡ºåŠ›ã‚’è¡Œã„ã¾ã™ã€‚<br>
+ * ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ä»•æ§˜ã¨ã—ã¦å‚ç…§ã—ãŸæƒ…å ±æºã¯ä¸‹è¨˜ã®Propertiesã‚¯ãƒ©ã‚¹èª¬æ˜ã§ã™ã€‚<br>
  * http://java.sun.com/j2se/1.5.0/docs/api/java/util/Properties.html#store(java.
  * io.OutputStream,%20java.lang.String)
  * 
@@ -40,40 +40,40 @@ import blanco.resourcebundle.valueobject.BlancoResourceBundleBundleStructure;
  */
 public class BlancoResourceBundleXml2Properties {
     /**
-     * ƒRƒ}ƒ“ƒhƒ‰ƒCƒ“‚Éo—Í‚·‚éÛ‚ÌƒvƒŒƒtƒBƒbƒNƒXB
+     * ã‚³ãƒãƒ³ãƒ‰ãƒ©ã‚¤ãƒ³ã«å‡ºåŠ›ã™ã‚‹éš›ã®ãƒ—ãƒ¬ãƒ•ã‚£ãƒƒã‚¯ã‚¹ã€‚
      */
     private static final String CMDLINE_PREFIX = "rb: ";
 
     /**
-     * ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹ƒAƒNƒZƒT‚ÌƒCƒ“ƒXƒ^ƒ“ƒXB
+     * ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«ã‚¢ã‚¯ã‚»ã‚µã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã€‚
      */
     private BlancoResourceBundleResourceBundle fBundle = new BlancoResourceBundleResourceBundle();
 
     /**
-     * ƒ^ƒCƒ€ƒXƒ^ƒ“ƒv‚ğƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚ÌƒRƒƒ“ƒg‚Éo—Í‚·‚é‚©‚Ç‚¤‚©B
+     * ã‚¿ã‚¤ãƒ ã‚¹ã‚¿ãƒ³ãƒ—ã‚’ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã®ã‚³ãƒ¡ãƒ³ãƒˆã«å‡ºåŠ›ã™ã‚‹ã‹ã©ã†ã‹ã€‚
      */
     private boolean fCommentTimestamp = true;
 
     /**
-     * ƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚ğƒfƒBƒŒƒNƒgƒŠ•t‚«‚Åo—Í‚·‚é‚©‚Ç‚¤‚©B
+     * ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªä»˜ãã§å‡ºåŠ›ã™ã‚‹ã‹ã©ã†ã‹ã€‚
      */
     private boolean fPropertieswithdirectory = true;
 
     /**
-     * ƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚ÉƒRƒƒ“ƒg‚Æ‚µ‚Äˆ—“úŸ‚ğ–„‚ß‚Ş‚©‚Ç‚¤‚©‚Ìƒtƒ‰ƒO‚ğƒZƒbƒg‚µ‚Ü‚·B
+     * ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã«ã‚³ãƒ¡ãƒ³ãƒˆã¨ã—ã¦å‡¦ç†æ—¥æ¬¡ã‚’åŸ‹ã‚è¾¼ã‚€ã‹ã©ã†ã‹ã®ãƒ•ãƒ©ã‚°ã‚’ã‚»ãƒƒãƒˆã—ã¾ã™ã€‚
      * 
      * @param isCommentTimestamp
-     *            ˆ—“úŸ‚ğ–„‚ß‚Ş‚©‚Ç‚¤‚©Btrue‚È‚ç–„‚ß‚İB
+     *            å‡¦ç†æ—¥æ¬¡ã‚’åŸ‹ã‚è¾¼ã‚€ã‹ã©ã†ã‹ã€‚trueãªã‚‰åŸ‹ã‚è¾¼ã¿ã€‚
      */
     public void setCommentTimestamp(final boolean isCommentTimestamp) {
         fCommentTimestamp = isCommentTimestamp;
     }
 
     /**
-     * ƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚ğƒfƒBƒŒƒNƒgƒŠ•t‚«‚Åo—Í‚·‚é‚©‚Ç‚¤‚©‚Ìƒtƒ‰ƒO‚ğƒZƒbƒg‚µ‚Ü‚·B
+     * ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªä»˜ãã§å‡ºåŠ›ã™ã‚‹ã‹ã©ã†ã‹ã®ãƒ•ãƒ©ã‚°ã‚’ã‚»ãƒƒãƒˆã—ã¾ã™ã€‚
      * 
      * @param isPropertieswithdirectory
-     *            ƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚ğƒfƒBƒŒƒNƒgƒŠ•t‚«‚Åo—Í‚·‚é‚©‚Ç‚¤‚©B
+     *            ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªä»˜ãã§å‡ºåŠ›ã™ã‚‹ã‹ã©ã†ã‹ã€‚
      */
     public void setPropertieswithdirectory(
             final boolean isPropertieswithdirectory) {
@@ -81,16 +81,16 @@ public class BlancoResourceBundleXml2Properties {
     }
 
     /**
-     * ’†ŠÔXMLƒtƒ@ƒCƒ‹‚©‚ç ƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚ğ¶¬‚µ‚Ü‚·B
+     * ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰ ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
      * 
      * @param fileSource
-     *            ’†ŠÔXMLƒtƒ@ƒCƒ‹B
+     *            ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã€‚
      * @param directoryTarget
-     *            o—ÍæƒfƒBƒŒƒNƒgƒŠB
+     *            å‡ºåŠ›å…ˆãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã€‚
      */
     public void process(final File fileSource, final File directoryTarget) {
         if (directoryTarget.exists() == false) {
-            // ƒfƒBƒŒƒNƒgƒŠ‚ª–³‚¢‚Ì‚ÅV‹Kì¬‚µ‚Ü‚·B
+            // ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªãŒç„¡ã„ã®ã§æ–°è¦ä½œæˆã—ã¾ã™ã€‚
             directoryTarget.mkdirs();
         }
 
@@ -100,9 +100,9 @@ public class BlancoResourceBundleXml2Properties {
                 .parse(fileSource);
         for (int index = 0; index < structures.length; index++) {
             if (mapProcessedBaseName.get(structures[index].getName()) == null) {
-                // System.out.println("Šî’ê–¼[" + baseName + "]
-                // ‚ª‰‚ß‚Ä“oê‚µ‚Ü‚µ‚½BƒƒP[ƒ‹["
-                // + locale + "]‚ÍƒƒP[ƒ‹‚ªw’è‚³‚ê‚Ä‚¢‚È‚¢ê‡‚ÌƒŠƒ\[ƒX‚Æ‚µ‚Ä‚à—˜—p‚³‚ê‚Ü‚·B");
+                // System.out.println("åŸºåº•å[" + baseName + "]
+                // ãŒåˆã‚ã¦ç™»å ´ã—ã¾ã—ãŸã€‚ãƒ­ã‚±ãƒ¼ãƒ«["
+                // + locale + "]ã¯ãƒ­ã‚±ãƒ¼ãƒ«ãŒæŒ‡å®šã•ã‚Œã¦ã„ãªã„å ´åˆã®ãƒªã‚½ãƒ¼ã‚¹ã¨ã—ã¦ã‚‚åˆ©ç”¨ã•ã‚Œã¾ã™ã€‚");
                 structure2Properties(structures[index], null, directoryTarget);
                 mapProcessedBaseName.put(structures[index].getName(),
                         structures[index].getCurrentLocale());
@@ -113,14 +113,14 @@ public class BlancoResourceBundleXml2Properties {
     }
 
     /**
-     * ƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚ğ“WŠJ‚µ‚Ü‚·B
+     * ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã‚’å±•é–‹ã—ã¾ã™ã€‚
      * 
      * @param resourceBase
-     *            \‘¢B
+     *            æ§‹é€ ã€‚
      * @param locale
-     *            ƒƒP[ƒ‹B
+     *            ãƒ­ã‚±ãƒ¼ãƒ«ã€‚
      * @param directoryTarget
-     *            o—ÍæƒfƒBƒŒƒNƒgƒŠB
+     *            å‡ºåŠ›å…ˆãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã€‚
      */
     public void structure2Properties(
             final BlancoResourceBundleBundleStructure resourceBase,
@@ -134,7 +134,7 @@ public class BlancoResourceBundleXml2Properties {
                             "/", true);
         }
 
-        // ƒtƒ@ƒCƒ‹–¼‚ğŠm’è‚µ‚Ü‚·B
+        // ãƒ•ã‚¡ã‚¤ãƒ«åã‚’ç¢ºå®šã—ã¾ã™ã€‚
         String fileName = null;
         if (locale == null) {
             fileName = directoryTarget.getAbsolutePath() + subDirectory + "/"
@@ -147,10 +147,10 @@ public class BlancoResourceBundleXml2Properties {
         final File fileTarget = new File(fileName);
 
         {
-            // o—ÍæƒfƒBƒŒƒNƒgƒŠ‚Ì‘¶İƒ`ƒFƒbƒN
+            // å‡ºåŠ›å…ˆãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã®å­˜åœ¨ãƒã‚§ãƒƒã‚¯
             final File dirParent = fileTarget.getAbsoluteFile().getParentFile();
             if (dirParent.exists() == false) {
-                // –³‚¯‚ê‚Îì¬B
+                // ç„¡ã‘ã‚Œã°ä½œæˆã€‚
                 dirParent.mkdirs();
             }
         }
@@ -159,7 +159,7 @@ public class BlancoResourceBundleXml2Properties {
         Native2AsciiWriter writer = null;
         try {
 
-            // ƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚Í 8859_1‚ÅƒGƒ“ƒR[ƒh‚³‚ê‚Ä‚¢‚Ü‚·B
+            // ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã¯ 8859_1ã§ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ã•ã‚Œã¦ã„ã¾ã™ã€‚
             writer = new Native2AsciiWriter(new BufferedWriter(
                     new OutputStreamWriter(outStream, "8859_1")));
 
@@ -175,7 +175,7 @@ public class BlancoResourceBundleXml2Properties {
 
             final List<BlancoResourceBundleBundleItemStructure> listResource = resourceBase
                     .getItemList();
-            // ˆê‚Â‚àw’è‚ª–³‚¢ê‡‚Å‚ ‚Á‚Ä‚àAƒtƒ@ƒCƒ‹‚Í¶¬‚µ‚Ü‚·B
+            // ä¸€ã¤ã‚‚æŒ‡å®šãŒç„¡ã„å ´åˆã§ã‚ã£ã¦ã‚‚ã€ãƒ•ã‚¡ã‚¤ãƒ«ã¯ç”Ÿæˆã—ã¾ã™ã€‚
 
             final int sizeListRow = listResource.size();
             for (int indexField = 0; indexField < sizeListRow; indexField++) {
@@ -190,10 +190,10 @@ public class BlancoResourceBundleXml2Properties {
                 }
 
                 if (BlancoStringUtil.null2Blank(fieldResourceId).length() == 0) {
-                    // ƒŠƒ\[ƒXID‚ªnull‚Ìê‡‚Í ƒvƒƒpƒeƒB‚Å‚Í‚ ‚è‚Ü‚¹‚ñB
+                    // ãƒªã‚½ãƒ¼ã‚¹IDãŒnullã®å ´åˆã¯ ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚
                     if (fieldResourceString != null) {
-                        // ƒŠƒ\[ƒXID‚ªnull‚È‚Ì‚¾‚¯‚ê‚Ç‚à•¶š—ñ‚ªw’è‚³‚ê‚Ä‚¢‚éê‡‚É‚Í
-                        // ƒRƒƒ“ƒg‚Æ‚µ‚Äˆµ‚¢‚Ü‚·B
+                        // ãƒªã‚½ãƒ¼ã‚¹IDãŒnullãªã®ã ã‘ã‚Œã©ã‚‚æ–‡å­—åˆ—ãŒæŒ‡å®šã•ã‚Œã¦ã„ã‚‹å ´åˆã«ã¯
+                        // ã‚³ãƒ¡ãƒ³ãƒˆã¨ã—ã¦æ‰±ã„ã¾ã™ã€‚
                         writer.writeComment(fieldResourceString);
                     }
                 } else {
@@ -206,7 +206,7 @@ public class BlancoResourceBundleXml2Properties {
             writer.flush();
             outStream.flush();
 
-            // •K—v‚ª‚ ‚éê‡‚É‚Ì‚İƒtƒ@ƒCƒ‹‚Ìì¬‚âXV‚ğs‚¢‚Ü‚·B
+            // å¿…è¦ãŒã‚ã‚‹å ´åˆã«ã®ã¿ãƒ•ã‚¡ã‚¤ãƒ«ã®ä½œæˆã‚„æ›´æ–°ã‚’è¡Œã„ã¾ã™ã€‚
             switch (BlancoFileUtil.bytes2FileIfNecessary(outStream
                     .toByteArray(), fileTarget)) {
             case 0:
@@ -224,8 +224,8 @@ public class BlancoResourceBundleXml2Properties {
             }
 
         } catch (IOException e) {
-            throw new IllegalArgumentException("ƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹[" + fileName
-                    + "]‚Ìo—Í‚É“üo—Í—áŠO‚ª”­¶‚µ‚Ü‚µ‚½B" + e.toString());
+            throw new IllegalArgumentException("ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«[" + fileName
+                    + "]ã®å‡ºåŠ›æ™‚ã«å…¥å‡ºåŠ›ä¾‹å¤–ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚" + e.toString());
         } finally {
             if (writer != null) {
                 try {

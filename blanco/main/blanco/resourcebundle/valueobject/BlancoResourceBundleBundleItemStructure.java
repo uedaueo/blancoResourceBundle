@@ -12,108 +12,108 @@ package blanco.resourcebundle.valueobject;
 import java.util.List;
 
 /**
- * ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹‚ÌƒL[{’l‚ğ‚ ‚ç‚í‚·\‘¢‘ÌƒNƒ‰ƒXBƒL[’l‚Æ•¶š—ñ‚ğŠÜ‚İ‚Ü‚·B
+ * ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«ã®ã‚­ãƒ¼ï¼‹å€¤ã‚’ã‚ã‚‰ã‚ã™æ§‹é€ ä½“ã‚¯ãƒ©ã‚¹ã€‚ã‚­ãƒ¼å€¤ã¨æ–‡å­—åˆ—ã‚’å«ã¿ã¾ã™ã€‚
  */
 public class BlancoResourceBundleBundleItemStructure {
     /**
-     * €–Ú”Ô†B
+     * é …ç›®ç•ªå·ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh: [no]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰: [no]ã€‚
      */
     private String fNo;
 
     /**
-     * ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹ã‚ÌƒL[’lB
+     * ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«ä¸Šã®ã‚­ãƒ¼å€¤ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh: [key]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰: [key]ã€‚
      */
     private String fKey;
 
     /**
-     * ƒŠƒ\[ƒX•¶š—ñ‚ÌƒŠƒXƒgBBlancoResourceBundleBundleResourceStringStructureƒNƒ‰ƒX‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ªƒŠƒXƒg‚ÅŠi”[‚³‚ê‚Ü‚·B”ñCombine‚Ìê‡‚É‚ÍAMAX‚PŒ‚ªŠÜ‚Ü‚ê‚Ü‚·BCombine‚Ìê‡‚É‚ÍAƒƒP[ƒ‹‚²‚Æ‚É‚PŒB
+     * ãƒªã‚½ãƒ¼ã‚¹æ–‡å­—åˆ—ã®ãƒªã‚¹ãƒˆã€‚BlancoResourceBundleBundleResourceStringStructureã‚¯ãƒ©ã‚¹ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãŒãƒªã‚¹ãƒˆã§æ ¼ç´ã•ã‚Œã¾ã™ã€‚éCombineã®å ´åˆã«ã¯ã€MAXï¼‘ä»¶ãŒå«ã¾ã‚Œã¾ã™ã€‚Combineã®å ´åˆã«ã¯ã€ãƒ­ã‚±ãƒ¼ãƒ«ã”ã¨ã«ï¼‘ä»¶ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh: [resourceStringList]B
-     * ƒfƒtƒHƒ‹ƒg: [new java.util.ArrayList<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure>()]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰: [resourceStringList]ã€‚
+     * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ: [new java.util.ArrayList<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure>()]ã€‚
      */
     private List<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure> fResourceStringList = new java.util.ArrayList<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure>();
 
     /**
-     * ƒtƒB[ƒ‹ƒh [no] ‚Ì’l‚ğİ’è‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [no] ã®å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [€–Ú”Ô†B]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [é …ç›®ç•ªå·ã€‚]ã€‚
      *
-     * @param argNo ƒtƒB[ƒ‹ƒh[no]‚Éİ’è‚·‚é’lB
+     * @param argNo ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[no]ã«è¨­å®šã™ã‚‹å€¤ã€‚
      */
     public void setNo(final String argNo) {
         fNo = argNo;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [no] ‚Ì’l‚ğæ“¾‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [no] ã®å€¤ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [€–Ú”Ô†B]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [é …ç›®ç•ªå·ã€‚]ã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[no]‚©‚çæ“¾‚µ‚½’lB
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[no]ã‹ã‚‰å–å¾—ã—ãŸå€¤ã€‚
      */
     public String getNo() {
         return fNo;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [key] ‚Ì’l‚ğİ’è‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [key] ã®å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹ã‚ÌƒL[’lB]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«ä¸Šã®ã‚­ãƒ¼å€¤ã€‚]ã€‚
      *
-     * @param argKey ƒtƒB[ƒ‹ƒh[key]‚Éİ’è‚·‚é’lB
+     * @param argKey ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[key]ã«è¨­å®šã™ã‚‹å€¤ã€‚
      */
     public void setKey(final String argKey) {
         fKey = argKey;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [key] ‚Ì’l‚ğæ“¾‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [key] ã®å€¤ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹ã‚ÌƒL[’lB]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«ä¸Šã®ã‚­ãƒ¼å€¤ã€‚]ã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[key]‚©‚çæ“¾‚µ‚½’lB
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[key]ã‹ã‚‰å–å¾—ã—ãŸå€¤ã€‚
      */
     public String getKey() {
         return fKey;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [resourceStringList] ‚Ì’l‚ğİ’è‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [resourceStringList] ã®å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [ƒŠƒ\[ƒX•¶š—ñ‚ÌƒŠƒXƒgBBlancoResourceBundleBundleResourceStringStructureƒNƒ‰ƒX‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ªƒŠƒXƒg‚ÅŠi”[‚³‚ê‚Ü‚·B”ñCombine‚Ìê‡‚É‚ÍAMAX‚PŒ‚ªŠÜ‚Ü‚ê‚Ü‚·BCombine‚Ìê‡‚É‚ÍAƒƒP[ƒ‹‚²‚Æ‚É‚PŒB]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ãƒªã‚½ãƒ¼ã‚¹æ–‡å­—åˆ—ã®ãƒªã‚¹ãƒˆã€‚BlancoResourceBundleBundleResourceStringStructureã‚¯ãƒ©ã‚¹ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãŒãƒªã‚¹ãƒˆã§æ ¼ç´ã•ã‚Œã¾ã™ã€‚éCombineã®å ´åˆã«ã¯ã€MAXï¼‘ä»¶ãŒå«ã¾ã‚Œã¾ã™ã€‚Combineã®å ´åˆã«ã¯ã€ãƒ­ã‚±ãƒ¼ãƒ«ã”ã¨ã«ï¼‘ä»¶ã€‚]ã€‚
      *
-     * @param argResourceStringList ƒtƒB[ƒ‹ƒh[resourceStringList]‚Éİ’è‚·‚é’lB
+     * @param argResourceStringList ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[resourceStringList]ã«è¨­å®šã™ã‚‹å€¤ã€‚
      */
     public void setResourceStringList(final List<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure> argResourceStringList) {
         fResourceStringList = argResourceStringList;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [resourceStringList] ‚Ì’l‚ğæ“¾‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [resourceStringList] ã®å€¤ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [ƒŠƒ\[ƒX•¶š—ñ‚ÌƒŠƒXƒgBBlancoResourceBundleBundleResourceStringStructureƒNƒ‰ƒX‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ªƒŠƒXƒg‚ÅŠi”[‚³‚ê‚Ü‚·B”ñCombine‚Ìê‡‚É‚ÍAMAX‚PŒ‚ªŠÜ‚Ü‚ê‚Ü‚·BCombine‚Ìê‡‚É‚ÍAƒƒP[ƒ‹‚²‚Æ‚É‚PŒB]B
-     * ƒfƒtƒHƒ‹ƒg: [new java.util.ArrayList<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure>()]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ãƒªã‚½ãƒ¼ã‚¹æ–‡å­—åˆ—ã®ãƒªã‚¹ãƒˆã€‚BlancoResourceBundleBundleResourceStringStructureã‚¯ãƒ©ã‚¹ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãŒãƒªã‚¹ãƒˆã§æ ¼ç´ã•ã‚Œã¾ã™ã€‚éCombineã®å ´åˆã«ã¯ã€MAXï¼‘ä»¶ãŒå«ã¾ã‚Œã¾ã™ã€‚Combineã®å ´åˆã«ã¯ã€ãƒ­ã‚±ãƒ¼ãƒ«ã”ã¨ã«ï¼‘ä»¶ã€‚]ã€‚
+     * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ: [new java.util.ArrayList<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure>()]ã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[resourceStringList]‚©‚çæ“¾‚µ‚½’lB
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[resourceStringList]ã‹ã‚‰å–å¾—ã—ãŸå€¤ã€‚
      */
     public List<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure> getResourceStringList() {
         return fResourceStringList;
     }
 
     /**
-     * ‚±‚ÌƒoƒŠƒ…[ƒIƒuƒWƒFƒNƒg‚Ì•¶š—ñ•\Œ»‚ğæ“¾‚µ‚Ü‚·B
+     * ã“ã®ãƒãƒªãƒ¥ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®æ–‡å­—åˆ—è¡¨ç¾ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
-     * <P>g—pã‚Ì’ˆÓ</P>
+     * <P>ä½¿ç”¨ä¸Šã®æ³¨æ„</P>
      * <UL>
-     * <LI>ƒIƒuƒWƒFƒNƒg‚ÌƒVƒƒƒ[”ÍˆÍ‚Ì‚İ•¶š—ñ‰»‚Ìˆ—‘ÎÛ‚Æ‚È‚è‚Ü‚·B
-     * <LI>ƒIƒuƒWƒFƒNƒg‚ªzŠÂQÆ‚µ‚Ä‚¢‚éê‡‚É‚ÍA‚±‚Ìƒƒ\ƒbƒh‚Íg‚í‚È‚¢‚Å‚­‚¾‚³‚¢B
+     * <LI>ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ã‚·ãƒ£ãƒ­ãƒ¼ç¯„å›²ã®ã¿æ–‡å­—åˆ—åŒ–ã®å‡¦ç†å¯¾è±¡ã¨ãªã‚Šã¾ã™ã€‚
+     * <LI>ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒå¾ªç’°å‚ç…§ã—ã¦ã„ã‚‹å ´åˆã«ã¯ã€ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã¯ä½¿ã‚ãªã„ã§ãã ã•ã„ã€‚
      * </UL>
      *
-     * @return ƒoƒŠƒ…[ƒIƒuƒWƒFƒNƒg‚Ì•¶š—ñ•\Œ»B
+     * @return ãƒãƒªãƒ¥ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®æ–‡å­—åˆ—è¡¨ç¾ã€‚
      */
     @Override
     public String toString() {

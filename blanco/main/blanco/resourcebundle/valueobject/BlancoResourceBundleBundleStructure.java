@@ -12,315 +12,315 @@ package blanco.resourcebundle.valueobject;
 import java.util.List;
 
 /**
- * ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹‚ğ‚ ‚ç‚í‚·\‘¢‘ÌƒNƒ‰ƒXBŠî’ê–¼‚âƒpƒbƒP[ƒW‚È‚ÇŠî–{î•ñ‚ªŠÜ‚Ü‚ê‚Ü‚·B
+ * ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«ã‚’ã‚ã‚‰ã‚ã™æ§‹é€ ä½“ã‚¯ãƒ©ã‚¹ã€‚åŸºåº•åã‚„ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ãªã©åŸºæœ¬æƒ…å ±ãŒå«ã¾ã‚Œã¾ã™ã€‚
  */
 public class BlancoResourceBundleBundleStructure {
     /**
-     * ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹‚ÌŠî’ê–¼B
+     * ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«ã®åŸºåº•åã€‚
      *
-     * ƒtƒB[ƒ‹ƒh: [name]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰: [name]ã€‚
      */
     private String fName;
 
     /**
-     * ‚±‚ÌƒŠƒ\[ƒXƒoƒ“ƒhƒ‹‚ª‘Î‰‚·‚éƒƒP[ƒ‹‚Ìˆê——B(CombineŒã‚Ìê‡‚É‚Ì‚İ—LŒø)
+     * ã“ã®ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«ãŒå¯¾å¿œã™ã‚‹ãƒ­ã‚±ãƒ¼ãƒ«ã®ä¸€è¦§ã€‚(Combineå¾Œã®å ´åˆã«ã®ã¿æœ‰åŠ¹)
      *
-     * ƒtƒB[ƒ‹ƒh: [listLocale]B
-     * ƒfƒtƒHƒ‹ƒg: [new java.util.ArrayList<java.lang.String>()]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰: [listLocale]ã€‚
+     * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ: [new java.util.ArrayList<java.lang.String>()]ã€‚
      */
     private List<java.lang.String> fListLocale = new java.util.ArrayList<java.lang.String>();
 
     /**
-     * ƒpƒbƒP[ƒW–¼B
+     * ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸åã€‚
      *
-     * ƒtƒB[ƒ‹ƒh: [package]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰: [package]ã€‚
      */
     private String fPackage;
 
     /**
-     * ƒNƒ‰ƒX‚É•t—^‚³‚ê‚éƒTƒtƒBƒbƒNƒXB
+     * ã‚¯ãƒ©ã‚¹ã«ä»˜ä¸ã•ã‚Œã‚‹ã‚µãƒ•ã‚£ãƒƒã‚¯ã‚¹ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh: [suffix]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰: [suffix]ã€‚
      */
     private String fSuffix;
 
     /**
-     * ‚±‚ÌƒŠƒ\[ƒXƒoƒ“ƒhƒ‹‚É‘Î‚·‚éà–¾B
+     * ã“ã®ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«ã«å¯¾ã™ã‚‹èª¬æ˜ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh: [description]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰: [description]ã€‚
      */
     private String fDescription;
 
     /**
-     * ‚±‚ÌƒNƒ‰ƒX‚ÌƒAƒNƒZƒXBŠî–{“I‚É‚Í public ‚Å—˜—p‚µ‚Ü‚·B
+     * ã“ã®ã‚¯ãƒ©ã‚¹ã®ã‚¢ã‚¯ã‚»ã‚¹ã€‚åŸºæœ¬çš„ã«ã¯ public ã§åˆ©ç”¨ã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh: [access]B
-     * ƒfƒtƒHƒ‹ƒg: ["public"]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰: [access]ã€‚
+     * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ: ["public"]ã€‚
      */
     private String fAccess = "public";
 
     /**
-     * ŠeƒL[{’l‚Ìî•ñB
+     * å„ã‚­ãƒ¼ï¼‹å€¤ã®æƒ…å ±ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh: [itemList]B
-     * ƒfƒtƒHƒ‹ƒg: [new java.util.ArrayList<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure>()]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰: [itemList]ã€‚
+     * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ: [new java.util.ArrayList<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure>()]ã€‚
      */
     private List<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure> fItemList = new java.util.ArrayList<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure>();
 
     /**
-     * ƒ[ƒN‚É—˜—p‚³‚ê‚éƒtƒB[ƒ‹ƒhB
+     * ãƒ¯ãƒ¼ã‚¯ã«åˆ©ç”¨ã•ã‚Œã‚‹ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh: [resourceItem]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰: [resourceItem]ã€‚
      */
     private BlancoResourceBundleBundleItemStructure fResourceItem;
 
     /**
-     * Œ»İˆ—‚µ‚Ä‚¢‚éƒƒP[ƒ‹‚ğ‹L‰¯‚µ‚Ü‚·B
+     * ç¾åœ¨å‡¦ç†ã—ã¦ã„ã‚‹ãƒ­ã‚±ãƒ¼ãƒ«ã‚’è¨˜æ†¶ã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh: [currentLocale]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰: [currentLocale]ã€‚
      */
     private String fCurrentLocale;
 
     /**
-     * Œ»İˆ—‚µ‚Ä‚¢‚éƒŠƒ\[ƒX•¶š—ñ‚ğ‹L‰¯‚µ‚Ü‚·B
+     * ç¾åœ¨å‡¦ç†ã—ã¦ã„ã‚‹ãƒªã‚½ãƒ¼ã‚¹æ–‡å­—åˆ—ã‚’è¨˜æ†¶ã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh: [currentResourceString]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰: [currentResourceString]ã€‚
      */
     private String fCurrentResourceString;
 
     /**
-     * ƒtƒB[ƒ‹ƒh [name] ‚Ì’l‚ğİ’è‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [name] ã®å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹‚ÌŠî’ê–¼B]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«ã®åŸºåº•åã€‚]ã€‚
      *
-     * @param argName ƒtƒB[ƒ‹ƒh[name]‚Éİ’è‚·‚é’lB
+     * @param argName ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[name]ã«è¨­å®šã™ã‚‹å€¤ã€‚
      */
     public void setName(final String argName) {
         fName = argName;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [name] ‚Ì’l‚ğæ“¾‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [name] ã®å€¤ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹‚ÌŠî’ê–¼B]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«ã®åŸºåº•åã€‚]ã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[name]‚©‚çæ“¾‚µ‚½’lB
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[name]ã‹ã‚‰å–å¾—ã—ãŸå€¤ã€‚
      */
     public String getName() {
         return fName;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [listLocale] ‚Ì’l‚ğİ’è‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [listLocale] ã®å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [‚±‚ÌƒŠƒ\[ƒXƒoƒ“ƒhƒ‹‚ª‘Î‰‚·‚éƒƒP[ƒ‹‚Ìˆê——B(CombineŒã‚Ìê‡‚É‚Ì‚İ—LŒø)]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ã“ã®ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«ãŒå¯¾å¿œã™ã‚‹ãƒ­ã‚±ãƒ¼ãƒ«ã®ä¸€è¦§ã€‚(Combineå¾Œã®å ´åˆã«ã®ã¿æœ‰åŠ¹)]ã€‚
      *
-     * @param argListLocale ƒtƒB[ƒ‹ƒh[listLocale]‚Éİ’è‚·‚é’lB
+     * @param argListLocale ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[listLocale]ã«è¨­å®šã™ã‚‹å€¤ã€‚
      */
     public void setListLocale(final List<java.lang.String> argListLocale) {
         fListLocale = argListLocale;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [listLocale] ‚Ì’l‚ğæ“¾‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [listLocale] ã®å€¤ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [‚±‚ÌƒŠƒ\[ƒXƒoƒ“ƒhƒ‹‚ª‘Î‰‚·‚éƒƒP[ƒ‹‚Ìˆê——B(CombineŒã‚Ìê‡‚É‚Ì‚İ—LŒø)]B
-     * ƒfƒtƒHƒ‹ƒg: [new java.util.ArrayList<java.lang.String>()]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ã“ã®ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«ãŒå¯¾å¿œã™ã‚‹ãƒ­ã‚±ãƒ¼ãƒ«ã®ä¸€è¦§ã€‚(Combineå¾Œã®å ´åˆã«ã®ã¿æœ‰åŠ¹)]ã€‚
+     * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ: [new java.util.ArrayList<java.lang.String>()]ã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[listLocale]‚©‚çæ“¾‚µ‚½’lB
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[listLocale]ã‹ã‚‰å–å¾—ã—ãŸå€¤ã€‚
      */
     public List<java.lang.String> getListLocale() {
         return fListLocale;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [package] ‚Ì’l‚ğİ’è‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [package] ã®å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [ƒpƒbƒP[ƒW–¼B]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸åã€‚]ã€‚
      *
-     * @param argPackage ƒtƒB[ƒ‹ƒh[package]‚Éİ’è‚·‚é’lB
+     * @param argPackage ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[package]ã«è¨­å®šã™ã‚‹å€¤ã€‚
      */
     public void setPackage(final String argPackage) {
         fPackage = argPackage;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [package] ‚Ì’l‚ğæ“¾‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [package] ã®å€¤ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [ƒpƒbƒP[ƒW–¼B]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸åã€‚]ã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[package]‚©‚çæ“¾‚µ‚½’lB
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[package]ã‹ã‚‰å–å¾—ã—ãŸå€¤ã€‚
      */
     public String getPackage() {
         return fPackage;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [suffix] ‚Ì’l‚ğİ’è‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [suffix] ã®å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [ƒNƒ‰ƒX‚É•t—^‚³‚ê‚éƒTƒtƒBƒbƒNƒXB]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ã‚¯ãƒ©ã‚¹ã«ä»˜ä¸ã•ã‚Œã‚‹ã‚µãƒ•ã‚£ãƒƒã‚¯ã‚¹ã€‚]ã€‚
      *
-     * @param argSuffix ƒtƒB[ƒ‹ƒh[suffix]‚Éİ’è‚·‚é’lB
+     * @param argSuffix ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[suffix]ã«è¨­å®šã™ã‚‹å€¤ã€‚
      */
     public void setSuffix(final String argSuffix) {
         fSuffix = argSuffix;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [suffix] ‚Ì’l‚ğæ“¾‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [suffix] ã®å€¤ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [ƒNƒ‰ƒX‚É•t—^‚³‚ê‚éƒTƒtƒBƒbƒNƒXB]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ã‚¯ãƒ©ã‚¹ã«ä»˜ä¸ã•ã‚Œã‚‹ã‚µãƒ•ã‚£ãƒƒã‚¯ã‚¹ã€‚]ã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[suffix]‚©‚çæ“¾‚µ‚½’lB
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[suffix]ã‹ã‚‰å–å¾—ã—ãŸå€¤ã€‚
      */
     public String getSuffix() {
         return fSuffix;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [description] ‚Ì’l‚ğİ’è‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [description] ã®å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [‚±‚ÌƒŠƒ\[ƒXƒoƒ“ƒhƒ‹‚É‘Î‚·‚éà–¾B]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ã“ã®ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«ã«å¯¾ã™ã‚‹èª¬æ˜ã€‚]ã€‚
      *
-     * @param argDescription ƒtƒB[ƒ‹ƒh[description]‚Éİ’è‚·‚é’lB
+     * @param argDescription ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[description]ã«è¨­å®šã™ã‚‹å€¤ã€‚
      */
     public void setDescription(final String argDescription) {
         fDescription = argDescription;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [description] ‚Ì’l‚ğæ“¾‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [description] ã®å€¤ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [‚±‚ÌƒŠƒ\[ƒXƒoƒ“ƒhƒ‹‚É‘Î‚·‚éà–¾B]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ã“ã®ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«ã«å¯¾ã™ã‚‹èª¬æ˜ã€‚]ã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[description]‚©‚çæ“¾‚µ‚½’lB
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[description]ã‹ã‚‰å–å¾—ã—ãŸå€¤ã€‚
      */
     public String getDescription() {
         return fDescription;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [access] ‚Ì’l‚ğİ’è‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [access] ã®å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [‚±‚ÌƒNƒ‰ƒX‚ÌƒAƒNƒZƒXBŠî–{“I‚É‚Í public ‚Å—˜—p‚µ‚Ü‚·B]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ã“ã®ã‚¯ãƒ©ã‚¹ã®ã‚¢ã‚¯ã‚»ã‚¹ã€‚åŸºæœ¬çš„ã«ã¯ public ã§åˆ©ç”¨ã—ã¾ã™ã€‚]ã€‚
      *
-     * @param argAccess ƒtƒB[ƒ‹ƒh[access]‚Éİ’è‚·‚é’lB
+     * @param argAccess ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[access]ã«è¨­å®šã™ã‚‹å€¤ã€‚
      */
     public void setAccess(final String argAccess) {
         fAccess = argAccess;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [access] ‚Ì’l‚ğæ“¾‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [access] ã®å€¤ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [‚±‚ÌƒNƒ‰ƒX‚ÌƒAƒNƒZƒXBŠî–{“I‚É‚Í public ‚Å—˜—p‚µ‚Ü‚·B]B
-     * ƒfƒtƒHƒ‹ƒg: ["public"]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ã“ã®ã‚¯ãƒ©ã‚¹ã®ã‚¢ã‚¯ã‚»ã‚¹ã€‚åŸºæœ¬çš„ã«ã¯ public ã§åˆ©ç”¨ã—ã¾ã™ã€‚]ã€‚
+     * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ: ["public"]ã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[access]‚©‚çæ“¾‚µ‚½’lB
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[access]ã‹ã‚‰å–å¾—ã—ãŸå€¤ã€‚
      */
     public String getAccess() {
         return fAccess;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [itemList] ‚Ì’l‚ğİ’è‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [itemList] ã®å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [ŠeƒL[{’l‚Ìî•ñB]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [å„ã‚­ãƒ¼ï¼‹å€¤ã®æƒ…å ±ã€‚]ã€‚
      *
-     * @param argItemList ƒtƒB[ƒ‹ƒh[itemList]‚Éİ’è‚·‚é’lB
+     * @param argItemList ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[itemList]ã«è¨­å®šã™ã‚‹å€¤ã€‚
      */
     public void setItemList(final List<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure> argItemList) {
         fItemList = argItemList;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [itemList] ‚Ì’l‚ğæ“¾‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [itemList] ã®å€¤ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [ŠeƒL[{’l‚Ìî•ñB]B
-     * ƒfƒtƒHƒ‹ƒg: [new java.util.ArrayList<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure>()]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [å„ã‚­ãƒ¼ï¼‹å€¤ã®æƒ…å ±ã€‚]ã€‚
+     * ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ: [new java.util.ArrayList<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure>()]ã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[itemList]‚©‚çæ“¾‚µ‚½’lB
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[itemList]ã‹ã‚‰å–å¾—ã—ãŸå€¤ã€‚
      */
     public List<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure> getItemList() {
         return fItemList;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [resourceItem] ‚Ì’l‚ğİ’è‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [resourceItem] ã®å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [ƒ[ƒN‚É—˜—p‚³‚ê‚éƒtƒB[ƒ‹ƒhB]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ãƒ¯ãƒ¼ã‚¯ã«åˆ©ç”¨ã•ã‚Œã‚‹ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã€‚]ã€‚
      *
-     * @param argResourceItem ƒtƒB[ƒ‹ƒh[resourceItem]‚Éİ’è‚·‚é’lB
+     * @param argResourceItem ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[resourceItem]ã«è¨­å®šã™ã‚‹å€¤ã€‚
      */
     public void setResourceItem(final BlancoResourceBundleBundleItemStructure argResourceItem) {
         fResourceItem = argResourceItem;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [resourceItem] ‚Ì’l‚ğæ“¾‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [resourceItem] ã®å€¤ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [ƒ[ƒN‚É—˜—p‚³‚ê‚éƒtƒB[ƒ‹ƒhB]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ãƒ¯ãƒ¼ã‚¯ã«åˆ©ç”¨ã•ã‚Œã‚‹ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã€‚]ã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[resourceItem]‚©‚çæ“¾‚µ‚½’lB
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[resourceItem]ã‹ã‚‰å–å¾—ã—ãŸå€¤ã€‚
      */
     public BlancoResourceBundleBundleItemStructure getResourceItem() {
         return fResourceItem;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [currentLocale] ‚Ì’l‚ğİ’è‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [currentLocale] ã®å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [Œ»İˆ—‚µ‚Ä‚¢‚éƒƒP[ƒ‹‚ğ‹L‰¯‚µ‚Ü‚·B]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ç¾åœ¨å‡¦ç†ã—ã¦ã„ã‚‹ãƒ­ã‚±ãƒ¼ãƒ«ã‚’è¨˜æ†¶ã—ã¾ã™ã€‚]ã€‚
      *
-     * @param argCurrentLocale ƒtƒB[ƒ‹ƒh[currentLocale]‚Éİ’è‚·‚é’lB
+     * @param argCurrentLocale ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[currentLocale]ã«è¨­å®šã™ã‚‹å€¤ã€‚
      */
     public void setCurrentLocale(final String argCurrentLocale) {
         fCurrentLocale = argCurrentLocale;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [currentLocale] ‚Ì’l‚ğæ“¾‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [currentLocale] ã®å€¤ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [Œ»İˆ—‚µ‚Ä‚¢‚éƒƒP[ƒ‹‚ğ‹L‰¯‚µ‚Ü‚·B]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ç¾åœ¨å‡¦ç†ã—ã¦ã„ã‚‹ãƒ­ã‚±ãƒ¼ãƒ«ã‚’è¨˜æ†¶ã—ã¾ã™ã€‚]ã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[currentLocale]‚©‚çæ“¾‚µ‚½’lB
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[currentLocale]ã‹ã‚‰å–å¾—ã—ãŸå€¤ã€‚
      */
     public String getCurrentLocale() {
         return fCurrentLocale;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [currentResourceString] ‚Ì’l‚ğİ’è‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [currentResourceString] ã®å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [Œ»İˆ—‚µ‚Ä‚¢‚éƒŠƒ\[ƒX•¶š—ñ‚ğ‹L‰¯‚µ‚Ü‚·B]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ç¾åœ¨å‡¦ç†ã—ã¦ã„ã‚‹ãƒªã‚½ãƒ¼ã‚¹æ–‡å­—åˆ—ã‚’è¨˜æ†¶ã—ã¾ã™ã€‚]ã€‚
      *
-     * @param argCurrentResourceString ƒtƒB[ƒ‹ƒh[currentResourceString]‚Éİ’è‚·‚é’lB
+     * @param argCurrentResourceString ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[currentResourceString]ã«è¨­å®šã™ã‚‹å€¤ã€‚
      */
     public void setCurrentResourceString(final String argCurrentResourceString) {
         fCurrentResourceString = argCurrentResourceString;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [currentResourceString] ‚Ì’l‚ğæ“¾‚µ‚Ü‚·B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [currentResourceString] ã®å€¤ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
-     * ƒtƒB[ƒ‹ƒh‚Ìà–¾: [Œ»İˆ—‚µ‚Ä‚¢‚éƒŠƒ\[ƒX•¶š—ñ‚ğ‹L‰¯‚µ‚Ü‚·B]B
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®èª¬æ˜: [ç¾åœ¨å‡¦ç†ã—ã¦ã„ã‚‹ãƒªã‚½ãƒ¼ã‚¹æ–‡å­—åˆ—ã‚’è¨˜æ†¶ã—ã¾ã™ã€‚]ã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[currentResourceString]‚©‚çæ“¾‚µ‚½’lB
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[currentResourceString]ã‹ã‚‰å–å¾—ã—ãŸå€¤ã€‚
      */
     public String getCurrentResourceString() {
         return fCurrentResourceString;
     }
 
     /**
-     * ‚±‚ÌƒoƒŠƒ…[ƒIƒuƒWƒFƒNƒg‚Ì•¶š—ñ•\Œ»‚ğæ“¾‚µ‚Ü‚·B
+     * ã“ã®ãƒãƒªãƒ¥ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®æ–‡å­—åˆ—è¡¨ç¾ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
-     * <P>g—pã‚Ì’ˆÓ</P>
+     * <P>ä½¿ç”¨ä¸Šã®æ³¨æ„</P>
      * <UL>
-     * <LI>ƒIƒuƒWƒFƒNƒg‚ÌƒVƒƒƒ[”ÍˆÍ‚Ì‚İ•¶š—ñ‰»‚Ìˆ—‘ÎÛ‚Æ‚È‚è‚Ü‚·B
-     * <LI>ƒIƒuƒWƒFƒNƒg‚ªzŠÂQÆ‚µ‚Ä‚¢‚éê‡‚É‚ÍA‚±‚Ìƒƒ\ƒbƒh‚Íg‚í‚È‚¢‚Å‚­‚¾‚³‚¢B
+     * <LI>ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ã‚·ãƒ£ãƒ­ãƒ¼ç¯„å›²ã®ã¿æ–‡å­—åˆ—åŒ–ã®å‡¦ç†å¯¾è±¡ã¨ãªã‚Šã¾ã™ã€‚
+     * <LI>ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒå¾ªç’°å‚ç…§ã—ã¦ã„ã‚‹å ´åˆã«ã¯ã€ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã¯ä½¿ã‚ãªã„ã§ãã ã•ã„ã€‚
      * </UL>
      *
-     * @return ƒoƒŠƒ…[ƒIƒuƒWƒFƒNƒg‚Ì•¶š—ñ•\Œ»B
+     * @return ãƒãƒªãƒ¥ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®æ–‡å­—åˆ—è¡¨ç¾ã€‚
      */
     @Override
     public String toString() {

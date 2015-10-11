@@ -27,26 +27,26 @@ import blanco.resourcebundle.resourcebundle.BlancoResourceBundleResourceBundle;
 import blanco.resourcebundle.valueobject.BlancoResourceBundleBundleStructure;
 
 /**
- * ’†ŠÔXMLƒtƒ@ƒCƒ‹‚©‚ç ƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚ÌƒL[•”•ª‚Ì‚İ‚Ì’è”ƒNƒ‰ƒX‚ğ¶¬‚µ‚Ü‚·B
+ * ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰ ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã®ã‚­ãƒ¼éƒ¨åˆ†ã®ã¿ã®å®šæ•°ã‚¯ãƒ©ã‚¹ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
  * 
- * ‚±‚Ìƒ\[ƒXƒR[ƒh‚ÍblancoResourceBundle‚Ìˆê•”‚Å‚·B<br>
- * “à•”“I‚É‚Í blancoConstants—p‚ÌXMLƒtƒ@ƒCƒ‹‚ğ¶¬‚µ‚Ü‚·B
+ * ã“ã®ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã¯blancoResourceBundleã®ä¸€éƒ¨ã§ã™ã€‚<br>
+ * å†…éƒ¨çš„ã«ã¯ blancoConstantsç”¨ã®XMLãƒ•ã‚¡ã‚¤ãƒ«ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
  * 
  * @author IGA Tosiki
  */
 public class BlancoResourceBundleXml2ConstantsXml {
     /**
-     * ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹ƒAƒNƒZƒT‚ÌƒCƒ“ƒXƒ^ƒ“ƒXB
+     * ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«ã‚¢ã‚¯ã‚»ã‚µã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã€‚
      */
     private final BlancoResourceBundleResourceBundle fBundle = new BlancoResourceBundleResourceBundle();
 
     /**
-     * ’†ŠÔXMLƒtƒ@ƒCƒ‹‚©‚ç ƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚ÌƒL[•”•ª‚Ì‚İ‚Ì’è”ƒNƒ‰ƒX‚ğ¶¬‚µ‚Ü‚·B
+     * ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰ ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã®ã‚­ãƒ¼éƒ¨åˆ†ã®ã¿ã®å®šæ•°ã‚¯ãƒ©ã‚¹ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
      * 
      * @param argFileSource
-     *            “ü—Í‚Æ‚È‚é’†ŠÔXMLƒtƒ@ƒCƒ‹B
+     *            å…¥åŠ›ã¨ãªã‚‹ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã€‚
      * @param argTmpResourceBundleDirectory
-     *            blancoConstants—p‚Ì’†ŠÔXMLƒtƒ@ƒCƒ‹‚ğo—Í‚·‚éo—ÍæƒfƒBƒŒƒNƒgƒŠB
+     *            blancoConstantsç”¨ã®ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã‚’å‡ºåŠ›ã™ã‚‹å‡ºåŠ›å…ˆãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã€‚
      */
     public void process(final File argFileSource,
             final File argTmpResourceBundleDirectory) {
@@ -54,21 +54,21 @@ public class BlancoResourceBundleXml2ConstantsXml {
 
         final Node rootNode = result.getNode();
         if (rootNode instanceof Document) {
-            // ‚±‚ê‚ª³íŒnBƒhƒLƒ…ƒƒ“ƒgƒ‹[ƒg‚ğæ“¾
+            // ã“ã‚ŒãŒæ­£å¸¸ç³»ã€‚ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆãƒ«ãƒ¼ãƒˆã‚’å–å¾—
             final Document rootDocument = (Document) rootNode;
             final NodeList listSheet = rootDocument
                     .getElementsByTagName("sheet");
             final int sizeListSheet = listSheet.getLength();
             for (int index = 0; index < sizeListSheet; index++) {
                 final Element elementSheet = (Element) listSheet.item(index);
-                // System.out.println("ƒV[ƒg[" + elementSheet.getAttribute("name")
-                // + "]‚ğˆ—’†B");
+                // System.out.println("ã‚·ãƒ¼ãƒˆ[" + elementSheet.getAttribute("name")
+                // + "]ã‚’å‡¦ç†ä¸­ã€‚");
 
                 final NodeList listCommon = elementSheet
                         .getElementsByTagName(fBundle
                                 .getMeta2xmlElementCommon());
                 if (listCommon.getLength() == 0) {
-                    // common‚ª–³‚¢ê‡‚É‚ÍƒXƒLƒbƒv‚µ‚Ü‚·B
+                    // commonãŒç„¡ã„å ´åˆã«ã¯ã‚¹ã‚­ãƒƒãƒ—ã—ã¾ã™ã€‚
                     continue;
                 }
 
@@ -114,14 +114,14 @@ public class BlancoResourceBundleXml2ConstantsXml {
     }
 
     /**
-     * ƒV[ƒg‚Ìƒm[ƒh‚ğ“WŠJ‚µ‚Ü‚·B
+     * ã‚·ãƒ¼ãƒˆã®ãƒãƒ¼ãƒ‰ã‚’å±•é–‹ã—ã¾ã™ã€‚
      * 
      * @param argElementSheet
-     *            ƒV[ƒgƒGƒŒƒƒ“ƒgB
+     *            ã‚·ãƒ¼ãƒˆã‚¨ãƒ¬ãƒ¡ãƒ³ãƒˆã€‚
      * @param argElementCommon
-     *            ‹¤’ÊƒGƒŒƒƒ“ƒgB
+     *            å…±é€šã‚¨ãƒ¬ãƒ¡ãƒ³ãƒˆã€‚
      * @param argTmpResourceBundleDirectory
-     *            blancoConstants—p‚Ì’†ŠÔXMLƒtƒ@ƒCƒ‹‚ğo—Í‚·‚éo—ÍæƒfƒBƒŒƒNƒgƒŠB
+     *            blancoConstantsç”¨ã®ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã‚’å‡ºåŠ›ã™ã‚‹å‡ºåŠ›å…ˆãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã€‚
      */
     private void expandSheet(final Element argElementSheet,
             final Element argElementCommon,
@@ -129,7 +129,7 @@ public class BlancoResourceBundleXml2ConstantsXml {
         final BlancoResourceBundleBundleStructure structure = new BlancoResourceBundleBundleStructure();
         structure.setName(BlancoXmlUtil.getTextContent(argElementCommon,
                 "baseName"));
-        // ƒNƒ‰ƒX–¼‚Í–¼‘O•ÏŒ`‚³‚¹‚Ü‚·B
+        // ã‚¯ãƒ©ã‚¹åã¯åå‰å¤‰å½¢ã•ã›ã¾ã™ã€‚
         final String className = BlancoNameAdjuster.toClassName(structure
                 .getName())
                 + "Constants";
@@ -141,7 +141,7 @@ public class BlancoResourceBundleXml2ConstantsXml {
         final NodeList listResourceList = argElementSheet
                 .getElementsByTagName(fBundle.getMeta2xmlElementList());
         if (listResourceList.getLength() == 0) {
-            // common‚ª–³‚¢ê‡‚É‚ÍƒXƒLƒbƒv‚µ‚Ü‚·B
+            // commonãŒç„¡ã„å ´åˆã«ã¯ã‚¹ã‚­ãƒƒãƒ—ã—ã¾ã™ã€‚
             return;
         }
 
@@ -183,7 +183,7 @@ public class BlancoResourceBundleXml2ConstantsXml {
             final String fieldResourceId = BlancoXmlUtil.getTextContent(
                     elementResource, "resourceKey");
 
-            // no‚Í‚ ‚¦‚Äo—Í‚µ‚Ü‚¹‚ñB
+            // noã¯ã‚ãˆã¦å‡ºåŠ›ã—ã¾ã›ã‚“ã€‚
 
             BlancoXmlUtil.addChildElement(document, eleField, "name",
                     fieldResourceId.replaceAll("[.]", "_"));
@@ -211,9 +211,9 @@ public class BlancoResourceBundleXml2ConstantsXml {
                 }
             }
 
-            // ÀÛ‚ÌƒL[‚Ì“à—e‚ğJavaDoc‚É‹LÚ‚µ‚Ü‚·B
+            // å®Ÿéš›ã®ã‚­ãƒ¼ã®å†…å®¹ã‚’JavaDocã«è¨˜è¼‰ã—ã¾ã™ã€‚
             BlancoXmlUtil.addChildElement(document, eleField, "description",
-                    "“à—e: " + allDescription + " (ƒL[: " + fieldResourceId + ")");
+                    "å†…å®¹: " + allDescription + " (ã‚­ãƒ¼: " + fieldResourceId + ")");
         }
         BlancoXmlUtil.transformDom2File(document, new File(
                 argTmpResourceBundleDirectory.getAbsolutePath() + "/constants/"

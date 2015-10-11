@@ -15,35 +15,35 @@ import blanco.resourcebundle.expand.BlancoResourceBundleExpandResourceBundle;
 import blanco.resourcebundle.valueobject.BlancoResourceBundleBundleStructure;
 
 /**
- * ����XML�t�@�C������ �v���p�e�B�t�@�C���A�N�Z�X�p��Java�\�[�X�R�[�h�𐶐����܂��B
+ * 中間XMLファイルから プロパティファイルアクセス用のJavaソースコードを生成します。
  * 
- * ���̃\�[�X�R�[�h��blancoResourceBundle�̈ꕔ�ł��B<br>
+ * このソースコードはblancoResourceBundleの一部です。<br>
  * 
  * @author IGA Tosiki
  */
 public class BlancoResourceBundleXml2JavaClass {
     /**
-     * ���\�[�X�o���h���������MessageFormat�ɂ��p�[�X���s�����ۂɁA��O�����������珈���𒆒f���邩�ǂ����̃t���O�B
+     * リソースバンドル文字列をMessageFormatによるパースを行った際に、例外が発生したら処理を中断するかどうかのフラグ。
      * 
-     * true�Ȃ珈�����f���ė�O�𔭐������܂��B<br>
-     * false�Ȃ珈�����s���A�u��������͖������̂Ƃ݂Ȃ��܂��B<br>
-     * Java�̃\�[�X�R�[�h����������ۂȂǂɁA������ false�ɐݒ肵�Ĕg���ʂ��������Ƃ��ł���悤�ɐ؂�ւ���ꍇ������܂��B<br>
-     * �f�t�H���g�l[true]���ݒ肳��Ă��܂��B
+     * trueなら処理中断して例外を発生させます。<br>
+     * falseなら処理続行し、置換文字列は無いものとみなします。<br>
+     * Javaのソースコードを処理する際などに、あえて falseに設定して波括弧を扱うことができるように切り替える場合があります。<br>
+     * デフォルト値[true]が設定されています。
      */
     private boolean fIsFailOnMessageFormatError = true;
 
     /**
-     * ���O�o�͂��������������\�[�X�R�[�h�Ɋ܂߂邩�ǂ����̃t���O�B���݂͕W���o�݂͂̂ɑΉ��B
+     * ログ出力を自動生成されるソースコードに含めるかどうかのフラグ。現在は標準出力のみに対応。
      */
     private boolean fIsLog = false;
 
     /**
-     * �v���p�e�B�t�@�C�����f�B���N�g���t���ŏo�͂��邩�ǂ����B
+     * プロパティファイルをディレクトリ付きで出力するかどうか。
      */
     private boolean fPropertieswithdirectory = true;
 
     /**
-     * ������������\�[�X�t�@�C���̕����G���R�[�f�B���O�B
+     * 自動生成するソースファイルの文字エンコーディング。
      */
     private String fEncoding = null;
 
@@ -52,12 +52,12 @@ public class BlancoResourceBundleXml2JavaClass {
     }
 
     /**
-     * ���\�[�X�o���h���������MessageFormat�ɂ��p�[�X���s�����ۂɁA��O�����������珈���𒆒f���邩�ǂ����̃t���O��ݒ肵�܂��B
+     * リソースバンドル文字列をMessageFormatによるパースを行った際に、例外が発生したら処理を中断するかどうかのフラグを設定します。
      * 
-     * true�Ȃ珈�����f���ė�O�𔭐������܂��B<br>
-     * false�Ȃ珈�����s���A�u��������͖������̂Ƃ݂Ȃ��܂��B<br>
-     * Java�̃\�[�X�R�[�h����������ۂȂǂɁA������ false�ɐݒ肵�Ĕg���ʂ��������Ƃ��ł���悤�ɐ؂�ւ���ꍇ������܂��B<br>
-     * �f�t�H���g�l[true]���ݒ肳��Ă��܂��B
+     * trueなら処理中断して例外を発生させます。<br>
+     * falseなら処理続行し、置換文字列は無いものとみなします。<br>
+     * Javaのソースコードを処理する際などに、あえて falseに設定して波括弧を扱うことができるように切り替える場合があります。<br>
+     * デフォルト値[true]が設定されています。
      * 
      * @param isFailOnMessageFormatError
      */
@@ -67,20 +67,20 @@ public class BlancoResourceBundleXml2JavaClass {
     }
 
     /**
-     * ���O�o�͂��������������\�[�X�R�[�h�Ɋ܂߂邩�ǂ����̃t���O�̃Z�b�g�B
+     * ログ出力を自動生成されるソースコードに含めるかどうかのフラグのセット。
      * 
      * @param argIsLog
-     *            ���O�o�͂��������������\�[�X�R�[�h�Ɋ܂߂邩�ǂ����B
+     *            ログ出力を自動生成されるソースコードに含めるかどうか。
      */
     public void setLog(final boolean argIsLog) {
         fIsLog = argIsLog;
     }
 
     /**
-     * �v���p�e�B�t�@�C�����f�B���N�g���t���ŏo�͂��邩�ǂ����̃t���O���Z�b�g���܂��B
+     * プロパティファイルをディレクトリ付きで出力するかどうかのフラグをセットします。
      * 
      * @param isPropertieswithdirectory
-     *            �v���p�e�B�t�@�C�����f�B���N�g���t���ŏo�͂��邩�ǂ����B
+     *            プロパティファイルをディレクトリ付きで出力するかどうか。
      */
     public void setPropertieswithdirectory(
             final boolean isPropertieswithdirectory) {
@@ -88,12 +88,12 @@ public class BlancoResourceBundleXml2JavaClass {
     }
 
     /**
-     * ����XML�t�@�C������ �v���p�e�B�t�@�C���A�N�Z�X�p��Java�\�[�X�R�[�h�𐶐����܂��B
+     * 中間XMLファイルから プロパティファイルアクセス用のJavaソースコードを生成します。
      * 
      * @param argFileSource
-     *            ���͂ƂȂ钆��XML�t�@�C���B
+     *            入力となる中間XMLファイル。
      * @param argDirectoryTarget
-     *            �\�[�X�R�[�h���o�͂���ۂ̏o�͐�f�B���N�g���B
+     *            ソースコードを出力する際の出力先ディレクトリ。
      */
     public void process(final File argFileSource, final File argDirectoryTarget) {
         final BlancoResourceBundleBundleStructure[] structures = new BlancoResourceBundleXmlParser()
@@ -104,12 +104,12 @@ public class BlancoResourceBundleXml2JavaClass {
     }
 
     /**
-     * �w��̃V�[�g�̋L�q���e��W�J���܂��B
+     * 指定のシートの記述内容を展開します。
      * 
      * @param argStructure
-     *            �^�X�N�̍\���B
+     *            タスクの構造。
      * @param argDirectoryTarget
-     *            �o�͐�f�B���N�g��
+     *            出力先ディレクトリ
      */
     public void structure2Source(
             final BlancoResourceBundleBundleStructure argStructure,

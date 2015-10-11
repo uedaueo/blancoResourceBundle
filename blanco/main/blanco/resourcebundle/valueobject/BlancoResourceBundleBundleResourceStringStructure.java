@@ -10,77 +10,77 @@
 package blanco.resourcebundle.valueobject;
 
 /**
- * ���\�[�X�o���h���̃��P�[���{�����������킷�\���̃N���X�B
+ * リソースバンドルのロケール＋文字列をあらわす構造体クラス。
  */
 public class BlancoResourceBundleBundleResourceStringStructure {
     /**
-     * ���P�[���B
+     * ロケール。
      *
-     * �t�B�[���h: [locale]�B
+     * フィールド: [locale]。
      */
     private String fLocale;
 
     /**
-     * ���\�[�X������B
+     * リソース文字列。
      *
-     * �t�B�[���h: [resourceString]�B
+     * フィールド: [resourceString]。
      */
     private String fResourceString;
 
     /**
-     * �t�B�[���h [locale] �̒l��ݒ肵�܂��B
+     * フィールド [locale] の値を設定します。
      *
-     * �t�B�[���h�̐���: [���P�[���B]�B
+     * フィールドの説明: [ロケール。]。
      *
-     * @param argLocale �t�B�[���h[locale]�ɐݒ肷��l�B
+     * @param argLocale フィールド[locale]に設定する値。
      */
     public void setLocale(final String argLocale) {
         fLocale = argLocale;
     }
 
     /**
-     * �t�B�[���h [locale] �̒l���擾���܂��B
+     * フィールド [locale] の値を取得します。
      *
-     * �t�B�[���h�̐���: [���P�[���B]�B
+     * フィールドの説明: [ロケール。]。
      *
-     * @return �t�B�[���h[locale]����擾�����l�B
+     * @return フィールド[locale]から取得した値。
      */
     public String getLocale() {
         return fLocale;
     }
 
     /**
-     * �t�B�[���h [resourceString] �̒l��ݒ肵�܂��B
+     * フィールド [resourceString] の値を設定します。
      *
-     * �t�B�[���h�̐���: [���\�[�X������B]�B
+     * フィールドの説明: [リソース文字列。]。
      *
-     * @param argResourceString �t�B�[���h[resourceString]�ɐݒ肷��l�B
+     * @param argResourceString フィールド[resourceString]に設定する値。
      */
     public void setResourceString(final String argResourceString) {
         fResourceString = argResourceString;
     }
 
     /**
-     * �t�B�[���h [resourceString] �̒l���擾���܂��B
+     * フィールド [resourceString] の値を取得します。
      *
-     * �t�B�[���h�̐���: [���\�[�X������B]�B
+     * フィールドの説明: [リソース文字列。]。
      *
-     * @return �t�B�[���h[resourceString]����擾�����l�B
+     * @return フィールド[resourceString]から取得した値。
      */
     public String getResourceString() {
         return fResourceString;
     }
 
     /**
-     * ���̃o�����[�I�u�W�F�N�g�̕�����\�����擾���܂��B
+     * このバリューオブジェクトの文字列表現を取得します。
      *
-     * <P>�g�p��̒���</P>
+     * <P>使用上の注意</P>
      * <UL>
-     * <LI>�I�u�W�F�N�g�̃V�����[�͈͂̂ݕ����񉻂̏����ΏۂƂȂ�܂��B
-     * <LI>�I�u�W�F�N�g���z�Q�Ƃ��Ă���ꍇ�ɂ́A���̃��\�b�h�͎g��Ȃ��ł��������B
+     * <LI>オブジェクトのシャロー範囲のみ文字列化の処理対象となります。
+     * <LI>オブジェクトが循環参照している場合には、このメソッドは使わないでください。
      * </UL>
      *
-     * @return �o�����[�I�u�W�F�N�g�̕�����\���B
+     * @return バリューオブジェクトの文字列表現。
      */
     @Override
     public String toString() {

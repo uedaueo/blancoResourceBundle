@@ -14,49 +14,49 @@ import java.io.IOException;
 import blanco.resourcebundle.task.valueobject.BlancoResourceBundleProcessInput;
 
 /**
- * ƒoƒbƒ`ˆ—ƒNƒ‰ƒX [BlancoResourceBundleBatchProcess]B
+ * ãƒãƒƒãƒå‡¦ç†ã‚¯ãƒ©ã‚¹ [BlancoResourceBundleBatchProcess]ã€‚
  *
- * <P>ƒoƒbƒ`ˆ—‚ÌŒÄ‚Ño‚µ—áB</P>
+ * <P>ãƒãƒƒãƒå‡¦ç†ã®å‘¼ã³å‡ºã—ä¾‹ã€‚</P>
  * <code>
- * java -classpath (ƒNƒ‰ƒXƒpƒX) blanco.resourcebundle.task.BlancoResourceBundleBatchProcess -help
+ * java -classpath (ã‚¯ãƒ©ã‚¹ãƒ‘ã‚¹) blanco.resourcebundle.task.BlancoResourceBundleBatchProcess -help
  * </code>
  */
 public class BlancoResourceBundleBatchProcess {
     /**
-     * ³íI—¹B
+     * æ­£å¸¸çµ‚äº†ã€‚
      */
     public static final int END_SUCCESS = 0;
 
     /**
-     * “ü—ÍˆÙíI—¹B“à•”“I‚Éjava.lang.IllegalArgumentException‚ª”­¶‚µ‚½ê‡B
+     * å…¥åŠ›ç•°å¸¸çµ‚äº†ã€‚å†…éƒ¨çš„ã«java.lang.IllegalArgumentExceptionãŒç™ºç”Ÿã—ãŸå ´åˆã€‚
      */
     public static final int END_ILLEGAL_ARGUMENT_EXCEPTION = 7;
 
     /**
-     * “üo—Í—áŠOI—¹B“à•”“I‚Éjava.io.IOException‚ª”­¶‚µ‚½ê‡B
+     * å…¥å‡ºåŠ›ä¾‹å¤–çµ‚äº†ã€‚å†…éƒ¨çš„ã«java.io.IOExceptionãŒç™ºç”Ÿã—ãŸå ´åˆã€‚
      */
     public static final int END_IO_EXCEPTION = 8;
 
     /**
-     * ˆÙíI—¹Bƒoƒbƒ`‚Ìˆ—ŠJn‚É¸”s‚µ‚½ê‡A‚¨‚æ‚Ñ“à•”“I‚Éjava.lang.Error‚Ü‚½‚Íjava.lang.RuntimeException‚ª”­¶‚µ‚½ê‡B
+     * ç•°å¸¸çµ‚äº†ã€‚ãƒãƒƒãƒã®å‡¦ç†é–‹å§‹ã«å¤±æ•—ã—ãŸå ´åˆã€ãŠã‚ˆã³å†…éƒ¨çš„ã«java.lang.Errorã¾ãŸã¯java.lang.RuntimeExceptionãŒç™ºç”Ÿã—ãŸå ´åˆã€‚
      */
     public static final int END_ERROR = 9;
 
     /**
-     * ƒRƒ}ƒ“ƒhƒ‰ƒCƒ“‚©‚çÀs‚³‚ê‚½Û‚ÌƒGƒ“ƒgƒŠƒ|ƒCƒ“ƒg‚Å‚·B
+     * ã‚³ãƒãƒ³ãƒ‰ãƒ©ã‚¤ãƒ³ã‹ã‚‰å®Ÿè¡Œã•ã‚ŒãŸéš›ã®ã‚¨ãƒ³ãƒˆãƒªãƒã‚¤ãƒ³ãƒˆã§ã™ã€‚
      *
-     * @param args ƒRƒ“ƒ\[ƒ‹‚©‚çˆø‚«Œp‚ª‚ê‚½ˆø”B
+     * @param args ã‚³ãƒ³ã‚½ãƒ¼ãƒ«ã‹ã‚‰å¼•ãç¶™ãŒã‚ŒãŸå¼•æ•°ã€‚
      */
     public static final void main(final String[] args) {
         final BlancoResourceBundleBatchProcess batchProcess = new BlancoResourceBundleBatchProcess();
 
-        // ƒoƒbƒ`ˆ—‚Ìˆø”B
+        // ãƒãƒƒãƒå‡¦ç†ã®å¼•æ•°ã€‚
         final BlancoResourceBundleProcessInput input = new BlancoResourceBundleProcessInput();
 
         boolean isNeedUsage = false;
         boolean isFieldMetadirProcessed = false;
 
-        // ƒRƒ}ƒ“ƒhƒ‰ƒCƒ“ˆø”‚Ì‰ğÍ‚ğ‚¨‚±‚È‚¢‚Ü‚·B
+        // ã‚³ãƒãƒ³ãƒ‰ãƒ©ã‚¤ãƒ³å¼•æ•°ã®è§£æã‚’ãŠã“ãªã„ã¾ã™ã€‚
         for (int index = 0; index < args.length; index++) {
             String arg = args[index];
             if (arg.startsWith("-verbose=")) {
@@ -82,7 +82,7 @@ public class BlancoResourceBundleBatchProcess {
                 usage();
                 System.exit(END_SUCCESS);
             } else {
-                System.out.println("BlancoResourceBundleBatchProcess: “ü—Íƒpƒ‰ƒ[ƒ^[" + arg + "]‚Í–³‹‚³‚ê‚Ü‚µ‚½B");
+                System.out.println("BlancoResourceBundleBatchProcess: å…¥åŠ›ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[" + arg + "]ã¯ç„¡è¦–ã•ã‚Œã¾ã—ãŸã€‚");
                 isNeedUsage = true;
             }
         }
@@ -92,137 +92,137 @@ public class BlancoResourceBundleBatchProcess {
         }
 
         if( isFieldMetadirProcessed == false) {
-            System.out.println("BlancoResourceBundleBatchProcess: ˆ—ŠJn¸”sB“ü—Íƒpƒ‰ƒ[ƒ^[input]‚Ì•K{ƒtƒB[ƒ‹ƒh’l[metadir]‚É’l‚ªİ’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB");
+            System.out.println("BlancoResourceBundleBatchProcess: å‡¦ç†é–‹å§‹å¤±æ•—ã€‚å…¥åŠ›ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[input]ã®å¿…é ˆãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰å€¤[metadir]ã«å€¤ãŒè¨­å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚");
             System.exit(END_ILLEGAL_ARGUMENT_EXCEPTION);
         }
 
         int retCode = batchProcess.execute(input);
 
-        // I—¹ƒR[ƒh‚ğ–ß‚µ‚Ü‚·B
-        // ¦’ˆÓFSystem.exit()‚ğŒÄ‚Ño‚µ‚Ä‚¢‚é“_‚É’ˆÓ‚µ‚Ä‚­‚¾‚³‚¢B
+        // çµ‚äº†ã‚³ãƒ¼ãƒ‰ã‚’æˆ»ã—ã¾ã™ã€‚
+        // â€»æ³¨æ„ï¼šSystem.exit()ã‚’å‘¼ã³å‡ºã—ã¦ã„ã‚‹ç‚¹ã«æ³¨æ„ã—ã¦ãã ã•ã„ã€‚
         System.exit(retCode);
     }
 
     /**
-     * ‹ï‘Ì“I‚Èƒoƒbƒ`ˆ—“à—e‚ğ‹Lq‚·‚é‚½‚ß‚Ìƒƒ\ƒbƒh‚Å‚·B
+     * å…·ä½“çš„ãªãƒãƒƒãƒå‡¦ç†å†…å®¹ã‚’è¨˜è¿°ã™ã‚‹ãŸã‚ã®ãƒ¡ã‚½ãƒƒãƒ‰ã§ã™ã€‚
      *
-     * ‚±‚Ìƒƒ\ƒbƒh‚ÉÀÛ‚Ìˆ—“à—e‚ğ‹Lq‚µ‚Ü‚·B
+     * ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã«å®Ÿéš›ã®å‡¦ç†å†…å®¹ã‚’è¨˜è¿°ã—ã¾ã™ã€‚
      *
-     * @param input ƒoƒbƒ`ˆ—‚Ì“ü—Íƒpƒ‰ƒ[ƒ^B
-     * @return ƒoƒbƒ`ˆ—‚ÌI—¹ƒR[ƒhBEND_SUCCESS, END_ILLEGAL_ARGUMENT_EXCEPTION, END_IO_EXCEPTION, END_ERROR ‚Ì‚¢‚¸‚ê‚©‚Ì’l‚ğ–ß‚µ‚Ü‚·B
-     * @throws IOException “üo—Í—áŠO‚ª”­¶‚µ‚½ê‡B
-     * @throws IllegalArgumentException “ü—Í’l‚É•s³‚ªŒ©‚Â‚©‚Á‚½ê‡B
+     * @param input ãƒãƒƒãƒå‡¦ç†ã®å…¥åŠ›ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã€‚
+     * @return ãƒãƒƒãƒå‡¦ç†ã®çµ‚äº†ã‚³ãƒ¼ãƒ‰ã€‚END_SUCCESS, END_ILLEGAL_ARGUMENT_EXCEPTION, END_IO_EXCEPTION, END_ERROR ã®ã„ãšã‚Œã‹ã®å€¤ã‚’æˆ»ã—ã¾ã™ã€‚
+     * @throws IOException å…¥å‡ºåŠ›ä¾‹å¤–ãŒç™ºç”Ÿã—ãŸå ´åˆã€‚
+     * @throws IllegalArgumentException å…¥åŠ›å€¤ã«ä¸æ­£ãŒè¦‹ã¤ã‹ã£ãŸå ´åˆã€‚
      */
     public int process(final BlancoResourceBundleProcessInput input) throws IOException, IllegalArgumentException {
-        // “ü—Íƒpƒ‰ƒ[ƒ^‚ğƒ`ƒFƒbƒN‚µ‚Ü‚·B
+        // å…¥åŠ›ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã‚’ãƒã‚§ãƒƒã‚¯ã—ã¾ã™ã€‚
         validateInput(input);
 
-        // ‚±‚Ì‰ÓŠ‚ÅƒRƒ“ƒpƒCƒ‹ƒGƒ‰[‚ª”­¶‚·‚éê‡ABlancoResourceBundleProcessƒCƒ“ƒ^ƒtƒF[ƒX‚ğÀ‘•‚µ‚Ä blanco.resourcebundle.taskƒpƒbƒP[ƒW‚É BlancoResourceBundleProcessImplƒNƒ‰ƒX‚ğì¬‚·‚é‚±‚Æ‚É‚æ‚è‰ğŒˆ‚Å‚«‚éê‡‚ª‚ ‚è‚Ü‚·B
+        // ã“ã®ç®‡æ‰€ã§ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã™ã‚‹å ´åˆã€BlancoResourceBundleProcessã‚¤ãƒ³ã‚¿ãƒ•ã‚§ãƒ¼ã‚¹ã‚’å®Ÿè£…ã—ã¦ blanco.resourcebundle.taskãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã« BlancoResourceBundleProcessImplã‚¯ãƒ©ã‚¹ã‚’ä½œæˆã™ã‚‹ã“ã¨ã«ã‚ˆã‚Šè§£æ±ºã§ãã‚‹å ´åˆãŒã‚ã‚Šã¾ã™ã€‚
         final BlancoResourceBundleProcess process = new BlancoResourceBundleProcessImpl();
 
-        // ˆ—‚Ì–{‘Ì‚ğÀs‚µ‚Ü‚·B
+        // å‡¦ç†ã®æœ¬ä½“ã‚’å®Ÿè¡Œã—ã¾ã™ã€‚
         final int retCode = process.execute(input);
 
         return retCode;
     }
 
     /**
-     * ƒNƒ‰ƒX‚ğƒCƒ“ƒXƒ^ƒ“ƒX‰»‚µ‚Äƒoƒbƒ`‚ğÀs‚·‚éÛ‚ÌƒGƒ“ƒgƒŠƒ|ƒCƒ“ƒg‚Å‚·B
+     * ã‚¯ãƒ©ã‚¹ã‚’ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹åŒ–ã—ã¦ãƒãƒƒãƒã‚’å®Ÿè¡Œã™ã‚‹éš›ã®ã‚¨ãƒ³ãƒˆãƒªãƒã‚¤ãƒ³ãƒˆã§ã™ã€‚
      *
-     * ‚±‚Ìƒƒ\ƒbƒh‚Í‰º‹L‚Ìd—l‚ğ’ñ‹Ÿ‚µ‚Ü‚·B
+     * ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã¯ä¸‹è¨˜ã®ä»•æ§˜ã‚’æä¾›ã—ã¾ã™ã€‚
      * <ul>
-     * <li>ƒƒ\ƒbƒh‚Ì“ü—Íƒpƒ‰ƒ[ƒ^‚Ì“à—eƒ`ƒFƒbƒNB
-     * <li>IllegalArgumentException, RuntimeException, Error‚È‚Ç‚Ì—áŠO‚ğcatch‚µ‚Ä–ß‚è’l‚Ö‚Æ•ÏŠ·B
+     * <li>ãƒ¡ã‚½ãƒƒãƒ‰ã®å…¥åŠ›ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®å†…å®¹ãƒã‚§ãƒƒã‚¯ã€‚
+     * <li>IllegalArgumentException, RuntimeException, Errorãªã©ã®ä¾‹å¤–ã‚’catchã—ã¦æˆ»ã‚Šå€¤ã¸ã¨å¤‰æ›ã€‚
      * </ul>
      *
-     * @param input ƒoƒbƒ`ˆ—‚Ì“ü—Íƒpƒ‰ƒ[ƒ^B
-     * @return ƒoƒbƒ`ˆ—‚ÌI—¹ƒR[ƒhBEND_SUCCESS, END_ILLEGAL_ARGUMENT_EXCEPTION, END_IO_EXCEPTION, END_ERROR ‚Ì‚¢‚¸‚ê‚©‚Ì’l‚ğ–ß‚µ‚Ü‚·B
-     * @throws IllegalArgumentException “ü—Í’l‚É•s³‚ªŒ©‚Â‚©‚Á‚½ê‡B
+     * @param input ãƒãƒƒãƒå‡¦ç†ã®å…¥åŠ›ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã€‚
+     * @return ãƒãƒƒãƒå‡¦ç†ã®çµ‚äº†ã‚³ãƒ¼ãƒ‰ã€‚END_SUCCESS, END_ILLEGAL_ARGUMENT_EXCEPTION, END_IO_EXCEPTION, END_ERROR ã®ã„ãšã‚Œã‹ã®å€¤ã‚’æˆ»ã—ã¾ã™ã€‚
+     * @throws IllegalArgumentException å…¥åŠ›å€¤ã«ä¸æ­£ãŒè¦‹ã¤ã‹ã£ãŸå ´åˆã€‚
      */
     public final int execute(final BlancoResourceBundleProcessInput input) throws IllegalArgumentException {
         try {
-            // ƒoƒbƒ`ˆ—‚Ì–{‘Ì‚ğÀs‚µ‚Ü‚·B
+            // ãƒãƒƒãƒå‡¦ç†ã®æœ¬ä½“ã‚’å®Ÿè¡Œã—ã¾ã™ã€‚
             int retCode = process(input);
 
             return retCode;
         } catch (IllegalArgumentException ex) {
-            System.out.println("BlancoResourceBundleBatchProcess: “ü—Í—áŠO‚ª”­¶‚µ‚Ü‚µ‚½Bƒoƒbƒ`ˆ—‚ğ’†’f‚µ‚Ü‚·B:" + ex.toString());
-            // “ü—ÍˆÙíI—¹B
+            System.out.println("BlancoResourceBundleBatchProcess: å…¥åŠ›ä¾‹å¤–ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ãƒãƒƒãƒå‡¦ç†ã‚’ä¸­æ–­ã—ã¾ã™ã€‚:" + ex.toString());
+            // å…¥åŠ›ç•°å¸¸çµ‚äº†ã€‚
             return END_ILLEGAL_ARGUMENT_EXCEPTION;
         } catch (IOException ex) {
-            System.out.println("BlancoResourceBundleBatchProcess: “üo—Í—áŠO‚ª”­¶‚µ‚Ü‚µ‚½Bƒoƒbƒ`ˆ—‚ğ’†’f‚µ‚Ü‚·B:" + ex.toString());
-            // “ü—ÍˆÙíI—¹B
+            System.out.println("BlancoResourceBundleBatchProcess: å…¥å‡ºåŠ›ä¾‹å¤–ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ãƒãƒƒãƒå‡¦ç†ã‚’ä¸­æ–­ã—ã¾ã™ã€‚:" + ex.toString());
+            // å…¥åŠ›ç•°å¸¸çµ‚äº†ã€‚
             return END_IO_EXCEPTION;
         } catch (RuntimeException ex) {
-            System.out.println("BlancoResourceBundleBatchProcess: ƒ‰ƒ“ƒ^ƒCƒ€—áŠO‚ª”­¶‚µ‚Ü‚µ‚½Bƒoƒbƒ`ˆ—‚ğ’†’f‚µ‚Ü‚·B:" + ex.toString());
+            System.out.println("BlancoResourceBundleBatchProcess: ãƒ©ãƒ³ã‚¿ã‚¤ãƒ ä¾‹å¤–ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ãƒãƒƒãƒå‡¦ç†ã‚’ä¸­æ–­ã—ã¾ã™ã€‚:" + ex.toString());
             ex.printStackTrace();
-            // ˆÙíI—¹B
+            // ç•°å¸¸çµ‚äº†ã€‚
             return END_ERROR;
         } catch (Error er) {
-            System.out.println("BlancoResourceBundleBatchProcess: ƒ‰ƒ“ƒ^ƒCƒ€ƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½Bƒoƒbƒ`ˆ—‚ğ’†’f‚µ‚Ü‚·B:" + er.toString());
+            System.out.println("BlancoResourceBundleBatchProcess: ãƒ©ãƒ³ã‚¿ã‚¤ãƒ ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ãƒãƒƒãƒå‡¦ç†ã‚’ä¸­æ–­ã—ã¾ã™ã€‚:" + er.toString());
             er.printStackTrace();
-            // ˆÙíI—¹B
+            // ç•°å¸¸çµ‚äº†ã€‚
             return END_ERROR;
         }
     }
 
     /**
-     * ‚±‚Ìƒoƒbƒ`ˆ—ƒNƒ‰ƒX‚Ìg‚¢•û‚Ìà–¾‚ğ•W€o—Í‚É¦‚·‚½‚ß‚Ìƒƒ\ƒbƒh‚Å‚·B
+     * ã“ã®ãƒãƒƒãƒå‡¦ç†ã‚¯ãƒ©ã‚¹ã®ä½¿ã„æ–¹ã®èª¬æ˜ã‚’æ¨™æº–å‡ºåŠ›ã«ç¤ºã™ãŸã‚ã®ãƒ¡ã‚½ãƒƒãƒ‰ã§ã™ã€‚
      */
     public static final void usage() {
         System.out.println("BlancoResourceBundleBatchProcess: Usage:");
-        System.out.println("  java blanco.resourcebundle.task.BlancoResourceBundleBatchProcess -verbose=’l1 -metadir=’l2 -targetdir=’l3 -tmpdir=’l4 -encoding=’l5 -commenttimestamp=’l6 -failonmessageformaterror=’l7 -log=’l8 -propertieswithdirectory=’l9");
+        System.out.println("  java blanco.resourcebundle.task.BlancoResourceBundleBatchProcess -verbose=å€¤1 -metadir=å€¤2 -targetdir=å€¤3 -tmpdir=å€¤4 -encoding=å€¤5 -commenttimestamp=å€¤6 -failonmessageformaterror=å€¤7 -log=å€¤8 -propertieswithdirectory=å€¤9");
         System.out.println("    -verbose");
-        System.out.println("      à–¾[verboseƒ‚[ƒh‚Å“®ì‚³‚¹‚é‚©‚Ç‚¤‚©B]");
-        System.out.println("      Œ^[^‹U]");
-        System.out.println("      ƒfƒtƒHƒ‹ƒg’l[false]");
+        System.out.println("      èª¬æ˜[verboseãƒ¢ãƒ¼ãƒ‰ã§å‹•ä½œã•ã›ã‚‹ã‹ã©ã†ã‹ã€‚]");
+        System.out.println("      å‹[çœŸå½]");
+        System.out.println("      ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤[false]");
         System.out.println("    -metadir");
-        System.out.println("      à–¾[ƒƒ^ƒfƒBƒŒƒNƒgƒŠ]");
-        System.out.println("      Œ^[•¶š—ñ]");
-        System.out.println("      •K{ƒpƒ‰ƒ[ƒ^");
+        System.out.println("      èª¬æ˜[ãƒ¡ã‚¿ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª]");
+        System.out.println("      å‹[æ–‡å­—åˆ—]");
+        System.out.println("      å¿…é ˆãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿");
         System.out.println("    -targetdir");
-        System.out.println("      à–¾[o—ÍæƒtƒHƒ‹ƒ_‚ğw’è‚µ‚Ü‚·B–³w’è‚Ìê‡‚É‚ÍƒJƒŒƒ“ƒg’¼‰º‚Ìblanco‚ğ—p‚¢‚Ü‚·B]");
-        System.out.println("      Œ^[•¶š—ñ]");
-        System.out.println("      ƒfƒtƒHƒ‹ƒg’l[blanco]");
+        System.out.println("      èª¬æ˜[å‡ºåŠ›å…ˆãƒ•ã‚©ãƒ«ãƒ€ã‚’æŒ‡å®šã—ã¾ã™ã€‚ç„¡æŒ‡å®šã®å ´åˆã«ã¯ã‚«ãƒ¬ãƒ³ãƒˆç›´ä¸‹ã®blancoã‚’ç”¨ã„ã¾ã™ã€‚]");
+        System.out.println("      å‹[æ–‡å­—åˆ—]");
+        System.out.println("      ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤[blanco]");
         System.out.println("    -tmpdir");
-        System.out.println("      à–¾[ƒeƒ“ƒ|ƒ‰ƒŠƒtƒHƒ‹ƒ_‚ğw’è‚µ‚Ü‚·B–³w’è‚Ìê‡‚É‚ÍAƒJƒŒƒ“ƒg’¼‰º‚Ìtmp‚ğ—p‚¢‚Ü‚·B]");
-        System.out.println("      Œ^[•¶š—ñ]");
-        System.out.println("      ƒfƒtƒHƒ‹ƒg’l[tmp]");
+        System.out.println("      èª¬æ˜[ãƒ†ãƒ³ãƒãƒ©ãƒªãƒ•ã‚©ãƒ«ãƒ€ã‚’æŒ‡å®šã—ã¾ã™ã€‚ç„¡æŒ‡å®šã®å ´åˆã«ã¯ã€ã‚«ãƒ¬ãƒ³ãƒˆç›´ä¸‹ã®tmpã‚’ç”¨ã„ã¾ã™ã€‚]");
+        System.out.println("      å‹[æ–‡å­—åˆ—]");
+        System.out.println("      ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤[tmp]");
         System.out.println("    -encoding");
-        System.out.println("      à–¾[©“®¶¬‚·‚éƒ\[ƒXƒtƒ@ƒCƒ‹‚Ì•¶šƒGƒ“ƒR[ƒfƒBƒ“ƒO‚ğw’è‚µ‚Ü‚·B]");
-        System.out.println("      Œ^[•¶š—ñ]");
+        System.out.println("      èª¬æ˜[è‡ªå‹•ç”Ÿæˆã™ã‚‹ã‚½ãƒ¼ã‚¹ãƒ•ã‚¡ã‚¤ãƒ«ã®æ–‡å­—ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã‚’æŒ‡å®šã—ã¾ã™ã€‚]");
+        System.out.println("      å‹[æ–‡å­—åˆ—]");
         System.out.println("    -commenttimestamp");
-        System.out.println("      à–¾[ƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚Ì¶¬‚É‚Â‚¢‚ÄAƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚ÌƒRƒƒ“ƒg‚Éo—Í‚·‚é‚©‚Ç‚¤‚©ƒtƒ‰ƒOB]");
-        System.out.println("      Œ^[^‹U]");
-        System.out.println("      ƒfƒtƒHƒ‹ƒg’l[true]");
+        System.out.println("      èª¬æ˜[ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã®ç”Ÿæˆæ™‚åˆ»ã«ã¤ã„ã¦ã€ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã®ã‚³ãƒ¡ãƒ³ãƒˆã«å‡ºåŠ›ã™ã‚‹ã‹ã©ã†ã‹ãƒ•ãƒ©ã‚°ã€‚]");
+        System.out.println("      å‹[çœŸå½]");
+        System.out.println("      ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤[true]");
         System.out.println("    -failonmessageformaterror");
-        System.out.println("      à–¾[ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹•¶š—ñ‚ğMessageFormat‚É‚æ‚éƒp[ƒX‚ğs‚Á‚½Û‚ÉA—áŠO‚ª”­¶‚µ‚½‚çˆ—‚ğ’†’f‚·‚é‚©‚Ç‚¤‚©‚Ìƒtƒ‰ƒOBtrue‚È‚çˆ—’†’f‚µ‚Ä—áŠO‚ğ”­¶‚³‚¹‚Ü‚·Bfalse‚È‚çˆ—‘±s‚µA’uŠ·•¶š—ñ‚Í–³‚¢‚à‚Ì‚Æ‚İ‚È‚µ‚Ü‚·BJava‚Ìƒ\[ƒXƒR[ƒh‚ğˆ—‚·‚éÛ‚È‚Ç‚ÉA‚ ‚¦‚Ä false‚Éİ’è‚µ‚Ä”gŠ‡ŒÊ‚ğˆµ‚¤‚±‚Æ‚ª‚Å‚«‚é‚æ‚¤‚ÉØ‚è‘Ö‚¦‚éê‡‚ª‚ ‚è‚Ü‚·B]");
-        System.out.println("      Œ^[^‹U]");
-        System.out.println("      ƒfƒtƒHƒ‹ƒg’l[true]");
+        System.out.println("      èª¬æ˜[ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«æ–‡å­—åˆ—ã‚’MessageFormatã«ã‚ˆã‚‹ãƒ‘ãƒ¼ã‚¹ã‚’è¡Œã£ãŸéš›ã«ã€ä¾‹å¤–ãŒç™ºç”Ÿã—ãŸã‚‰å‡¦ç†ã‚’ä¸­æ–­ã™ã‚‹ã‹ã©ã†ã‹ã®ãƒ•ãƒ©ã‚°ã€‚trueãªã‚‰å‡¦ç†ä¸­æ–­ã—ã¦ä¾‹å¤–ã‚’ç™ºç”Ÿã•ã›ã¾ã™ã€‚falseãªã‚‰å‡¦ç†ç¶šè¡Œã—ã€ç½®æ›æ–‡å­—åˆ—ã¯ç„¡ã„ã‚‚ã®ã¨ã¿ãªã—ã¾ã™ã€‚Javaã®ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã‚’å‡¦ç†ã™ã‚‹éš›ãªã©ã«ã€ã‚ãˆã¦ falseã«è¨­å®šã—ã¦æ³¢æ‹¬å¼§ã‚’æ‰±ã†ã“ã¨ãŒã§ãã‚‹ã‚ˆã†ã«åˆ‡ã‚Šæ›¿ãˆã‚‹å ´åˆãŒã‚ã‚Šã¾ã™ã€‚]");
+        System.out.println("      å‹[çœŸå½]");
+        System.out.println("      ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤[true]");
         System.out.println("    -log");
-        System.out.println("      à–¾[ƒƒOo—Í‚ğ©“®¶¬‚³‚ê‚éƒ\[ƒXƒR[ƒh‚ÉŠÜ‚ß‚é‚©‚Ç‚¤‚©‚Ìƒtƒ‰ƒOBo—Í‚·‚éê‡‚É‚Í java.util.logging.Logger‚Ì‚İ‚É‘Î‰B]");
-        System.out.println("      Œ^[^‹U]");
-        System.out.println("      ƒfƒtƒHƒ‹ƒg’l[false]");
+        System.out.println("      èª¬æ˜[ãƒ­ã‚°å‡ºåŠ›ã‚’è‡ªå‹•ç”Ÿæˆã•ã‚Œã‚‹ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã«å«ã‚ã‚‹ã‹ã©ã†ã‹ã®ãƒ•ãƒ©ã‚°ã€‚å‡ºåŠ›ã™ã‚‹å ´åˆã«ã¯ java.util.logging.Loggerã®ã¿ã«å¯¾å¿œã€‚]");
+        System.out.println("      å‹[çœŸå½]");
+        System.out.println("      ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤[false]");
         System.out.println("    -propertieswithdirectory");
-        System.out.println("      à–¾[ƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚ğƒfƒBƒŒƒNƒgƒŠ•t‚«‚Åo—Í‚·‚é‚©‚Ç‚¤‚©‚Ìƒtƒ‰ƒOB]");
-        System.out.println("      Œ^[^‹U]");
-        System.out.println("      ƒfƒtƒHƒ‹ƒg’l[true]");
+        System.out.println("      èª¬æ˜[ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªä»˜ãã§å‡ºåŠ›ã™ã‚‹ã‹ã©ã†ã‹ã®ãƒ•ãƒ©ã‚°ã€‚]");
+        System.out.println("      å‹[çœŸå½]");
+        System.out.println("      ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤[true]");
         System.out.println("    -? , -help");
-        System.out.println("      à–¾[g‚¢•û‚ğ•\¦‚µ‚Ü‚·B]");
+        System.out.println("      èª¬æ˜[ä½¿ã„æ–¹ã‚’è¡¨ç¤ºã—ã¾ã™ã€‚]");
     }
 
     /**
-     * ‚±‚Ìƒoƒbƒ`ˆ—ƒNƒ‰ƒX‚Ì“ü—Íƒpƒ‰ƒ[ƒ^‚Ì‘Ã“–«ƒ`ƒFƒbƒN‚ğÀ{‚·‚é‚½‚ß‚Ìƒƒ\ƒbƒh‚Å‚·B
+     * ã“ã®ãƒãƒƒãƒå‡¦ç†ã‚¯ãƒ©ã‚¹ã®å…¥åŠ›ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®å¦¥å½“æ€§ãƒã‚§ãƒƒã‚¯ã‚’å®Ÿæ–½ã™ã‚‹ãŸã‚ã®ãƒ¡ã‚½ãƒƒãƒ‰ã§ã™ã€‚
      *
-     * @param input ƒoƒbƒ`ˆ—‚Ì“ü—Íƒpƒ‰ƒ[ƒ^B
-     * @throws IllegalArgumentException “ü—Í’l‚É•s³‚ªŒ©‚Â‚©‚Á‚½ê‡B
+     * @param input ãƒãƒƒãƒå‡¦ç†ã®å…¥åŠ›ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã€‚
+     * @throws IllegalArgumentException å…¥åŠ›å€¤ã«ä¸æ­£ãŒè¦‹ã¤ã‹ã£ãŸå ´åˆã€‚
      */
     public void validateInput(final BlancoResourceBundleProcessInput input) throws IllegalArgumentException {
         if (input == null) {
-            throw new IllegalArgumentException("BlancoBatchProcessBatchProcess: ˆ—ŠJn¸”sB“ü—Íƒpƒ‰ƒ[ƒ^[input]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B");
+            throw new IllegalArgumentException("BlancoBatchProcessBatchProcess: å‡¦ç†é–‹å§‹å¤±æ•—ã€‚å…¥åŠ›ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[input]ã«nullãŒä¸ãˆã‚‰ã‚Œã¾ã—ãŸã€‚");
         }
         if (input.getMetadir() == null) {
-            throw new IllegalArgumentException("BlancoResourceBundleBatchProcess: ˆ—ŠJn¸”sB“ü—Íƒpƒ‰ƒ[ƒ^[input]‚Ì•K{ƒtƒB[ƒ‹ƒh’l[metadir]‚É’l‚ªİ’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("BlancoResourceBundleBatchProcess: å‡¦ç†é–‹å§‹å¤±æ•—ã€‚å…¥åŠ›ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[input]ã®å¿…é ˆãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰å€¤[metadir]ã«å€¤ãŒè¨­å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚");
         }
     }
 }

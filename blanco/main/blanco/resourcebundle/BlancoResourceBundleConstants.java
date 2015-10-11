@@ -10,36 +10,36 @@
 package blanco.resourcebundle;
 
 /**
- * blancoResourceBundle‚Ì‚½‚ß‚Ì’è”’è‹`
+ * blancoResourceBundleã®ãŸã‚ã®å®šæ•°å®šç¾©
  */
 public class BlancoResourceBundleConstants {
     /**
-     * €–Ú”Ô†:1<br>
-     * ƒvƒƒ_ƒNƒg–¼B‰pš‚Åw’è‚µ‚Ü‚·B
+     * é …ç›®ç•ªå·:1<br>
+     * ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆåã€‚è‹±å­—ã§æŒ‡å®šã—ã¾ã™ã€‚
      */
     public static final String PRODUCT_NAME = "blancoResourceBundle";
 
     /**
-     * €–Ú”Ô†:2<br>
-     * ƒvƒƒ_ƒNƒg–¼‚Ì¬•¶š”ÅB‰pš‚Åw’è‚µ‚Ü‚·B
+     * é …ç›®ç•ªå·:2<br>
+     * ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆåã®å°æ–‡å­—ç‰ˆã€‚è‹±å­—ã§æŒ‡å®šã—ã¾ã™ã€‚
      */
     public static final String PRODUCT_NAME_LOWER = "blancoresourcebundle";
 
     /**
-     * €–Ú”Ô†:3<br>
-     * ƒo[ƒWƒ‡ƒ“”Ô†B
+     * é …ç›®ç•ªå·:3<br>
+     * ãƒãƒ¼ã‚¸ãƒ§ãƒ³ç•ªå·ã€‚
      */
     public static final String VERSION = "1.3.10";
 
     /**
-     * €–Ú”Ô†:4<br>
-     * ˆ—‚Ì‰ß’ö‚Å—˜—p‚³‚ê‚éƒTƒuƒfƒBƒŒƒNƒgƒŠB
+     * é …ç›®ç•ªå·:4<br>
+     * å‡¦ç†ã®éç¨‹ã§åˆ©ç”¨ã•ã‚Œã‚‹ã‚µãƒ–ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã€‚
      */
     public static final String TARGET_SUBDIRECTORY = "/resourcebundle";
 
     /**
-     * €–Ú”Ô†:5<br>
-     * ValueObject‚Ìƒ[ƒNƒtƒ@ƒCƒ‹‚ªŠi”[‚³‚ê‚é‘Š‘ÎƒtƒHƒ‹ƒ_–¼B'/'•t‚Åw’è‚µ‚Ü‚·B
+     * é …ç›®ç•ªå·:5<br>
+     * ValueObjectã®ãƒ¯ãƒ¼ã‚¯ãƒ•ã‚¡ã‚¤ãƒ«ãŒæ ¼ç´ã•ã‚Œã‚‹ç›¸å¯¾ãƒ•ã‚©ãƒ«ãƒ€åã€‚'/'ä»˜ã§æŒ‡å®šã—ã¾ã™ã€‚
      */
     public static final String VALUE_OBJECT_DIRECTORY = "/valueobject";
 }

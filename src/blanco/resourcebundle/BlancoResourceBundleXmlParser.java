@@ -23,20 +23,20 @@ import blanco.xml.bind.valueobject.BlancoXmlDocument;
 import blanco.xml.bind.valueobject.BlancoXmlElement;
 
 /**
- * blancoResourceBundle‚Ì ’†ŠÔXMLƒtƒ@ƒCƒ‹Œ`®‚ğƒp[ƒX(“Ç‚İ‘‚«)‚·‚éƒNƒ‰ƒXB
+ * blancoResourceBundleã® ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«å½¢å¼ã‚’ãƒ‘ãƒ¼ã‚¹(èª­ã¿æ›¸ã)ã™ã‚‹ã‚¯ãƒ©ã‚¹ã€‚
  * 
- * ’ˆÓ: 2007.09.19“_‚Å‚ÍAƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹¶¬‚Ì‚İ‚Å ‚±‚ÌƒNƒ‰ƒX‚ğ—˜—p‚µ‚Ä‚¢‚Ü‚·B
- * ŠO•”‚Ìƒvƒƒ_ƒNƒg‚ªƒŠƒ\[ƒXƒoƒ“ƒhƒ‹‚Ì’†ŠÔƒtƒ@ƒCƒ‹‚ÉƒAƒNƒZƒX‚·‚éÛ‚É‚àA‚±‚ÌƒNƒ‰ƒX‚ğ—˜—p‚·‚é‚±‚Æ‚ğ‘z’è‚µ‚Ä‚¢‚Ü‚·B
+ * æ³¨æ„: 2007.09.19æ™‚ç‚¹ã§ã¯ã€ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ç”Ÿæˆã®ã¿ã§ ã“ã®ã‚¯ãƒ©ã‚¹ã‚’åˆ©ç”¨ã—ã¦ã„ã¾ã™ã€‚
+ * å¤–éƒ¨ã®ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆãŒãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«ã®ä¸­é–“ãƒ•ã‚¡ã‚¤ãƒ«ã«ã‚¢ã‚¯ã‚»ã‚¹ã™ã‚‹éš›ã«ã‚‚ã€ã“ã®ã‚¯ãƒ©ã‚¹ã‚’åˆ©ç”¨ã™ã‚‹ã“ã¨ã‚’æƒ³å®šã—ã¦ã„ã¾ã™ã€‚
  * 
  * @author IGA Tosiki
  */
 public class BlancoResourceBundleXmlParser {
     /**
-     * ’†ŠÔXMLƒtƒ@ƒCƒ‹‚ÌXMLƒhƒLƒ…ƒƒ“ƒg‚ğƒp[ƒX‚µ‚ÄAƒoƒŠƒ…[ƒIƒuƒWƒFƒNƒgî•ñ‚Ì”z—ñ‚ğæ“¾‚µ‚Ü‚·B
+     * ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã®XMLãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã‚’ãƒ‘ãƒ¼ã‚¹ã—ã¦ã€ãƒãƒªãƒ¥ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆæƒ…å ±ã®é…åˆ—ã‚’å–å¾—ã—ã¾ã™ã€‚
      * 
      * @param argMetaXmlSourceFile
-     *            ’†ŠÔXMLƒtƒ@ƒCƒ‹B
-     * @return ƒp[ƒX‚ÌŒ‹‰Ê“¾‚ç‚ê‚½ƒoƒŠƒ…[ƒIƒuƒWƒFƒNƒgî•ñ‚Ì”z—ñB
+     *            ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã€‚
+     * @return ãƒ‘ãƒ¼ã‚¹ã®çµæœå¾—ã‚‰ã‚ŒãŸãƒãƒªãƒ¥ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆæƒ…å ±ã®é…åˆ—ã€‚
      */
     public BlancoResourceBundleBundleStructure[] parse(
             final File argMetaXmlSourceFile) {
@@ -50,25 +50,25 @@ public class BlancoResourceBundleXmlParser {
     }
 
     /**
-     * ’†ŠÔXMLƒtƒ@ƒCƒ‹Œ`®‚ÌXMLƒhƒLƒ…ƒƒ“ƒg‚ğƒp[ƒX‚µ‚ÄAƒoƒŠƒ…[ƒIƒuƒWƒFƒNƒgî•ñ‚Ì”z—ñ‚ğæ“¾‚µ‚Ü‚·B
+     * ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«å½¢å¼ã®XMLãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã‚’ãƒ‘ãƒ¼ã‚¹ã—ã¦ã€ãƒãƒªãƒ¥ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆæƒ…å ±ã®é…åˆ—ã‚’å–å¾—ã—ã¾ã™ã€‚
      * 
      * @param argXmlDocument
-     *            ’†ŠÔXMLƒtƒ@ƒCƒ‹‚ÌXMLƒhƒLƒ…ƒƒ“ƒgB
-     * @return ƒp[ƒX‚ÌŒ‹‰Ê“¾‚ç‚ê‚½ƒoƒŠƒ…[ƒIƒuƒWƒFƒNƒgî•ñ‚Ì”z—ñB
+     *            ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã®XMLãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã€‚
+     * @return ãƒ‘ãƒ¼ã‚¹ã®çµæœå¾—ã‚‰ã‚ŒãŸãƒãƒªãƒ¥ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆæƒ…å ±ã®é…åˆ—ã€‚
      */
     public BlancoResourceBundleBundleStructure[] parse(
             final BlancoXmlDocument argXmlDocument) {
         final List<BlancoResourceBundleBundleStructure> listStructure = new ArrayList<BlancoResourceBundleBundleStructure>();
 
-        // ƒ‹[ƒgƒGƒŒƒƒ“ƒg‚ğæ“¾‚µ‚Ü‚·B
+        // ãƒ«ãƒ¼ãƒˆã‚¨ãƒ¬ãƒ¡ãƒ³ãƒˆã‚’å–å¾—ã—ã¾ã™ã€‚
         final BlancoXmlElement elementRoot = BlancoXmlBindingUtil
                 .getDocumentElement(argXmlDocument);
         if (elementRoot == null) {
-            // ƒ‹[ƒgƒGƒŒƒƒ“ƒg‚ª–³‚¢ê‡‚É‚Íˆ—’†’f‚µ‚Ü‚·B
+            // ãƒ«ãƒ¼ãƒˆã‚¨ãƒ¬ãƒ¡ãƒ³ãƒˆãŒç„¡ã„å ´åˆã«ã¯å‡¦ç†ä¸­æ–­ã—ã¾ã™ã€‚
             return null;
         }
 
-        // sheet(ExcelƒV[ƒg)‚ÌƒŠƒXƒg‚ğæ“¾‚µ‚Ü‚·B
+        // sheet(Excelã‚·ãƒ¼ãƒˆ)ã®ãƒªã‚¹ãƒˆã‚’å–å¾—ã—ã¾ã™ã€‚
         final List<BlancoXmlElement> listSheet = BlancoXmlBindingUtil
                 .getElementsByTagName(elementRoot, "sheet");
 
@@ -78,7 +78,7 @@ public class BlancoResourceBundleXmlParser {
 
             final BlancoResourceBundleBundleStructure objResourceBaseStructure = parseElementSheet(elementSheet);
             if (objResourceBaseStructure != null) {
-                // “¾‚ç‚ê‚½î•ñ‚ğ‹L‰¯‚µ‚Ü‚·B
+                // å¾—ã‚‰ã‚ŒãŸæƒ…å ±ã‚’è¨˜æ†¶ã—ã¾ã™ã€‚
                 listStructure.add(objResourceBaseStructure);
             }
         }
@@ -90,11 +90,11 @@ public class BlancoResourceBundleXmlParser {
     }
 
     /**
-     * ’†ŠÔXMLƒtƒ@ƒCƒ‹Œ`®‚ÌusheetvXMLƒGƒŒƒƒ“ƒg‚ğƒp[ƒX‚µ‚ÄAƒoƒŠƒ…[ƒIƒuƒWƒFƒNƒgî•ñ‚ğæ“¾‚µ‚Ü‚·B
+     * ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«å½¢å¼ã®ã€Œsheetã€XMLã‚¨ãƒ¬ãƒ¡ãƒ³ãƒˆã‚’ãƒ‘ãƒ¼ã‚¹ã—ã¦ã€ãƒãƒªãƒ¥ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆæƒ…å ±ã‚’å–å¾—ã—ã¾ã™ã€‚
      * 
      * @param argElementSheet
-     *            ’†ŠÔXMLƒtƒ@ƒCƒ‹‚ÌusheetvXMLƒGƒŒƒƒ“ƒgB
-     * @return ƒp[ƒX‚ÌŒ‹‰Ê“¾‚ç‚ê‚½ƒoƒŠƒ…[ƒIƒuƒWƒFƒNƒgî•ñBunamev‚ªŒ©‚Â‚©‚ç‚È‚©‚Á‚½ê‡‚É‚Í null‚ğ–ß‚µ‚Ü‚·B
+     *            ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã®ã€Œsheetã€XMLã‚¨ãƒ¬ãƒ¡ãƒ³ãƒˆã€‚
+     * @return ãƒ‘ãƒ¼ã‚¹ã®çµæœå¾—ã‚‰ã‚ŒãŸãƒãƒªãƒ¥ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆæƒ…å ±ã€‚ã€Œnameã€ãŒè¦‹ã¤ã‹ã‚‰ãªã‹ã£ãŸå ´åˆã«ã¯ nullã‚’æˆ»ã—ã¾ã™ã€‚
      */
     public BlancoResourceBundleBundleStructure parseElementSheet(
             final BlancoXmlElement argElementSheet) {
@@ -103,7 +103,7 @@ public class BlancoResourceBundleXmlParser {
                 .getElementsByTagName(argElementSheet,
                         "blancoresourcebundle-common");
         if (listCommon == null || listCommon.size() == 0) {
-            // common‚ª–³‚¢ê‡‚É‚ÍƒXƒLƒbƒv‚µ‚Ü‚·B
+            // commonãŒç„¡ã„å ´åˆã«ã¯ã‚¹ã‚­ãƒƒãƒ—ã—ã¾ã™ã€‚
             return null;
         }
 
@@ -111,7 +111,7 @@ public class BlancoResourceBundleXmlParser {
         resourceBaseStructure.setName(BlancoXmlBindingUtil.getTextContent(
                 elementCommon, "baseName"));
 
-        // ƒJƒŒƒ“ƒgƒƒP[ƒ‹‚ğ‹L‰¯‚µ‚Ü‚·B
+        // ã‚«ãƒ¬ãƒ³ãƒˆãƒ­ã‚±ãƒ¼ãƒ«ã‚’è¨˜æ†¶ã—ã¾ã™ã€‚
         resourceBaseStructure.setCurrentLocale(BlancoXmlBindingUtil
                 .getTextContent(elementCommon, "locale"));
 
@@ -119,7 +119,7 @@ public class BlancoResourceBundleXmlParser {
                 .getElementsByTagName(elementCommon, "locale");
         for (int indexLocale = 0; indexLocale < localeList.size(); indexLocale++) {
             final BlancoXmlElement elementLocale = localeList.get(indexLocale);
-            // CombineŒã‚Ì’†ŠÔXMLã‚Å‚ÍAlocale‚Í•¡”‰ñ“oê‚µ‚Ü‚·B
+            // Combineå¾Œã®ä¸­é–“XMLä¸Šã§ã¯ã€localeã¯è¤‡æ•°å›ç™»å ´ã—ã¾ã™ã€‚
             resourceBaseStructure.getListLocale().add(
                     BlancoXmlBindingUtil.getTextContent(elementLocale));
         }
@@ -173,8 +173,8 @@ public class BlancoResourceBundleXmlParser {
                         resourceMessageItem);
             }
 
-            // ResourceKey ‚ªnull‚Å‚ ‚Á‚Ä‚à’Ç‰Á‚µ‚Ü‚·B
-            // ‚»‚ê‚ÍƒRƒƒ“ƒg—“‚ğ•\Œ»‚·‚é‚à‚Ì‚Å‚·B
+            // ResourceKey ãŒnullã§ã‚ã£ã¦ã‚‚è¿½åŠ ã—ã¾ã™ã€‚
+            // ãã‚Œã¯ã‚³ãƒ¡ãƒ³ãƒˆæ¬„ã‚’è¡¨ç¾ã™ã‚‹ã‚‚ã®ã§ã™ã€‚
 
             resourceBaseStructure.getItemList().add(resourceItemStructure);
         }

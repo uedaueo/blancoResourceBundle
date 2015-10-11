@@ -33,60 +33,60 @@ import blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStrin
 import blanco.resourcebundle.valueobject.BlancoResourceBundleBundleStructure;
 
 /**
- * ’†ŠÔXMLƒtƒ@ƒCƒ‹‚©‚ç ƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚ğ¶¬‚·‚éˆ—‚Ì“à•”ˆ—‚Å‚·B
+ * ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰ ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ç”Ÿæˆã™ã‚‹å‡¦ç†ã®å†…éƒ¨å‡¦ç†ã§ã™ã€‚
  * 
- * ‚±‚Ìƒ\[ƒXƒR[ƒh‚ÍblancoResourceBundle‚Ìˆê•”‚Å‚·B<br>
- * XML‚ÌDOMƒGƒŒƒƒ“ƒg‚ğ“ü—Í‚Æ‚µ‚Äƒtƒ@ƒCƒ‹‚ğo—Í‚µ‚Ü‚·B <br>
+ * ã“ã®ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã¯blancoResourceBundleã®ä¸€éƒ¨ã§ã™ã€‚<br>
+ * XMLã®DOMã‚¨ãƒ¬ãƒ¡ãƒ³ãƒˆã‚’å…¥åŠ›ã¨ã—ã¦ãƒ•ã‚¡ã‚¤ãƒ«ã‚’å‡ºåŠ›ã—ã¾ã™ã€‚ <br>
  * 
- * “®ì‚Ì‘O’ñğŒ:BlancoResourceBundleXmlValidatorƒNƒ‰ƒX‚Å–‘O‚Éƒ`ƒFƒbƒN‚³‚ê‚Ä‚¢‚é‚à‚Ì‚Æ‘z’è‚µ‚Ü‚·B
+ * å‹•ä½œã®å‰ææ¡ä»¶:BlancoResourceBundleXmlValidatorã‚¯ãƒ©ã‚¹ã§äº‹å‰ã«ãƒã‚§ãƒƒã‚¯ã•ã‚Œã¦ã„ã‚‹ã‚‚ã®ã¨æƒ³å®šã—ã¾ã™ã€‚
  * 
  * @author IGA Tosiki
  */
 public class BlancoResourceBundleExpandResourceBundle {
     /**
-     * ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹ƒAƒNƒZƒT‚ÌƒCƒ“ƒXƒ^ƒ“ƒXB
+     * ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«ã‚¢ã‚¯ã‚»ã‚µã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã€‚
      */
     private final BlancoResourceBundleResourceBundle fBundle = new BlancoResourceBundleResourceBundle();
 
     /**
-     * “à•”“I‚É—˜—p‚·‚éblancoCg—pƒtƒ@ƒNƒgƒŠB
+     * å†…éƒ¨çš„ã«åˆ©ç”¨ã™ã‚‹blancoCgç”¨ãƒ•ã‚¡ã‚¯ãƒˆãƒªã€‚
      */
     private BlancoCgObjectFactory fCgFactory = null;
 
     /**
-     * “à•”“I‚É—˜—p‚·‚éblancoCg—pƒ\[ƒXƒtƒ@ƒCƒ‹î•ñB
+     * å†…éƒ¨çš„ã«åˆ©ç”¨ã™ã‚‹blancoCgç”¨ã‚½ãƒ¼ã‚¹ãƒ•ã‚¡ã‚¤ãƒ«æƒ…å ±ã€‚
      */
     private BlancoCgSourceFile fCgSourceFile = null;
 
     /**
-     * “à•”“I‚É—˜—p‚·‚éblancoCg—pƒNƒ‰ƒXî•ñB
+     * å†…éƒ¨çš„ã«åˆ©ç”¨ã™ã‚‹blancoCgç”¨ã‚¯ãƒ©ã‚¹æƒ…å ±ã€‚
      */
     private BlancoCgClass fCgClass = null;
 
     /**
-     * w’è‚Ìî•ñ‚ğƒ\[ƒXƒR[ƒh‚É“WŠJ‚µ‚Ü‚·B
+     * æŒ‡å®šã®æƒ…å ±ã‚’ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã«å±•é–‹ã—ã¾ã™ã€‚
      * 
-     * ƒ\[ƒXƒR[ƒho—Íƒtƒ‰ƒO‚É‚æ‚Á‚ÄAƒ\[ƒXƒR[ƒh‚ğo—Í‚·‚é‚©‚Ç‚¤‚©‚ªØ‚è‘Ö‚í‚è‚Ü‚·B
+     * ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰å‡ºåŠ›ãƒ•ãƒ©ã‚°ã«ã‚ˆã£ã¦ã€ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã‚’å‡ºåŠ›ã™ã‚‹ã‹ã©ã†ã‹ãŒåˆ‡ã‚Šæ›¿ã‚ã‚Šã¾ã™ã€‚
      * 
      * @param argStructure
-     *            \‘¢B
+     *            æ§‹é€ ã€‚
      * @param argDirectoryTarget
-     *            o—Íæ‚Ìƒ^[ƒQƒbƒgƒfƒBƒŒƒNƒgƒŠB
+     *            å‡ºåŠ›å…ˆã®ã‚¿ãƒ¼ã‚²ãƒƒãƒˆãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã€‚
      * @param argEncoding
-     *            ¶¬‚·‚éƒ\[ƒXƒR[ƒh‚Ì•¶šƒGƒ“ƒR[ƒfƒBƒ“ƒOB
+     *            ç”Ÿæˆã™ã‚‹ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã®æ–‡å­—ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã€‚
      * @param argIsFailOnMessageFormatError
-     *            ƒƒbƒZ[ƒW•¶š—ñ‚ğMessageFormat‚É‚æ‚éƒp[ƒX‚ğs‚Á‚½Û‚Ì—áŠO‚ª”­¶‚µ‚½‚çˆ—‚ğ’†’f‚·‚é‚©‚Ç‚¤‚©‚Ìƒtƒ‰ƒO‚ğİ’è‚µ‚Ü‚·
-     *            B
+     *            ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸æ–‡å­—åˆ—ã‚’MessageFormatã«ã‚ˆã‚‹ãƒ‘ãƒ¼ã‚¹ã‚’è¡Œã£ãŸéš›ã®ä¾‹å¤–ãŒç™ºç”Ÿã—ãŸã‚‰å‡¦ç†ã‚’ä¸­æ–­ã™ã‚‹ã‹ã©ã†ã‹ã®ãƒ•ãƒ©ã‚°ã‚’è¨­å®šã—ã¾ã™
+     *            ã€‚
      * @param argIsLog
-     *            ƒƒOo—Í‚ğ©“®¶¬‚³‚ê‚éƒ\[ƒXƒR[ƒh‚ÉŠÜ‚ß‚é‚©‚Ç‚¤‚©B
+     *            ãƒ­ã‚°å‡ºåŠ›ã‚’è‡ªå‹•ç”Ÿæˆã•ã‚Œã‚‹ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã«å«ã‚ã‚‹ã‹ã©ã†ã‹ã€‚
      * @param argPropertieswithdirectory
-     *            ƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‚ğƒfƒBƒŒƒNƒgƒŠ•t‚«‚Åo—Í‚·‚é‚©‚Ç‚¤‚©B
+     *            ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªä»˜ãã§å‡ºåŠ›ã™ã‚‹ã‹ã©ã†ã‹ã€‚
      */
     public void expand(final BlancoResourceBundleBundleStructure argStructure,
             final File argDirectoryTarget, final String argEncoding,
             final boolean argIsFailOnMessageFormatError,
             final boolean argIsLog, final boolean argPropertieswithdirectory) {
-        // ƒNƒ‰ƒX–¼‚Í–¼‘O•ÏŒ`‚³‚¹‚Ü‚·B
+        // ã‚¯ãƒ©ã‚¹åã¯åå‰å¤‰å½¢ã•ã›ã¾ã™ã€‚
         final String className = BlancoNameAdjuster.toClassName(argStructure
                 .getName())
                 + (argStructure.getSuffix() == null ? "" : argStructure
@@ -95,7 +95,7 @@ public class BlancoResourceBundleExpandResourceBundle {
         final List<java.lang.String> listKnownLocale = new ArrayList<java.lang.String>();
         final Map<java.lang.String, java.lang.String> mapBundle = new HashMap<java.lang.String, java.lang.String>();
 
-        // ]—ˆ‚ÆŒİŠ·«‚ğ‚½‚¹‚é‚½‚ßA/mainƒTƒuƒtƒHƒ‹ƒ_‚Éo—Í‚µ‚Ü‚·B
+        // å¾“æ¥ã¨äº’æ›æ€§ã‚’æŒãŸã›ã‚‹ãŸã‚ã€/mainã‚µãƒ–ãƒ•ã‚©ãƒ«ãƒ€ã«å‡ºåŠ›ã—ã¾ã™ã€‚
         final File fileBlancoMain = new File(argDirectoryTarget
                 .getAbsolutePath()
                 + "/main");
@@ -108,7 +108,7 @@ public class BlancoResourceBundleExpandResourceBundle {
         fCgClass = fCgFactory.createClass(className, null);
         fCgSourceFile.getClassList().add(fCgClass);
 
-        // ƒAƒNƒZƒX‚ğİ’è‚µ‚Ü‚·B
+        // ã‚¢ã‚¯ã‚»ã‚¹ã‚’è¨­å®šã—ã¾ã™ã€‚
         fCgClass.setAccess(argStructure.getAccess());
 
         if (argStructure.getDescription() != null) {
@@ -161,7 +161,7 @@ public class BlancoResourceBundleExpandResourceBundle {
                                 fBundle.getExpandresourceSrc022(argStructure
                                         .getName()));
 
-                // í‚ÉƒCƒ“ƒ|[ƒg‚ª•K—v‚Å‚·B
+                // å¸¸ã«ã‚¤ãƒ³ãƒãƒ¼ãƒˆãŒå¿…è¦ã§ã™ã€‚
                 fCgSourceFile.getImportList().add(
                         "java.util.MissingResourceException");
 
@@ -253,14 +253,14 @@ public class BlancoResourceBundleExpandResourceBundle {
             }
 
             {
-                // getResourceBundleƒƒ\ƒbƒh
+                // getResourceBundleãƒ¡ã‚½ãƒƒãƒ‰
                 final BlancoCgMethod method = fCgFactory.createMethod(
-                        "getResourceBundle", "“à•”“I‚É•Û‚µ‚Ä‚¢‚éƒŠƒ\[ƒXƒoƒ“ƒhƒ‹ƒIƒuƒWƒFƒNƒg‚ğæ“¾‚µ‚Ü‚·B");
+                        "getResourceBundle", "å†…éƒ¨çš„ã«ä¿æŒã—ã¦ã„ã‚‹ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å–å¾—ã—ã¾ã™ã€‚");
                 fCgClass.getMethodList().add(method);
 
                 method.setReturn(fCgFactory
                         .createReturn("java.util.ResourceBundle",
-                                "“à•”“I‚É•Û‚µ‚Ä‚¢‚éƒŠƒ\[ƒXƒoƒ“ƒhƒ‹ƒIƒuƒWƒFƒNƒgB"));
+                                "å†…éƒ¨çš„ã«ä¿æŒã—ã¦ã„ã‚‹ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã€‚"));
 
                 final List<java.lang.String> listLine = method.getLineList();
 
@@ -299,7 +299,7 @@ public class BlancoResourceBundleExpandResourceBundle {
                                             + resourceStringStructure
                                                     .getLocale() + ")<br>");
 
-                    // ˆ—Ï‚İ‚ÌƒƒP[ƒ‹‚Å‚ ‚é‚±‚Æ‚ğ‹L‰¯‚µ‚Ü‚·B
+                    // å‡¦ç†æ¸ˆã¿ã®ãƒ­ã‚±ãƒ¼ãƒ«ã§ã‚ã‚‹ã“ã¨ã‚’è¨˜æ†¶ã—ã¾ã™ã€‚
                     mapProcessedLocale.put(resourceStringStructure.getLocale(),
                             resourceStringStructure.getLocale());
                     if (mapBundle.get(itemStructure.getKey()) == null) {
@@ -307,7 +307,7 @@ public class BlancoResourceBundleExpandResourceBundle {
                                 resourceStringStructure.getResourceString());
                     }
 
-                    // ƒtƒH[ƒ}ƒbƒg—áŠO‚Í”­¶‚·‚é‚±‚Æ‚Í‘z’è‚µ‚Ü‚¹‚ñB‚È‚º‚È‚ç–‘Oƒ`ƒFƒbƒN‚É‚æ‚èŠù‚É‰ğŒˆ‚³‚ê‚Ä‚¢‚é‚©‚ç‚Å‚·B
+                    // ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆä¾‹å¤–ã¯ç™ºç”Ÿã™ã‚‹ã“ã¨ã¯æƒ³å®šã—ã¾ã›ã‚“ã€‚ãªãœãªã‚‰äº‹å‰ãƒã‚§ãƒƒã‚¯ã«ã‚ˆã‚Šæ—¢ã«è§£æ±ºã•ã‚Œã¦ã„ã‚‹ã‹ã‚‰ã§ã™ã€‚
                     final Format[] formatList = BlancoResourceBundleUtil
                             .getFormatsByArgumentIndex(BlancoStringUtil
                                     .null2Blank(resourceStringStructure
@@ -316,23 +316,23 @@ public class BlancoResourceBundleExpandResourceBundle {
                     for (int indexFormat = 0; indexFormat < formatList.length; indexFormat++) {
                         String strArgType = "java.lang.String";
                         if (formatList[indexFormat] == null) {
-                            // ƒtƒH[ƒ}ƒbƒg‚È‚µ:
-                            // java.lang.String‚Ö‚Ìƒ}ƒbƒv‚ª‘Ã“–
+                            // ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆãªã—:
+                            // java.lang.Stringã¸ã®ãƒãƒƒãƒ—ãŒå¦¥å½“
                             strArgType = "java.lang.String";
                         } else if (formatList[indexFormat] instanceof java.text.NumberFormat) {
-                            // java.math.BigDecimal‚Ö‚Ìƒ}ƒbƒv‚ª‘Ã“–
+                            // java.math.BigDecimalã¸ã®ãƒãƒƒãƒ—ãŒå¦¥å½“
                             strArgType = "java.math.BigDecimal";
                         } else if (formatList[indexFormat] instanceof java.text.DateFormat) {
-                            // java.util.Date‚Ö‚Ìƒ}ƒbƒv‚ª‘Ã“–
+                            // java.util.Dateã¸ã®ãƒãƒƒãƒ—ãŒå¦¥å½“
                             strArgType = "java.util.Date";
                         } else if (formatList[indexFormat] instanceof java.text.ChoiceFormat) {
-                            // int‚Ö‚Ìƒ}ƒbƒv‚ª‘Ã“–
+                            // intã¸ã®ãƒãƒƒãƒ—ãŒå¦¥å½“
                             strArgType = "int";
                         } else {
                             strArgType = "java.lang.String";
                         }
                         if (indexResourceString == 0) {
-                            // ‰‰ñ‚Ì‚İƒƒ\ƒbƒhˆø”‚ğ¶¬
+                            // åˆå›ã®ã¿ãƒ¡ã‚½ãƒƒãƒ‰å¼•æ•°ã‚’ç”Ÿæˆ
                             methodGet
                                     .getParameterList()
                                     .add(
@@ -353,13 +353,13 @@ public class BlancoResourceBundleExpandResourceBundle {
                                             .getKey())));
                 }
 
-                // ƒƒP[ƒ‹‚ª‘S‚Ä‘µ‚Á‚Ä‚¢‚é‚©‚Ç‚¤‚©‚Ìƒ`ƒFƒbƒN‚ğs‚¢‚Ü‚·B
+                // ãƒ­ã‚±ãƒ¼ãƒ«ãŒå…¨ã¦æƒã£ã¦ã„ã‚‹ã‹ã©ã†ã‹ã®ãƒã‚§ãƒƒã‚¯ã‚’è¡Œã„ã¾ã™ã€‚
                 for (int indexCheck = 0; indexCheck < listKnownLocale.size(); indexCheck++) {
                     final String localeCheck = (String) listKnownLocale
                             .get(indexCheck);
                     final Object objCheck = mapProcessedLocale.get(localeCheck);
                     if (objCheck == null) {
-                        // ‚»‚ë‚Á‚Ä‚¢‚È‚¢ê‡‚Å‚ ‚Á‚Ä‚àAJavaDoc‚Ö‚ÌŒxo—Í‚É‚Æ‚Ç‚ß‚Ü‚·B
+                        // ãã‚ã£ã¦ã„ãªã„å ´åˆã§ã‚ã£ã¦ã‚‚ã€JavaDocã¸ã®è­¦å‘Šå‡ºåŠ›ã«ã¨ã©ã‚ã¾ã™ã€‚
                         methodGet.getLangDoc().getDescriptionList().add(
                                 fBundle.getExpandresourceSrc103(localeCheck));
                     }
@@ -429,7 +429,7 @@ public class BlancoResourceBundleExpandResourceBundle {
             }
         }
 
-        // ƒ\[ƒXƒR[ƒh‚ğÀÛ‚É¶¬‚µ‚Ü‚·B
+        // ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã‚’å®Ÿéš›ã«ç”Ÿæˆã—ã¾ã™ã€‚
         BlancoCgTransformerFactory.getJavaSourceTransformer().transform(
                 fCgSourceFile, fileBlancoMain);
     }

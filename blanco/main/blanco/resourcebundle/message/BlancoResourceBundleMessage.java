@@ -1,329 +1,329 @@
 /*
- * ‚±‚Ìƒ\[ƒXƒR[ƒh‚Í blanco Framework‚É‚æ‚Á‚ÄŽ©“®¶¬‚³‚ê‚Ä‚¢‚Ü‚·B
+ * ã“ã®ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã¯ blanco Frameworkã«ã‚ˆã£ã¦è‡ªå‹•ç”Ÿæˆã•ã‚Œã¦ã„ã¾ã™ã€‚
  */
 package blanco.resourcebundle.message;
 
 /**
- * blancoResourceBundle‚ÌƒƒbƒZ[ƒWƒNƒ‰ƒXB
+ * blancoResourceBundleã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚¯ãƒ©ã‚¹ã€‚
  */
 public class BlancoResourceBundleMessage {
     /**
-     * ƒƒbƒZ[ƒW‚ðƒvƒƒpƒeƒBƒtƒ@ƒCƒ‹‘Î‰ž‚³‚¹‚é‚½‚ß‚Ì“à•”“I‚É—˜—p‚·‚éƒŠƒ\[ƒXƒoƒ“ƒhƒ‹ƒNƒ‰ƒXB
+     * ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ãƒ•ã‚¡ã‚¤ãƒ«å¯¾å¿œã•ã›ã‚‹ãŸã‚ã®å†…éƒ¨çš„ã«åˆ©ç”¨ã™ã‚‹ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«ã‚¯ãƒ©ã‚¹ã€‚
      */
     protected final BlancoResourceBundleMessageResourceBundle fBundle = new BlancoResourceBundleMessageResourceBundle();
 
     /**
-     * ƒƒbƒZ[ƒW’è‹`ID[BlancoResourceBundle]AƒL[[MBRBI001]‚Ì•¶Žš—ñ‚ðŽæ“¾‚µ‚Ü‚·B
+     * ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å®šç¾©ID[BlancoResourceBundle]ã€ã‚­ãƒ¼[MBRBI001]ã®æ–‡å­—åˆ—ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
      * No.2:
-     * •¶Žš—ñ[ƒŠƒ\[ƒX’è‹`[{0}]‚ÌƒpƒbƒP[ƒW‚ÌŽw’è‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñB]
+     * æ–‡å­—åˆ—[ãƒªã‚½ãƒ¼ã‚¹å®šç¾©[{0}]ã®ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã®æŒ‡å®šãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚]
      *
-     * @param arg0 ’uŠ·•¶Žš—ñ{0}‚Ì’lB
-     * @return ƒƒbƒZ[ƒW•¶Žš—ñB
+     * @param arg0 ç½®æ›æ–‡å­—åˆ—{0}ã®å€¤ã€‚
+     * @return ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸æ–‡å­—åˆ—ã€‚
      */
     public String getMbrbi001(final String arg0) {
         if (arg0 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi001]‚Ìƒpƒ‰ƒ[ƒ^[arg0]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi001]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg0]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
 
         return "[MBRBI001] " + fBundle.getMbrbi001(arg0);
     }
 
     /**
-     * ƒƒbƒZ[ƒW’è‹`ID[BlancoResourceBundle]AƒL[[MBRBI002]‚Ì•¶Žš—ñ‚ðŽæ“¾‚µ‚Ü‚·B
+     * ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å®šç¾©ID[BlancoResourceBundle]ã€ã‚­ãƒ¼[MBRBI002]ã®æ–‡å­—åˆ—ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
      * No.3:
-     * •¶Žš—ñ[ƒŠƒ\[ƒX’è‹`[{0}]‚ÉˆÙ‚È‚éƒpƒbƒP[ƒW‚ÌŽw’è[{1}]‚Æ[{2}]‚ªŒ©‚Â‚©‚è‚Ü‚µ‚½B]
+     * æ–‡å­—åˆ—[ãƒªã‚½ãƒ¼ã‚¹å®šç¾©[{0}]ã«ç•°ãªã‚‹ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã®æŒ‡å®š[{1}]ã¨[{2}]ãŒè¦‹ã¤ã‹ã‚Šã¾ã—ãŸã€‚]
      *
-     * @param arg0 ’uŠ·•¶Žš—ñ{0}‚Ì’lB
-     * @param arg1 ’uŠ·•¶Žš—ñ{1}‚Ì’lB
-     * @param arg2 ’uŠ·•¶Žš—ñ{2}‚Ì’lB
-     * @return ƒƒbƒZ[ƒW•¶Žš—ñB
+     * @param arg0 ç½®æ›æ–‡å­—åˆ—{0}ã®å€¤ã€‚
+     * @param arg1 ç½®æ›æ–‡å­—åˆ—{1}ã®å€¤ã€‚
+     * @param arg2 ç½®æ›æ–‡å­—åˆ—{2}ã®å€¤ã€‚
+     * @return ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸æ–‡å­—åˆ—ã€‚
      */
     public String getMbrbi002(final String arg0, final String arg1, final String arg2) {
         if (arg0 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi002]‚Ìƒpƒ‰ƒ[ƒ^[arg0]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi002]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg0]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
         if (arg1 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi002]‚Ìƒpƒ‰ƒ[ƒ^[arg1]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi002]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg1]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
         if (arg2 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi002]‚Ìƒpƒ‰ƒ[ƒ^[arg2]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi002]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg2]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
 
         return "[MBRBI002] " + fBundle.getMbrbi002(arg0, arg1, arg2);
     }
 
     /**
-     * ƒƒbƒZ[ƒW’è‹`ID[BlancoResourceBundle]AƒL[[MBRBI003]‚Ì•¶Žš—ñ‚ðŽæ“¾‚µ‚Ü‚·B
+     * ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å®šç¾©ID[BlancoResourceBundle]ã€ã‚­ãƒ¼[MBRBI003]ã®æ–‡å­—åˆ—ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
      * No.4:
-     * •¶Žš—ñ[ˆÙ‚È‚éƒTƒtƒBƒbƒNƒX[{0}]‚Æ[{1}]‚ª“¯ˆê‚ÌÝ’èƒtƒ@ƒCƒ‹ã‚ÉŒ©‚Â‚©‚è‚Ü‚µ‚½B]
+     * æ–‡å­—åˆ—[ç•°ãªã‚‹ã‚µãƒ•ã‚£ãƒƒã‚¯ã‚¹[{0}]ã¨[{1}]ãŒåŒä¸€ã®è¨­å®šãƒ•ã‚¡ã‚¤ãƒ«ä¸Šã«è¦‹ã¤ã‹ã‚Šã¾ã—ãŸã€‚]
      *
-     * @param arg0 ’uŠ·•¶Žš—ñ{0}‚Ì’lB
-     * @param arg1 ’uŠ·•¶Žš—ñ{1}‚Ì’lB
-     * @return ƒƒbƒZ[ƒW•¶Žš—ñB
+     * @param arg0 ç½®æ›æ–‡å­—åˆ—{0}ã®å€¤ã€‚
+     * @param arg1 ç½®æ›æ–‡å­—åˆ—{1}ã®å€¤ã€‚
+     * @return ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸æ–‡å­—åˆ—ã€‚
      */
     public String getMbrbi003(final String arg0, final String arg1) {
         if (arg0 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi003]‚Ìƒpƒ‰ƒ[ƒ^[arg0]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi003]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg0]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
         if (arg1 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi003]‚Ìƒpƒ‰ƒ[ƒ^[arg1]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi003]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg1]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
 
         return "[MBRBI003] " + fBundle.getMbrbi003(arg0, arg1);
     }
 
     /**
-     * ƒƒbƒZ[ƒW’è‹`ID[BlancoResourceBundle]AƒL[[MBRBI004]‚Ì•¶Žš—ñ‚ðŽæ“¾‚µ‚Ü‚·B
+     * ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å®šç¾©ID[BlancoResourceBundle]ã€ã‚­ãƒ¼[MBRBI004]ã®æ–‡å­—åˆ—ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
      * No.5:
-     * •¶Žš—ñ[ƒŠƒ\[ƒX’è‹`[{0}]‚ÌƒƒP[ƒ‹‚ÌŽw’è‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñB]
+     * æ–‡å­—åˆ—[ãƒªã‚½ãƒ¼ã‚¹å®šç¾©[{0}]ã®ãƒ­ã‚±ãƒ¼ãƒ«ã®æŒ‡å®šãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚]
      *
-     * @param arg0 ’uŠ·•¶Žš—ñ{0}‚Ì’lB
-     * @return ƒƒbƒZ[ƒW•¶Žš—ñB
+     * @param arg0 ç½®æ›æ–‡å­—åˆ—{0}ã®å€¤ã€‚
+     * @return ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸æ–‡å­—åˆ—ã€‚
      */
     public String getMbrbi004(final String arg0) {
         if (arg0 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi004]‚Ìƒpƒ‰ƒ[ƒ^[arg0]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi004]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg0]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
 
         return "[MBRBI004] " + fBundle.getMbrbi004(arg0);
     }
 
     /**
-     * ƒƒbƒZ[ƒW’è‹`ID[BlancoResourceBundle]AƒL[[MBRBI005]‚Ì•¶Žš—ñ‚ðŽæ“¾‚µ‚Ü‚·B
+     * ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å®šç¾©ID[BlancoResourceBundle]ã€ã‚­ãƒ¼[MBRBI005]ã®æ–‡å­—åˆ—ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
      * No.6:
-     * •¶Žš—ñ[Šî’ê–¼[{0}] ‚ÍŠù‚ÉƒƒP[ƒ‹[{1}]‚Åˆ—‚³‚ê‚Ä‚¢‚Ü‚·B]
+     * æ–‡å­—åˆ—[åŸºåº•å[{0}] ã¯æ—¢ã«ãƒ­ã‚±ãƒ¼ãƒ«[{1}]ã§å‡¦ç†ã•ã‚Œã¦ã„ã¾ã™ã€‚]
      *
-     * @param arg0 ’uŠ·•¶Žš—ñ{0}‚Ì’lB
-     * @param arg1 ’uŠ·•¶Žš—ñ{1}‚Ì’lB
-     * @return ƒƒbƒZ[ƒW•¶Žš—ñB
+     * @param arg0 ç½®æ›æ–‡å­—åˆ—{0}ã®å€¤ã€‚
+     * @param arg1 ç½®æ›æ–‡å­—åˆ—{1}ã®å€¤ã€‚
+     * @return ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸æ–‡å­—åˆ—ã€‚
      */
     public String getMbrbi005(final String arg0, final String arg1) {
         if (arg0 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi005]‚Ìƒpƒ‰ƒ[ƒ^[arg0]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi005]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg0]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
         if (arg1 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi005]‚Ìƒpƒ‰ƒ[ƒ^[arg1]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi005]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg1]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
 
         return "[MBRBI005] " + fBundle.getMbrbi005(arg0, arg1);
     }
 
     /**
-     * ƒƒbƒZ[ƒW’è‹`ID[BlancoResourceBundle]AƒL[[MBRBI006]‚Ì•¶Žš—ñ‚ðŽæ“¾‚µ‚Ü‚·B
+     * ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å®šç¾©ID[BlancoResourceBundle]ã€ã‚­ãƒ¼[MBRBI006]ã®æ–‡å­—åˆ—ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
      * No.7:
-     * •¶Žš—ñ[ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹’è‹`[{0}]‚ÌƒƒP[ƒ‹[{1}]‚ªd•¡‚µ‚Ä’è‹`‚³‚ê‚Ä‚¢‚Ü‚·B]
+     * æ–‡å­—åˆ—[ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«å®šç¾©[{0}]ã®ãƒ­ã‚±ãƒ¼ãƒ«[{1}]ãŒé‡è¤‡ã—ã¦å®šç¾©ã•ã‚Œã¦ã„ã¾ã™ã€‚]
      *
-     * @param arg0 ’uŠ·•¶Žš—ñ{0}‚Ì’lB
-     * @param arg1 ’uŠ·•¶Žš—ñ{1}‚Ì’lB
-     * @return ƒƒbƒZ[ƒW•¶Žš—ñB
+     * @param arg0 ç½®æ›æ–‡å­—åˆ—{0}ã®å€¤ã€‚
+     * @param arg1 ç½®æ›æ–‡å­—åˆ—{1}ã®å€¤ã€‚
+     * @return ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸æ–‡å­—åˆ—ã€‚
      */
     public String getMbrbi006(final String arg0, final String arg1) {
         if (arg0 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi006]‚Ìƒpƒ‰ƒ[ƒ^[arg0]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi006]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg0]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
         if (arg1 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi006]‚Ìƒpƒ‰ƒ[ƒ^[arg1]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi006]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg1]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
 
         return "[MBRBI006] " + fBundle.getMbrbi006(arg0, arg1);
     }
 
     /**
-     * ƒƒbƒZ[ƒW’è‹`ID[BlancoResourceBundle]AƒL[[MBRBI007]‚Ì•¶Žš—ñ‚ðŽæ“¾‚µ‚Ü‚·B
+     * ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å®šç¾©ID[BlancoResourceBundle]ã€ã‚­ãƒ¼[MBRBI007]ã®æ–‡å­—åˆ—ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
      * No.8:
-     * •¶Žš—ñ[ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹’è‹`[{0}]‚ÌƒƒP[ƒ‹[{1}]‚ÌƒŠƒ\[ƒXID[{2}]‚ªd•¡‚µ‚Ä’è‹`‚³‚ê‚Ä‚¢‚Ü‚·B]
+     * æ–‡å­—åˆ—[ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«å®šç¾©[{0}]ã®ãƒ­ã‚±ãƒ¼ãƒ«[{1}]ã®ãƒªã‚½ãƒ¼ã‚¹ID[{2}]ãŒé‡è¤‡ã—ã¦å®šç¾©ã•ã‚Œã¦ã„ã¾ã™ã€‚]
      *
-     * @param arg0 ’uŠ·•¶Žš—ñ{0}‚Ì’lB
-     * @param arg1 ’uŠ·•¶Žš—ñ{1}‚Ì’lB
-     * @param arg2 ’uŠ·•¶Žš—ñ{2}‚Ì’lB
-     * @return ƒƒbƒZ[ƒW•¶Žš—ñB
+     * @param arg0 ç½®æ›æ–‡å­—åˆ—{0}ã®å€¤ã€‚
+     * @param arg1 ç½®æ›æ–‡å­—åˆ—{1}ã®å€¤ã€‚
+     * @param arg2 ç½®æ›æ–‡å­—åˆ—{2}ã®å€¤ã€‚
+     * @return ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸æ–‡å­—åˆ—ã€‚
      */
     public String getMbrbi007(final String arg0, final String arg1, final String arg2) {
         if (arg0 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi007]‚Ìƒpƒ‰ƒ[ƒ^[arg0]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi007]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg0]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
         if (arg1 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi007]‚Ìƒpƒ‰ƒ[ƒ^[arg1]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi007]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg1]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
         if (arg2 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi007]‚Ìƒpƒ‰ƒ[ƒ^[arg2]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi007]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg2]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
 
         return "[MBRBI007] " + fBundle.getMbrbi007(arg0, arg1, arg2);
     }
 
     /**
-     * ƒƒbƒZ[ƒW’è‹`ID[BlancoResourceBundle]AƒL[[MBRBI008]‚Ì•¶Žš—ñ‚ðŽæ“¾‚µ‚Ü‚·B
+     * ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å®šç¾©ID[BlancoResourceBundle]ã€ã‚­ãƒ¼[MBRBI008]ã®æ–‡å­—åˆ—ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
      * No.9:
-     * •¶Žš—ñ[Šî’ê–¼[{0}] ƒƒP[ƒ‹[{1}] ƒL[[{2}] •¶Žš—ñ[{3}]‚Ì‰ðÍ‚ÉŽ¸”s‚µ‚Ü‚µ‚½B•¶Žš—ñ‚ª•s³‚Å‚ ‚é‰Â”\«‚ª‚ ‚è‚Ü‚·B]
+     * æ–‡å­—åˆ—[åŸºåº•å[{0}] ãƒ­ã‚±ãƒ¼ãƒ«[{1}] ã‚­ãƒ¼[{2}] æ–‡å­—åˆ—[{3}]ã®è§£æžã«å¤±æ•—ã—ã¾ã—ãŸã€‚æ–‡å­—åˆ—ãŒä¸æ­£ã§ã‚ã‚‹å¯èƒ½æ€§ãŒã‚ã‚Šã¾ã™ã€‚]
      *
-     * @param arg0 ’uŠ·•¶Žš—ñ{0}‚Ì’lB
-     * @param arg1 ’uŠ·•¶Žš—ñ{1}‚Ì’lB
-     * @param arg2 ’uŠ·•¶Žš—ñ{2}‚Ì’lB
-     * @param arg3 ’uŠ·•¶Žš—ñ{3}‚Ì’lB
-     * @return ƒƒbƒZ[ƒW•¶Žš—ñB
+     * @param arg0 ç½®æ›æ–‡å­—åˆ—{0}ã®å€¤ã€‚
+     * @param arg1 ç½®æ›æ–‡å­—åˆ—{1}ã®å€¤ã€‚
+     * @param arg2 ç½®æ›æ–‡å­—åˆ—{2}ã®å€¤ã€‚
+     * @param arg3 ç½®æ›æ–‡å­—åˆ—{3}ã®å€¤ã€‚
+     * @return ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸æ–‡å­—åˆ—ã€‚
      */
     public String getMbrbi008(final String arg0, final String arg1, final String arg2, final String arg3) {
         if (arg0 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi008]‚Ìƒpƒ‰ƒ[ƒ^[arg0]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi008]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg0]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
         if (arg1 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi008]‚Ìƒpƒ‰ƒ[ƒ^[arg1]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi008]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg1]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
         if (arg2 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi008]‚Ìƒpƒ‰ƒ[ƒ^[arg2]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi008]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg2]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
         if (arg3 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi008]‚Ìƒpƒ‰ƒ[ƒ^[arg3]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi008]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg3]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
 
         return "[MBRBI008] " + fBundle.getMbrbi008(arg0, arg1, arg2, arg3);
     }
 
     /**
-     * ƒƒbƒZ[ƒW’è‹`ID[BlancoResourceBundle]AƒL[[MBRBI009]‚Ì•¶Žš—ñ‚ðŽæ“¾‚µ‚Ü‚·B
+     * ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å®šç¾©ID[BlancoResourceBundle]ã€ã‚­ãƒ¼[MBRBI009]ã®æ–‡å­—åˆ—ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
      * No.10:
-     * •¶Žš—ñ[ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹’è‹`[{0}]‚ÌƒƒP[ƒ‹[{1}]‚ÌƒŠƒ\[ƒXID[{2}]‚ÌƒƒbƒZ[ƒW“à‚É‚¨‚¢‚Äƒpƒ‰ƒ[ƒ^‚ÌŽw’è‚ª({3})ŒÂ‚ ‚è‚Ü‚·‚ªA‚±‚ê‚Ü‚ÅŒ»‚ê‚Ä‚¢‚½•¶Žš—ñ‚É‚Íƒpƒ‰ƒ[ƒ^‚ÌŽw’è‚ª‚ ‚è‚Ü‚¹‚ñ‚Å‚µ‚½B]
+     * æ–‡å­—åˆ—[ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«å®šç¾©[{0}]ã®ãƒ­ã‚±ãƒ¼ãƒ«[{1}]ã®ãƒªã‚½ãƒ¼ã‚¹ID[{2}]ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å†…ã«ãŠã„ã¦ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®æŒ‡å®šãŒ({3})å€‹ã‚ã‚Šã¾ã™ãŒã€ã“ã‚Œã¾ã§ç¾ã‚Œã¦ã„ãŸæ–‡å­—åˆ—ã«ã¯ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®æŒ‡å®šãŒã‚ã‚Šã¾ã›ã‚“ã§ã—ãŸã€‚]
      *
-     * @param arg0 ’uŠ·•¶Žš—ñ{0}‚Ì’lB
-     * @param arg1 ’uŠ·•¶Žš—ñ{1}‚Ì’lB
-     * @param arg2 ’uŠ·•¶Žš—ñ{2}‚Ì’lB
-     * @param arg3 ’uŠ·•¶Žš—ñ{3}‚Ì’lB
-     * @return ƒƒbƒZ[ƒW•¶Žš—ñB
+     * @param arg0 ç½®æ›æ–‡å­—åˆ—{0}ã®å€¤ã€‚
+     * @param arg1 ç½®æ›æ–‡å­—åˆ—{1}ã®å€¤ã€‚
+     * @param arg2 ç½®æ›æ–‡å­—åˆ—{2}ã®å€¤ã€‚
+     * @param arg3 ç½®æ›æ–‡å­—åˆ—{3}ã®å€¤ã€‚
+     * @return ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸æ–‡å­—åˆ—ã€‚
      */
     public String getMbrbi009(final String arg0, final String arg1, final String arg2, final String arg3) {
         if (arg0 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi009]‚Ìƒpƒ‰ƒ[ƒ^[arg0]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi009]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg0]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
         if (arg1 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi009]‚Ìƒpƒ‰ƒ[ƒ^[arg1]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi009]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg1]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
         if (arg2 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi009]‚Ìƒpƒ‰ƒ[ƒ^[arg2]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi009]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg2]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
         if (arg3 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi009]‚Ìƒpƒ‰ƒ[ƒ^[arg3]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi009]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg3]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
 
         return "[MBRBI009] " + fBundle.getMbrbi009(arg0, arg1, arg2, arg3);
     }
 
     /**
-     * ƒƒbƒZ[ƒW’è‹`ID[BlancoResourceBundle]AƒL[[MBRBI010]‚Ì•¶Žš—ñ‚ðŽæ“¾‚µ‚Ü‚·B
+     * ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å®šç¾©ID[BlancoResourceBundle]ã€ã‚­ãƒ¼[MBRBI010]ã®æ–‡å­—åˆ—ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
      * No.11:
-     * •¶Žš—ñ[ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹’è‹`[{0}]‚ÌƒƒP[ƒ‹[{1}]‚ÌƒŠƒ\[ƒXID[{2}]‚ÌƒƒbƒZ[ƒW“à‚É‚¨‚¢‚Äƒpƒ‰ƒ[ƒ^‚ÌŽw’è‚ª‚ ‚è‚Ü‚¹‚ñ‚ªA‚±‚ê‚Ü‚ÅŒ»‚ê‚Ä‚¢‚½•¶Žš—ñ‚É‚Í({3})ŒÂ‚Ìƒpƒ‰ƒ[ƒ^‚ÌŽw’è‚ª‚ ‚è‚Ü‚µ‚½B]
+     * æ–‡å­—åˆ—[ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«å®šç¾©[{0}]ã®ãƒ­ã‚±ãƒ¼ãƒ«[{1}]ã®ãƒªã‚½ãƒ¼ã‚¹ID[{2}]ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å†…ã«ãŠã„ã¦ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®æŒ‡å®šãŒã‚ã‚Šã¾ã›ã‚“ãŒã€ã“ã‚Œã¾ã§ç¾ã‚Œã¦ã„ãŸæ–‡å­—åˆ—ã«ã¯({3})å€‹ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®æŒ‡å®šãŒã‚ã‚Šã¾ã—ãŸã€‚]
      *
-     * @param arg0 ’uŠ·•¶Žš—ñ{0}‚Ì’lB
-     * @param arg1 ’uŠ·•¶Žš—ñ{1}‚Ì’lB
-     * @param arg2 ’uŠ·•¶Žš—ñ{2}‚Ì’lB
-     * @param arg3 ’uŠ·•¶Žš—ñ{3}‚Ì’lB
-     * @return ƒƒbƒZ[ƒW•¶Žš—ñB
+     * @param arg0 ç½®æ›æ–‡å­—åˆ—{0}ã®å€¤ã€‚
+     * @param arg1 ç½®æ›æ–‡å­—åˆ—{1}ã®å€¤ã€‚
+     * @param arg2 ç½®æ›æ–‡å­—åˆ—{2}ã®å€¤ã€‚
+     * @param arg3 ç½®æ›æ–‡å­—åˆ—{3}ã®å€¤ã€‚
+     * @return ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸æ–‡å­—åˆ—ã€‚
      */
     public String getMbrbi010(final String arg0, final String arg1, final String arg2, final String arg3) {
         if (arg0 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi010]‚Ìƒpƒ‰ƒ[ƒ^[arg0]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi010]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg0]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
         if (arg1 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi010]‚Ìƒpƒ‰ƒ[ƒ^[arg1]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi010]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg1]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
         if (arg2 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi010]‚Ìƒpƒ‰ƒ[ƒ^[arg2]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi010]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg2]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
         if (arg3 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi010]‚Ìƒpƒ‰ƒ[ƒ^[arg3]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi010]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg3]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
 
         return "[MBRBI010] " + fBundle.getMbrbi010(arg0, arg1, arg2, arg3);
     }
 
     /**
-     * ƒƒbƒZ[ƒW’è‹`ID[BlancoResourceBundle]AƒL[[MBRBI011]‚Ì•¶Žš—ñ‚ðŽæ“¾‚µ‚Ü‚·B
+     * ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å®šç¾©ID[BlancoResourceBundle]ã€ã‚­ãƒ¼[MBRBI011]ã®æ–‡å­—åˆ—ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
      * No.12:
-     * •¶Žš—ñ[ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹’è‹`[{0}]‚ÌƒƒP[ƒ‹[{1}]‚ÌƒŠƒ\[ƒXID[{2}]‚ÌƒƒbƒZ[ƒW“à‚É‚¨‚¯‚éƒpƒ‰ƒ[ƒ^‚Ì”({3})‚ªA‚±‚ê‚Ü‚ÅŒ»‚ê‚Ä‚¢‚½ƒpƒ‰ƒ[ƒ^‚Ì”({4})‚Æˆê’v‚µ‚Ü‚¹‚ñB]
+     * æ–‡å­—åˆ—[ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«å®šç¾©[{0}]ã®ãƒ­ã‚±ãƒ¼ãƒ«[{1}]ã®ãƒªã‚½ãƒ¼ã‚¹ID[{2}]ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å†…ã«ãŠã‘ã‚‹ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®æ•°({3})ãŒã€ã“ã‚Œã¾ã§ç¾ã‚Œã¦ã„ãŸãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®æ•°({4})ã¨ä¸€è‡´ã—ã¾ã›ã‚“ã€‚]
      *
-     * @param arg0 ’uŠ·•¶Žš—ñ{0}‚Ì’lB
-     * @param arg1 ’uŠ·•¶Žš—ñ{1}‚Ì’lB
-     * @param arg2 ’uŠ·•¶Žš—ñ{2}‚Ì’lB
-     * @param arg3 ’uŠ·•¶Žš—ñ{3}‚Ì’lB
-     * @param arg4 ’uŠ·•¶Žš—ñ{4}‚Ì’lB
-     * @return ƒƒbƒZ[ƒW•¶Žš—ñB
+     * @param arg0 ç½®æ›æ–‡å­—åˆ—{0}ã®å€¤ã€‚
+     * @param arg1 ç½®æ›æ–‡å­—åˆ—{1}ã®å€¤ã€‚
+     * @param arg2 ç½®æ›æ–‡å­—åˆ—{2}ã®å€¤ã€‚
+     * @param arg3 ç½®æ›æ–‡å­—åˆ—{3}ã®å€¤ã€‚
+     * @param arg4 ç½®æ›æ–‡å­—åˆ—{4}ã®å€¤ã€‚
+     * @return ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸æ–‡å­—åˆ—ã€‚
      */
     public String getMbrbi011(final String arg0, final String arg1, final String arg2, final String arg3, final String arg4) {
         if (arg0 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi011]‚Ìƒpƒ‰ƒ[ƒ^[arg0]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi011]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg0]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
         if (arg1 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi011]‚Ìƒpƒ‰ƒ[ƒ^[arg1]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi011]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg1]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
         if (arg2 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi011]‚Ìƒpƒ‰ƒ[ƒ^[arg2]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi011]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg2]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
         if (arg3 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi011]‚Ìƒpƒ‰ƒ[ƒ^[arg3]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi011]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg3]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
         if (arg4 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi011]‚Ìƒpƒ‰ƒ[ƒ^[arg4]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi011]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg4]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
 
         return "[MBRBI011] " + fBundle.getMbrbi011(arg0, arg1, arg2, arg3, arg4);
     }
 
     /**
-     * ƒƒbƒZ[ƒW’è‹`ID[BlancoResourceBundle]AƒL[[MBRBI012]‚Ì•¶Žš—ñ‚ðŽæ“¾‚µ‚Ü‚·B
+     * ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å®šç¾©ID[BlancoResourceBundle]ã€ã‚­ãƒ¼[MBRBI012]ã®æ–‡å­—åˆ—ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
      * No.13:
-     * •¶Žš—ñ[ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹’è‹`[{0}]‚ÌƒƒP[ƒ‹[{1}]‚ÌƒŠƒ\[ƒXID[{2}]‚ÌƒƒbƒZ[ƒW“à‚É‚¨‚¯‚éƒpƒ‰ƒ[ƒ^‚ÌŒ^({3})‚ªA‚±‚ê‚Ü‚ÅŒ»‚ê‚Ä‚¢‚½ƒpƒ‰ƒ[ƒ^‚ÌŒ^({4})‚Æˆê’v‚µ‚Ü‚¹‚ñB]
+     * æ–‡å­—åˆ—[ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«å®šç¾©[{0}]ã®ãƒ­ã‚±ãƒ¼ãƒ«[{1}]ã®ãƒªã‚½ãƒ¼ã‚¹ID[{2}]ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å†…ã«ãŠã‘ã‚‹ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®åž‹({3})ãŒã€ã“ã‚Œã¾ã§ç¾ã‚Œã¦ã„ãŸãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®åž‹({4})ã¨ä¸€è‡´ã—ã¾ã›ã‚“ã€‚]
      *
-     * @param arg0 ’uŠ·•¶Žš—ñ{0}‚Ì’lB
-     * @param arg1 ’uŠ·•¶Žš—ñ{1}‚Ì’lB
-     * @param arg2 ’uŠ·•¶Žš—ñ{2}‚Ì’lB
-     * @param arg3 ’uŠ·•¶Žš—ñ{3}‚Ì’lB
-     * @param arg4 ’uŠ·•¶Žš—ñ{4}‚Ì’lB
-     * @return ƒƒbƒZ[ƒW•¶Žš—ñB
+     * @param arg0 ç½®æ›æ–‡å­—åˆ—{0}ã®å€¤ã€‚
+     * @param arg1 ç½®æ›æ–‡å­—åˆ—{1}ã®å€¤ã€‚
+     * @param arg2 ç½®æ›æ–‡å­—åˆ—{2}ã®å€¤ã€‚
+     * @param arg3 ç½®æ›æ–‡å­—åˆ—{3}ã®å€¤ã€‚
+     * @param arg4 ç½®æ›æ–‡å­—åˆ—{4}ã®å€¤ã€‚
+     * @return ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸æ–‡å­—åˆ—ã€‚
      */
     public String getMbrbi012(final String arg0, final String arg1, final String arg2, final String arg3, final String arg4) {
         if (arg0 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi012]‚Ìƒpƒ‰ƒ[ƒ^[arg0]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi012]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg0]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
         if (arg1 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi012]‚Ìƒpƒ‰ƒ[ƒ^[arg1]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi012]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg1]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
         if (arg2 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi012]‚Ìƒpƒ‰ƒ[ƒ^[arg2]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi012]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg2]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
         if (arg3 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi012]‚Ìƒpƒ‰ƒ[ƒ^[arg3]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi012]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg3]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
         if (arg4 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrbi012]‚Ìƒpƒ‰ƒ[ƒ^[arg4]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrbi012]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg4]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
 
         return "[MBRBI012] " + fBundle.getMbrbi012(arg0, arg1, arg2, arg3, arg4);
     }
 
     /**
-     * ƒƒbƒZ[ƒW’è‹`ID[BlancoResourceBundle]AƒL[[MBRBA001]‚Ì•¶Žš—ñ‚ðŽæ“¾‚µ‚Ü‚·B
+     * ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å®šç¾©ID[BlancoResourceBundle]ã€ã‚­ãƒ¼[MBRBA001]ã®æ–‡å­—åˆ—ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
      * No.15:
-     * •¶Žš—ñ[Žw’è‚Ìmetadir[{0}]‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñB]
+     * æ–‡å­—åˆ—[æŒ‡å®šã®metadir[{0}]ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚]
      *
-     * @param arg0 ’uŠ·•¶Žš—ñ{0}‚Ì’lB
-     * @return ƒƒbƒZ[ƒW•¶Žš—ñB
+     * @param arg0 ç½®æ›æ–‡å­—åˆ—{0}ã®å€¤ã€‚
+     * @return ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸æ–‡å­—åˆ—ã€‚
      */
     public String getMbrba001(final String arg0) {
         if (arg0 == null) {
-            throw new IllegalArgumentException("ƒƒ\ƒbƒh[getMbrba001]‚Ìƒpƒ‰ƒ[ƒ^[arg0]‚Énull‚ª—^‚¦‚ç‚ê‚Ü‚µ‚½B‚µ‚©‚µA‚±‚Ìƒpƒ‰ƒ[ƒ^‚Énull‚ð—^‚¦‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB");
+            throw new IllegalArgumentException("ãƒ¡ã‚½ãƒƒãƒ‰[getMbrba001]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿[arg0]ã«nullãŒä¸Žãˆã‚‰ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«nullã‚’ä¸Žãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚");
         }
 
         return "[MBRBA001] " + fBundle.getMbrba001(arg0);
