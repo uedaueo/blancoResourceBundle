@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XMLファイルのConcreteSAXを作成するためのXMLファイルです -->
+<workbook>
+  <sheet name="ja">
+    <blancoresourcebundle-common>
+      <baseName>shain</baseName>
+      <locale>ja</locale>
+      <packageName>myapp.resourcebundle</packageName>
+      <suffix>ResourceBundle</suffix>
+      <description>詳細の説明</description>
+    </blancoresourcebundle-common>
+    <blancoresourcebundle-resourceList>
+      <resource>
+        <no>1</no>
+        <resourceKey>MSG001</resourceKey>
+        <resourceString locale="ja">社員{0}</resourceString>
+      </resource>
+      <resource>
+        <no>2</no>
+        <resourceKey>MSG002</resourceKey>
+        <resourceString locale="ja">社員{0,number}</resourceString>
+      </resource>
+    </blancoresourcebundle-resourceList>
+  </sheet>
+
+  <sheet name="en">
+    <blancoresourcebundle-common>
+      <baseName>shain</baseName>
+      <locale>en</locale>
+      <packageName>myapp.resourcebundle</packageName>
+      <suffix>ResourceBundle</suffix>
+    </blancoresourcebundle-common>
+    <blancoresourcebundle-resourceList>
+      <resource>
+        <no>1</no>
+        <resourceKey>MSG001</resourceKey>
+        <resourceString locale="en">社員{0}</resourceString>
+      </resource>
+      <resource>
+        <no>2</no>
+        <resourceKey>MSG002</resourceKey>
+        <resourceString locale="en">社員{0,number}</resourceString>
+      </resource>
+    </blancoresourcebundle-resourceList>
+  </sheet>
+  <sheet name="readme"/>
+</workbook>
