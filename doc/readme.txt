@@ -39,12 +39,11 @@ Eclipseプラグイン形式としても提供されているので、あなた�
 [依存するライブラリ]
 blancoResourceBundleは下記のライブラリを利用しています。
    ※各オープンソース・プロダクトの提供者に感謝します。
- 1.JExcelApi - Java Excel API - A Java API to read, write and modify Excel spreadsheets
-     http://jexcelapi.sourceforge.net/
-     http://sourceforge.net/projects/jexcelapi/
-     http://www.andykhan.com/jexcelapi/ 
+ 1.Apache POI - the Java API for Microsoft Documents
+     https://poi.apache.org/
+     https://ja.wikipedia.org/wiki/Apache_POI
    概要: JavaからExcelブック形式を読み書きするためのライブラリです。
-   ライセンス: GNU Lesser General Public License
+   ライセンス: Apache License 2.0
  2.blancoCg
    概要: ソースコード生成ライブラリ
    ライセンス: GNU Lesser General Public License
