@@ -44,7 +44,7 @@
 
 	<!-- ===================================== -->
 	<!-- blanco Framework standard maven defs. -->
-	<!-- v201612251010 ....................... -->
+	<!-- v201612251240 ....................... -->
 	<!-- ===================================== -->
 	<repositories>
 		<!-- blancofw repository -->
@@ -101,6 +101,9 @@
 				<configuration>
 					<source>1.6</source>
 					<target>1.6</target>
+					<excludes>
+						<exclude>blanco/sample/**/*</exclude>
+					</excludes>
 				</configuration>
 			</plugin>
 
@@ -117,6 +120,12 @@
 						</goals>
 					</execution>
 				</executions>
+				<configuration>
+					<excludes>
+						<exclude>blanco/sample/</exclude>
+						<exclude>blanco/sample/**/*</exclude>
+					</excludes>
+				</configuration>
 			</plugin>
 
 			<!-- copy jar files into lib directory. -->
