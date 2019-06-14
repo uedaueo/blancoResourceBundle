@@ -125,4 +125,41 @@ public class BlancoResourceBundleBundleItemStructure {
         buf.append("]");
         return buf.toString();
     }
+
+    /**
+     * このバリューオブジェクトを指定のターゲットに複写します。
+     *
+     * <P>使用上の注意</P>
+     * <UL>
+     * <LI>オブジェクトのシャロー範囲のみ複写処理対象となります。
+     * <LI>オブジェクトが循環参照している場合には、このメソッドは使わないでください。
+     * </UL>
+     *
+     * @param target target value object.
+     */
+    public void copyTo(final BlancoResourceBundleBundleItemStructure target) {
+        if (target == null) {
+            throw new IllegalArgumentException("Bug: BlancoResourceBundleBundleItemStructure#copyTo(target): argument 'target' is null");
+        }
+
+        // No needs to copy parent class.
+
+        // Name: fNo
+        // Type: java.lang.String
+        target.fNo = this.fNo;
+        // Name: fKey
+        // Type: java.lang.String
+        target.fKey = this.fKey;
+        // Name: fResourceStringList
+        // Type: java.util.List
+        if (this.fResourceStringList != null) {
+            final java.util.Iterator<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure> iterator = this.fResourceStringList.iterator();
+            for (; iterator.hasNext();) {
+                blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure loopSource = iterator.next();
+                blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure loopTarget = null;
+                // フィールド[generics]はサポート外の型[blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure]です。
+                target.fResourceStringList.add(loopTarget);
+            }
+        }
+    }
 }

@@ -14,7 +14,6 @@ import java.text.MessageFormat;
 import java.util.Locale;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
-import java.util.logging.Logger;
 
 /**
  * BlancoResourceBundle CSP (Collection of Small Programs) のリソースバンドル定義です。
@@ -43,8 +42,6 @@ public class BlancoResourceBundleResourceBundle {
         try {
             fResourceBundle = ResourceBundle.getBundle("blanco/resourcebundle/resourcebundle/BlancoResourceBundle");
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、デフォルトのロケール、呼び出し側のクラスローダを使用して、リソースバンドルの取得を試みましたが失敗しました。定義書の設定値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
     }
 
@@ -59,8 +56,6 @@ public class BlancoResourceBundleResourceBundle {
         try {
             fResourceBundle = ResourceBundle.getBundle("blanco/resourcebundle/resourcebundle/BlancoResourceBundle", locale);
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、ロケール[" + locale.toString() + "]、呼び出し側のクラスローダを使用して、リソースバンドルの取得を試みましたが失敗しました。定義書の設定値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
     }
 
@@ -76,8 +71,6 @@ public class BlancoResourceBundleResourceBundle {
         try {
             fResourceBundle = ResourceBundle.getBundle("blanco/resourcebundle/resourcebundle/BlancoResourceBundle", locale, loader);
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、ロケール[" + locale.toString() + "]、指定のクラスローダを使用して、リソースバンドルの取得を試みましたが失敗しました。定義書の設定値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
     }
 
@@ -105,8 +98,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("METAFILE_DISPLAYNAME");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[METAFILE_DISPLAYNAME]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         // 置換文字列はひとつもありません。
         return strFormat;
@@ -127,8 +118,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("META2XML.ELEMENT_COMMON");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[META2XML.ELEMENT_COMMON]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         // 置換文字列はひとつもありません。
         return strFormat;
@@ -149,8 +138,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("META2XML.ELEMENT_LIST");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[META2XML.ELEMENT_LIST]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         // 置換文字列はひとつもありません。
         return strFormat;
@@ -171,8 +158,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("KEY_PREFIX");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[KEY_PREFIX]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         // 置換文字列はひとつもありません。
         return strFormat;
@@ -193,8 +178,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("GENERATE_BUNDLE_SOURCE");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[GENERATE_BUNDLE_SOURCE]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         // 置換文字列はひとつもありません。
         return strFormat;
@@ -215,8 +198,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("GENERATE_CONSTANTS_SOURCE");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[GENERATE_CONSTANTS_SOURCE]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         // 置換文字列はひとつもありません。
         return strFormat;
@@ -238,8 +219,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("EXPANDRESOURCE.SRC011");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[EXPANDRESOURCE.SRC011]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         final MessageFormat messageFormat = new MessageFormat(strFormat);
         final StringBuffer strbuf = new StringBuffer();
@@ -263,8 +242,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("EXPANDRESOURCE.SRC012");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[EXPANDRESOURCE.SRC012]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         // 置換文字列はひとつもありません。
         return strFormat;
@@ -285,8 +262,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("EXPANDRESOURCE.SRC013");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[EXPANDRESOURCE.SRC013]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         // 置換文字列はひとつもありません。
         return strFormat;
@@ -307,8 +282,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("EXPANDRESOURCE.SRC014");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[EXPANDRESOURCE.SRC014]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         // 置換文字列はひとつもありません。
         return strFormat;
@@ -329,8 +302,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("EXPANDRESOURCE.SRC015");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[EXPANDRESOURCE.SRC015]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         // 置換文字列はひとつもありません。
         return strFormat;
@@ -352,8 +323,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("EXPANDRESOURCE.SRC021");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[EXPANDRESOURCE.SRC021]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         final MessageFormat messageFormat = new MessageFormat(strFormat);
         final StringBuffer strbuf = new StringBuffer();
@@ -378,8 +347,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("EXPANDRESOURCE.SRC022");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[EXPANDRESOURCE.SRC022]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         final MessageFormat messageFormat = new MessageFormat(strFormat);
         final StringBuffer strbuf = new StringBuffer();
@@ -404,8 +371,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("EXPANDRESOURCE.SRC023");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[EXPANDRESOURCE.SRC023]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         final MessageFormat messageFormat = new MessageFormat(strFormat);
         final StringBuffer strbuf = new StringBuffer();
@@ -430,8 +395,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("EXPANDRESOURCE.SRC031");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[EXPANDRESOURCE.SRC031]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         final MessageFormat messageFormat = new MessageFormat(strFormat);
         final StringBuffer strbuf = new StringBuffer();
@@ -456,8 +419,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("EXPANDRESOURCE.SRC032");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[EXPANDRESOURCE.SRC032]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         final MessageFormat messageFormat = new MessageFormat(strFormat);
         final StringBuffer strbuf = new StringBuffer();
@@ -481,8 +442,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("EXPANDRESOURCE.SRC033");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[EXPANDRESOURCE.SRC033]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         // 置換文字列はひとつもありません。
         return strFormat;
@@ -504,8 +463,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("EXPANDRESOURCE.SRC034");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[EXPANDRESOURCE.SRC034]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         final MessageFormat messageFormat = new MessageFormat(strFormat);
         final StringBuffer strbuf = new StringBuffer();
@@ -530,8 +487,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("EXPANDRESOURCE.SRC041");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[EXPANDRESOURCE.SRC041]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         final MessageFormat messageFormat = new MessageFormat(strFormat);
         final StringBuffer strbuf = new StringBuffer();
@@ -556,8 +511,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("EXPANDRESOURCE.SRC042");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[EXPANDRESOURCE.SRC042]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         final MessageFormat messageFormat = new MessageFormat(strFormat);
         final StringBuffer strbuf = new StringBuffer();
@@ -581,8 +534,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("EXPANDRESOURCE.SRC043");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[EXPANDRESOURCE.SRC043]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         // 置換文字列はひとつもありません。
         return strFormat;
@@ -603,8 +554,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("EXPANDRESOURCE.SRC044");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[EXPANDRESOURCE.SRC044]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         // 置換文字列はひとつもありません。
         return strFormat;
@@ -626,8 +575,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("EXPANDRESOURCE.SRC045");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[EXPANDRESOURCE.SRC045]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         final MessageFormat messageFormat = new MessageFormat(strFormat);
         final StringBuffer strbuf = new StringBuffer();
@@ -651,8 +598,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("EXPANDRESOURCE.SRC051");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[EXPANDRESOURCE.SRC051]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         // 置換文字列はひとつもありません。
         return strFormat;
@@ -675,8 +620,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("EXPANDRESOURCE.SRC101");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[EXPANDRESOURCE.SRC101]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         final MessageFormat messageFormat = new MessageFormat(strFormat);
         final StringBuffer strbuf = new StringBuffer();
@@ -701,8 +644,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("EXPANDRESOURCE.SRC102");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[EXPANDRESOURCE.SRC102]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         final MessageFormat messageFormat = new MessageFormat(strFormat);
         final StringBuffer strbuf = new StringBuffer();
@@ -727,8 +668,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("EXPANDRESOURCE.SRC103");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[EXPANDRESOURCE.SRC103]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         final MessageFormat messageFormat = new MessageFormat(strFormat);
         final StringBuffer strbuf = new StringBuffer();
@@ -752,8 +691,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("EXPANDRESOURCE.SRC104");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[EXPANDRESOURCE.SRC104]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         // 置換文字列はひとつもありません。
         return strFormat;
@@ -776,8 +713,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("EXPANDRESOURCE.SRC105");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[EXPANDRESOURCE.SRC105]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         final MessageFormat messageFormat = new MessageFormat(strFormat);
         final StringBuffer strbuf = new StringBuffer();
@@ -801,8 +736,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("EXPANDRESOURCE.SRC106");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[EXPANDRESOURCE.SRC106]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         // 置換文字列はひとつもありません。
         return strFormat;
@@ -823,8 +756,6 @@ public class BlancoResourceBundleResourceBundle {
                 strFormat = fResourceBundle.getString("EXPANDRESOURCE.SRC107");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[BlancoResourceBundle]、キー[EXPANDRESOURCE.SRC107]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.resourcebundle.resourcebundle").fine(message);
         }
         // 置換文字列はひとつもありません。
         return strFormat;

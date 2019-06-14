@@ -315,4 +315,51 @@ public class BlancoResourceBundleProcessInput {
         buf.append("]");
         return buf.toString();
     }
+
+    /**
+     * このバリューオブジェクトを指定のターゲットに複写します。
+     *
+     * <P>使用上の注意</P>
+     * <UL>
+     * <LI>オブジェクトのシャロー範囲のみ複写処理対象となります。
+     * <LI>オブジェクトが循環参照している場合には、このメソッドは使わないでください。
+     * </UL>
+     *
+     * @param target target value object.
+     */
+    public void copyTo(final BlancoResourceBundleProcessInput target) {
+        if (target == null) {
+            throw new IllegalArgumentException("Bug: BlancoResourceBundleProcessInput#copyTo(target): argument 'target' is null");
+        }
+
+        // No needs to copy parent class.
+
+        // Name: fVerbose
+        // Type: boolean
+        target.fVerbose = this.fVerbose;
+        // Name: fMetadir
+        // Type: java.lang.String
+        target.fMetadir = this.fMetadir;
+        // Name: fTargetdir
+        // Type: java.lang.String
+        target.fTargetdir = this.fTargetdir;
+        // Name: fTmpdir
+        // Type: java.lang.String
+        target.fTmpdir = this.fTmpdir;
+        // Name: fEncoding
+        // Type: java.lang.String
+        target.fEncoding = this.fEncoding;
+        // Name: fCommenttimestamp
+        // Type: boolean
+        target.fCommenttimestamp = this.fCommenttimestamp;
+        // Name: fFailonmessageformaterror
+        // Type: boolean
+        target.fFailonmessageformaterror = this.fFailonmessageformaterror;
+        // Name: fLog
+        // Type: boolean
+        target.fLog = this.fLog;
+        // Name: fPropertieswithdirectory
+        // Type: boolean
+        target.fPropertieswithdirectory = this.fPropertieswithdirectory;
+    }
 }

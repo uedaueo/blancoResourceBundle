@@ -14,7 +14,6 @@ import java.text.MessageFormat;
 import java.util.Locale;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
-import java.util.logging.Logger;
 
 /**
  * Sample of blancoResourceBundle. This class is only for sample. It do not affect.
@@ -44,8 +43,6 @@ public class SampleResourceBundle {
         try {
             fResourceBundle = ResourceBundle.getBundle("blanco/sample/resourcebundle/Sample");
         } catch (MissingResourceException ex) {
-            final String message = "基底名[Sample]、デフォルトのロケール、呼び出し側のクラスローダを使用して、リソースバンドルの取得を試みましたが失敗しました。定義書の設定値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.sample.resourcebundle").fine(message);
         }
     }
 
@@ -60,8 +57,6 @@ public class SampleResourceBundle {
         try {
             fResourceBundle = ResourceBundle.getBundle("blanco/sample/resourcebundle/Sample", locale);
         } catch (MissingResourceException ex) {
-            final String message = "基底名[Sample]、ロケール[" + locale.toString() + "]、呼び出し側のクラスローダを使用して、リソースバンドルの取得を試みましたが失敗しました。定義書の設定値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.sample.resourcebundle").fine(message);
         }
     }
 
@@ -77,8 +72,6 @@ public class SampleResourceBundle {
         try {
             fResourceBundle = ResourceBundle.getBundle("blanco/sample/resourcebundle/Sample", locale, loader);
         } catch (MissingResourceException ex) {
-            final String message = "基底名[Sample]、ロケール[" + locale.toString() + "]、指定のクラスローダを使用して、リソースバンドルの取得を試みましたが失敗しました。定義書の設定値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.sample.resourcebundle").fine(message);
         }
     }
 
@@ -107,8 +100,6 @@ public class SampleResourceBundle {
                 strFormat = fResourceBundle.getString("MESSAGE001");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[Sample]、キー[MESSAGE001]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.sample.resourcebundle").fine(message);
         }
         // 置換文字列はひとつもありません。
         return strFormat;
@@ -131,8 +122,6 @@ public class SampleResourceBundle {
                 strFormat = fResourceBundle.getString("MESSAGE002");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[Sample]、キー[MESSAGE002]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.sample.resourcebundle").fine(message);
         }
         final MessageFormat messageFormat = new MessageFormat(strFormat);
         final StringBuffer strbuf = new StringBuffer();
@@ -159,8 +148,6 @@ public class SampleResourceBundle {
                 strFormat = fResourceBundle.getString("MESSAGE003");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[Sample]、キー[MESSAGE003]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.sample.resourcebundle").fine(message);
         }
         final MessageFormat messageFormat = new MessageFormat(strFormat);
         final StringBuffer strbuf = new StringBuffer();
@@ -186,8 +173,6 @@ public class SampleResourceBundle {
                 strFormat = fResourceBundle.getString("MESSAGE004");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[Sample]、キー[MESSAGE004]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.sample.resourcebundle").fine(message);
         }
         final MessageFormat messageFormat = new MessageFormat(strFormat);
         final StringBuffer strbuf = new StringBuffer();
@@ -213,8 +198,6 @@ public class SampleResourceBundle {
                 strFormat = fResourceBundle.getString("MESSAGE005");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[Sample]、キー[MESSAGE005]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.sample.resourcebundle").fine(message);
         }
         final MessageFormat messageFormat = new MessageFormat(strFormat);
         final StringBuffer strbuf = new StringBuffer();
@@ -242,8 +225,6 @@ public class SampleResourceBundle {
                 strFormat = fResourceBundle.getString("MESSAGE006");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[Sample]、キー[MESSAGE006]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.sample.resourcebundle").fine(message);
         }
         final MessageFormat messageFormat = new MessageFormat(strFormat);
         final StringBuffer strbuf = new StringBuffer();
@@ -280,8 +261,6 @@ public class SampleResourceBundle {
                 strFormat = fResourceBundle.getString("MESSAGE007");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[Sample]、キー[MESSAGE007]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.sample.resourcebundle").fine(message);
         }
         final MessageFormat messageFormat = new MessageFormat(strFormat);
         final StringBuffer strbuf = new StringBuffer();
@@ -306,8 +285,6 @@ public class SampleResourceBundle {
                 strFormat = fResourceBundle.getString("MESSAGE008");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[Sample]、キー[MESSAGE008]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.sample.resourcebundle").fine(message);
         }
         // 置換文字列はひとつもありません。
         return strFormat;
@@ -329,8 +306,6 @@ public class SampleResourceBundle {
                 strFormat = fResourceBundle.getString("MESSAGE009");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[Sample]、キー[MESSAGE009]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.sample.resourcebundle").fine(message);
         }
         // 置換文字列はひとつもありません。
         return strFormat;
@@ -353,8 +328,6 @@ public class SampleResourceBundle {
                 strFormat = fResourceBundle.getString("MESSAGE010");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[Sample]、キー[MESSAGE010]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.sample.resourcebundle").fine(message);
         }
         final MessageFormat messageFormat = new MessageFormat(strFormat);
         final StringBuffer strbuf = new StringBuffer();
@@ -379,8 +352,6 @@ public class SampleResourceBundle {
                 strFormat = fResourceBundle.getString("MESSAGE011");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[Sample]、キー[MESSAGE011]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.sample.resourcebundle").fine(message);
         }
         // 置換文字列はひとつもありません。
         return strFormat;
@@ -402,8 +373,6 @@ public class SampleResourceBundle {
                 strFormat = fResourceBundle.getString("MESSAGE013");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[Sample]、キー[MESSAGE013]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.sample.resourcebundle").fine(message);
         }
         // 置換文字列はひとつもありません。
         return strFormat;
@@ -425,8 +394,6 @@ public class SampleResourceBundle {
                 strFormat = fResourceBundle.getString("MESSAGE012");
             }
         } catch (MissingResourceException ex) {
-            final String message = "基底名[Sample]、キー[MESSAGE012]の定義が取得できませんでした。定義書の値を利用して処理続行します。:" + ex.toString();
-            Logger.getLogger("blanco.sample.resourcebundle").fine(message);
         }
         // 置換文字列はひとつもありません。
         return strFormat;

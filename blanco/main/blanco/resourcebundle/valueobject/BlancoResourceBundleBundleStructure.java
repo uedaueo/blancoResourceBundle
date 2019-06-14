@@ -339,4 +339,70 @@ public class BlancoResourceBundleBundleStructure {
         buf.append("]");
         return buf.toString();
     }
+
+    /**
+     * このバリューオブジェクトを指定のターゲットに複写します。
+     *
+     * <P>使用上の注意</P>
+     * <UL>
+     * <LI>オブジェクトのシャロー範囲のみ複写処理対象となります。
+     * <LI>オブジェクトが循環参照している場合には、このメソッドは使わないでください。
+     * </UL>
+     *
+     * @param target target value object.
+     */
+    public void copyTo(final BlancoResourceBundleBundleStructure target) {
+        if (target == null) {
+            throw new IllegalArgumentException("Bug: BlancoResourceBundleBundleStructure#copyTo(target): argument 'target' is null");
+        }
+
+        // No needs to copy parent class.
+
+        // Name: fName
+        // Type: java.lang.String
+        target.fName = this.fName;
+        // Name: fListLocale
+        // Type: java.util.List
+        if (this.fListLocale != null) {
+            final java.util.Iterator<java.lang.String> iterator = this.fListLocale.iterator();
+            for (; iterator.hasNext();) {
+                java.lang.String loopSource = iterator.next();
+                java.lang.String loopTarget = null;
+                loopTarget = loopSource;
+                target.fListLocale.add(loopTarget);
+            }
+        }
+        // Name: fPackage
+        // Type: java.lang.String
+        target.fPackage = this.fPackage;
+        // Name: fSuffix
+        // Type: java.lang.String
+        target.fSuffix = this.fSuffix;
+        // Name: fDescription
+        // Type: java.lang.String
+        target.fDescription = this.fDescription;
+        // Name: fAccess
+        // Type: java.lang.String
+        target.fAccess = this.fAccess;
+        // Name: fItemList
+        // Type: java.util.List
+        if (this.fItemList != null) {
+            final java.util.Iterator<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure> iterator = this.fItemList.iterator();
+            for (; iterator.hasNext();) {
+                blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure loopSource = iterator.next();
+                blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure loopTarget = null;
+                // フィールド[generics]はサポート外の型[blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure]です。
+                target.fItemList.add(loopTarget);
+            }
+        }
+        // Name: fResourceItem
+        // Type: blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure
+        // フィールド[fResourceItem]はサポート外の型[blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure]です。
+        // Name: fCurrentLocale
+        // Type: java.lang.String
+        target.fCurrentLocale = this.fCurrentLocale;
+        // Name: fCurrentResourceString
+        // Type: java.lang.String
+        target.fCurrentResourceString = this.fCurrentResourceString;
+    }
 }
