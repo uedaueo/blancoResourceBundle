@@ -1,12 +1,3 @@
-/*
- * blanco Framework
- * Copyright (C) 2004-2009 IGA Tosiki
- *
- * This library is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Lesser General Public
- * License as published by the Free Software Foundation; either
- * version 2.1 of the License, or (at your option) any later version.
- */
 package blanco.resourcebundle.task;
 
 import java.io.IOException;
@@ -78,6 +69,10 @@ public class BlancoResourceBundleBatchProcess {
                 input.setLog(Boolean.valueOf(arg.substring(5)).booleanValue());
             } else if (arg.startsWith("-propertieswithdirectory=")) {
                 input.setPropertieswithdirectory(Boolean.valueOf(arg.substring(25)).booleanValue());
+            } else if (arg.startsWith("-targetStyle=")) {
+                input.setTargetStyle(arg.substring(13));
+            } else if (arg.startsWith("-lineSeparator=")) {
+                input.setLineSeparator(arg.substring(15));
             } else if (arg.equals("-?") || arg.equals("-help")) {
                 usage();
                 System.exit(END_SUCCESS);
@@ -171,7 +166,7 @@ public class BlancoResourceBundleBatchProcess {
      */
     public static final void usage() {
         System.out.println("BlancoResourceBundleBatchProcess: Usage:");
-        System.out.println("  java blanco.resourcebundle.task.BlancoResourceBundleBatchProcess -verbose=値1 -metadir=値2 -targetdir=値3 -tmpdir=値4 -encoding=値5 -commenttimestamp=値6 -failonmessageformaterror=値7 -log=値8 -propertieswithdirectory=値9");
+        System.out.println("  java blanco.resourcebundle.task.BlancoResourceBundleBatchProcess -verbose=値1 -metadir=値2 -targetdir=値3 -tmpdir=値4 -encoding=値5 -commenttimestamp=値6 -failonmessageformaterror=値7 -log=値8 -propertieswithdirectory=値9 -targetStyle=値10 -lineSeparator=値11");
         System.out.println("    -verbose");
         System.out.println("      説明[verboseモードで動作させるかどうか。]");
         System.out.println("      型[真偽]");
@@ -207,6 +202,14 @@ public class BlancoResourceBundleBatchProcess {
         System.out.println("      説明[プロパティファイルをディレクトリ付きで出力するかどうかのフラグ。]");
         System.out.println("      型[真偽]");
         System.out.println("      デフォルト値[true]");
+        System.out.println("    -targetStyle");
+        System.out.println("      説明[出力先フォルダの書式を指定します。<br>\nblanco: [targetdir]/main<br>\nmaven: [targetdir]/main/java<br>\nfree: [targetdir](targetdirが無指定の場合はblanco/main)]");
+        System.out.println("      型[文字列]");
+        System.out.println("      デフォルト値[blanco]");
+        System.out.println("    -lineSeparator");
+        System.out.println("      説明[行末記号をしていします。LF=0x0a, CR=0x0d, CFLF=0x0d0x0a とします。LFがデフォルトです。]");
+        System.out.println("      型[文字列]");
+        System.out.println("      デフォルト値[LF]");
         System.out.println("    -? , -help");
         System.out.println("      説明[使い方を表示します。]");
     }

@@ -1,12 +1,3 @@
-/*
- * blanco Framework
- * Copyright (C) 2004-2009 IGA Tosiki
- *
- * This library is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Lesser General Public
- * License as published by the Free Software Foundation; either
- * version 2.1 of the License, or (at your option) any later version.
- */
 package blanco.resourcebundle.valueobject;
 
 import java.util.List;
@@ -26,7 +17,7 @@ public class BlancoResourceBundleBundleStructure {
      * このリソースバンドルが対応するロケールの一覧。(Combine後の場合にのみ有効)
      *
      * フィールド: [listLocale]。
-     * デフォルト: [new java.util.ArrayList<java.lang.String>()]。
+     * デフォルト: [new java.util.ArrayList&lt;java.lang.String&gt;()]。
      */
     private List<java.lang.String> fListLocale = new java.util.ArrayList<java.lang.String>();
 
@@ -55,7 +46,7 @@ public class BlancoResourceBundleBundleStructure {
      * このクラスのアクセス。基本的には public で利用します。
      *
      * フィールド: [access]。
-     * デフォルト: ["public"]。
+     * デフォルト: [&quot;public&quot;]。
      */
     private String fAccess = "public";
 
@@ -63,7 +54,7 @@ public class BlancoResourceBundleBundleStructure {
      * 各キー＋値の情報。
      *
      * フィールド: [itemList]。
-     * デフォルト: [new java.util.ArrayList<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure>()]。
+     * デフォルト: [new java.util.ArrayList&lt;blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure&gt;()]。
      */
     private List<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure> fItemList = new java.util.ArrayList<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure>();
 
@@ -125,7 +116,7 @@ public class BlancoResourceBundleBundleStructure {
      * フィールド [listLocale] の値を取得します。
      *
      * フィールドの説明: [このリソースバンドルが対応するロケールの一覧。(Combine後の場合にのみ有効)]。
-     * デフォルト: [new java.util.ArrayList<java.lang.String>()]。
+     * デフォルト: [new java.util.ArrayList&lt;java.lang.String&gt;()]。
      *
      * @return フィールド[listLocale]から取得した値。
      */
@@ -214,7 +205,7 @@ public class BlancoResourceBundleBundleStructure {
      * フィールド [access] の値を取得します。
      *
      * フィールドの説明: [このクラスのアクセス。基本的には public で利用します。]。
-     * デフォルト: ["public"]。
+     * デフォルト: [&quot;public&quot;]。
      *
      * @return フィールド[access]から取得した値。
      */
@@ -237,7 +228,7 @@ public class BlancoResourceBundleBundleStructure {
      * フィールド [itemList] の値を取得します。
      *
      * フィールドの説明: [各キー＋値の情報。]。
-     * デフォルト: [new java.util.ArrayList<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure>()]。
+     * デフォルト: [new java.util.ArrayList&lt;blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure&gt;()]。
      *
      * @return フィールド[itemList]から取得した値。
      */

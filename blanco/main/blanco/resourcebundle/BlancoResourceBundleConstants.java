@@ -1,12 +1,3 @@
-/*
- * blanco Framework
- * Copyright (C) 2004-2009 IGA Tosiki
- *
- * This library is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Lesser General Public
- * License as published by the Free Software Foundation; either
- * version 2.1 of the License, or (at your option) any later version.
- */
 package blanco.resourcebundle;
 
 /**
@@ -42,4 +33,34 @@ public class BlancoResourceBundleConstants {
      * ValueObjectのワークファイルが格納される相対フォルダ名。'/'付で指定します。
      */
     public static final String VALUE_OBJECT_DIRECTORY = "/valueobject";
+
+    /**
+     * 項目番号:6<br>
+     * targetdirに設定される文字列
+     */
+    public static final String TARGET_STYLE_BLANCO = "blanco";
+
+    /**
+     * 項目番号:7<br>
+     * targetdirに設定される文字列
+     */
+    public static final String TARGET_STYLE_MAVEN = "maven";
+
+    /**
+     * 項目番号:8<br>
+     * targetdirに設定される文字列
+     */
+    public static final String TARGET_STYLE_FREE = "free";
+
+    /**
+     * 項目番号:9<br>
+     * 生成したソースコードを保管するディレクトリのsuffix
+     */
+    public static final String TARGET_DIR_SUFFIX_BLANCO = "main";
+
+    /**
+     * 項目番号:10<br>
+     * 生成したソースコードを保管するディレクトリのsuffix
+     */
+    public static final String TARGET_DIR_SUFFIX_MAVEN = "main/java";
 }

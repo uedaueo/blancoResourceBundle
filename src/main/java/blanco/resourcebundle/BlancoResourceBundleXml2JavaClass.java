@@ -1,7 +1,7 @@
 /*
  * blanco Framework
  * Copyright (C) 2004-2007 IGA Tosiki
- * 
+ *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
  * License as published by the Free Software Foundation; either
@@ -16,15 +16,15 @@ import blanco.resourcebundle.valueobject.BlancoResourceBundleBundleStructure;
 
 /**
  * 中間XMLファイルから プロパティファイルアクセス用のJavaソースコードを生成します。
- * 
+ *
  * このソースコードはblancoResourceBundleの一部です。<br>
- * 
+ *
  * @author IGA Tosiki
  */
 public class BlancoResourceBundleXml2JavaClass {
     /**
      * リソースバンドル文字列をMessageFormatによるパースを行った際に、例外が発生したら処理を中断するかどうかのフラグ。
-     * 
+     *
      * trueなら処理中断して例外を発生させます。<br>
      * falseなら処理続行し、置換文字列は無いものとみなします。<br>
      * Javaのソースコードを処理する際などに、あえて falseに設定して波括弧を扱うことができるように切り替える場合があります。<br>
@@ -53,12 +53,12 @@ public class BlancoResourceBundleXml2JavaClass {
 
     /**
      * リソースバンドル文字列をMessageFormatによるパースを行った際に、例外が発生したら処理を中断するかどうかのフラグを設定します。
-     * 
+     *
      * trueなら処理中断して例外を発生させます。<br>
      * falseなら処理続行し、置換文字列は無いものとみなします。<br>
      * Javaのソースコードを処理する際などに、あえて falseに設定して波括弧を扱うことができるように切り替える場合があります。<br>
      * デフォルト値[true]が設定されています。
-     * 
+     *
      * @param isFailOnMessageFormatError
      */
     public void setFailOnMessageFormatError(
@@ -67,8 +67,19 @@ public class BlancoResourceBundleXml2JavaClass {
     }
 
     /**
+     * ソースコード生成先ディレクトリのスタイル
+     */
+    private boolean fTargetStyleAdvanced = false;
+    public void setTargetStyleAdvanced(boolean argTargetStyleAdvanced) {
+        this.fTargetStyleAdvanced = argTargetStyleAdvanced;
+    }
+    public boolean isTargetStyleAdvanced() {
+        return this.fTargetStyleAdvanced;
+    }
+
+    /**
      * ログ出力を自動生成されるソースコードに含めるかどうかのフラグのセット。
-     * 
+     *
      * @param argIsLog
      *            ログ出力を自動生成されるソースコードに含めるかどうか。
      */
@@ -78,7 +89,7 @@ public class BlancoResourceBundleXml2JavaClass {
 
     /**
      * プロパティファイルをディレクトリ付きで出力するかどうかのフラグをセットします。
-     * 
+     *
      * @param isPropertieswithdirectory
      *            プロパティファイルをディレクトリ付きで出力するかどうか。
      */
@@ -89,7 +100,7 @@ public class BlancoResourceBundleXml2JavaClass {
 
     /**
      * 中間XMLファイルから プロパティファイルアクセス用のJavaソースコードを生成します。
-     * 
+     *
      * @param argFileSource
      *            入力となる中間XMLファイル。
      * @param argDirectoryTarget
@@ -105,7 +116,7 @@ public class BlancoResourceBundleXml2JavaClass {
 
     /**
      * 指定のシートの記述内容を展開します。
-     * 
+     *
      * @param argStructure
      *            タスクの構造。
      * @param argDirectoryTarget
@@ -114,7 +125,9 @@ public class BlancoResourceBundleXml2JavaClass {
     public void structure2Source(
             final BlancoResourceBundleBundleStructure argStructure,
             final File argDirectoryTarget) {
-        new BlancoResourceBundleExpandResourceBundle().expand(argStructure,
+        BlancoResourceBundleExpandResourceBundle expander = new BlancoResourceBundleExpandResourceBundle();
+        expander.setTargetStyleAdvanced(this.isTargetStyleAdvanced());
+        expander.expand(argStructure,
                 argDirectoryTarget, fEncoding, fIsFailOnMessageFormatError,
                 fIsLog, fPropertieswithdirectory);
     }

@@ -1,12 +1,3 @@
-/*
- * blanco Framework
- * Copyright (C) 2004-2009 IGA Tosiki
- *
- * This library is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Lesser General Public
- * License as published by the Free Software Foundation; either
- * version 2.1 of the License, or (at your option) any later version.
- */
 package blanco.resourcebundle.valueobject;
 
 import java.util.List;
@@ -33,7 +24,7 @@ public class BlancoResourceBundleBundleItemStructure {
      * リソース文字列のリスト。BlancoResourceBundleBundleResourceStringStructureクラスのインスタンスがリストで格納されます。非Combineの場合には、MAX１件が含まれます。Combineの場合には、ロケールごとに１件。
      *
      * フィールド: [resourceStringList]。
-     * デフォルト: [new java.util.ArrayList<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure>()]。
+     * デフォルト: [new java.util.ArrayList&lt;blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure&gt;()]。
      */
     private List<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure> fResourceStringList = new java.util.ArrayList<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure>();
 
@@ -96,7 +87,7 @@ public class BlancoResourceBundleBundleItemStructure {
      * フィールド [resourceStringList] の値を取得します。
      *
      * フィールドの説明: [リソース文字列のリスト。BlancoResourceBundleBundleResourceStringStructureクラスのインスタンスがリストで格納されます。非Combineの場合には、MAX１件が含まれます。Combineの場合には、ロケールごとに１件。]。
-     * デフォルト: [new java.util.ArrayList<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure>()]。
+     * デフォルト: [new java.util.ArrayList&lt;blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure&gt;()]。
      *
      * @return フィールド[resourceStringList]から取得した値。
      */

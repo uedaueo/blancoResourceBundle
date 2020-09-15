@@ -1,7 +1,7 @@
 /*
  * blanco Framework
  * Copyright (C) 2004-2007 IGA Tosiki
- * 
+ *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
  * License as published by the Free Software Foundation; either
@@ -29,13 +29,13 @@ import blanco.resourcebundle.valueobject.BlancoResourceBundleBundleStructure;
 
 /**
  * 中間XMLファイルから プロパティファイルを生成します。
- * 
+ *
  * このソースコードはblancoResourceBundleの一部です。<br>
  * XMLを入力してプロパティファイルに出力を行います。<br>
  * プロパティファイル仕様として参照した情報源は下記のPropertiesクラス説明です。<br>
  * http://java.sun.com/j2se/1.5.0/docs/api/java/util/Properties.html#store(java.
  * io.OutputStream,%20java.lang.String)
- * 
+ *
  * @author IGA Tosiki
  */
 public class BlancoResourceBundleXml2Properties {
@@ -61,7 +61,7 @@ public class BlancoResourceBundleXml2Properties {
 
     /**
      * プロパティファイルにコメントとして処理日次を埋め込むかどうかのフラグをセットします。
-     * 
+     *
      * @param isCommentTimestamp
      *            処理日次を埋め込むかどうか。trueなら埋め込み。
      */
@@ -71,7 +71,7 @@ public class BlancoResourceBundleXml2Properties {
 
     /**
      * プロパティファイルをディレクトリ付きで出力するかどうかのフラグをセットします。
-     * 
+     *
      * @param isPropertieswithdirectory
      *            プロパティファイルをディレクトリ付きで出力するかどうか。
      */
@@ -81,17 +81,43 @@ public class BlancoResourceBundleXml2Properties {
     }
 
     /**
+     * ソースコード生成先ディレクトリのスタイル
+     */
+    private boolean fTargetStyleAdvanced = false;
+    public void setTargetStyleAdvanced(boolean argTargetStyleAdvanced) {
+        this.fTargetStyleAdvanced = argTargetStyleAdvanced;
+    }
+    public boolean isTargetStyleAdvanced() {
+        return this.fTargetStyleAdvanced;
+    }
+
+    /**
      * 中間XMLファイルから プロパティファイルを生成します。
-     * 
+     *
      * @param fileSource
      *            中間XMLファイル。
      * @param directoryTarget
      *            出力先ディレクトリ。
      */
     public void process(final File fileSource, final File directoryTarget) {
-        if (directoryTarget.exists() == false) {
+
+        /*
+         * 出力ディレクトリはant taskのtargetStyel引数で
+         * 指定された書式で出力されます。
+         * 従来と互換性を保つために、指定がない場合は blanco/main
+         * となります。
+         * by tueda, 2019/08/30
+         */
+        String strTarget = directoryTarget
+                .getAbsolutePath(); // advanced
+        if (!this.isTargetStyleAdvanced()) {
+            strTarget += "/main"; // legacy
+        }
+        final File fileBlancoMain = new File(strTarget);
+
+        if (fileBlancoMain.exists() == false) {
             // ディレクトリが無いので新規作成します。
-            directoryTarget.mkdirs();
+            fileBlancoMain.mkdirs();
         }
 
         final Map<java.lang.String, java.lang.String> mapProcessedBaseName = new HashMap<java.lang.String, java.lang.String>(
@@ -103,18 +129,18 @@ public class BlancoResourceBundleXml2Properties {
                 // System.out.println("基底名[" + baseName + "]
                 // が初めて登場しました。ロケール["
                 // + locale + "]はロケールが指定されていない場合のリソースとしても利用されます。");
-                structure2Properties(structures[index], null, directoryTarget);
+                structure2Properties(structures[index], null, fileBlancoMain);
                 mapProcessedBaseName.put(structures[index].getName(),
                         structures[index].getCurrentLocale());
             }
             structure2Properties(structures[index], structures[index]
-                    .getCurrentLocale(), directoryTarget);
+                    .getCurrentLocale(), fileBlancoMain);
         }
     }
 
     /**
      * プロパティファイルを展開します。
-     * 
+     *
      * @param resourceBase
      *            構造。
      * @param locale

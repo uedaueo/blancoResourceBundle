@@ -1,12 +1,3 @@
-/*
- * blanco Framework
- * Copyright (C) 2004-2009 IGA Tosiki
- *
- * This library is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Lesser General Public
- * License as published by the Free Software Foundation; either
- * version 2.1 of the License, or (at your option) any later version.
- */
 package blanco.resourcebundle.task;
 
 import org.apache.tools.ant.BuildException;
@@ -76,6 +67,16 @@ public class BlancoResourceBundleTask extends Task {
      * フィールド [propertieswithdirectory] に値がセットされたかどうか。
      */
     protected boolean fIsFieldPropertieswithdirectoryProcessed = false;
+
+    /**
+     * フィールド [targetStyle] に値がセットされたかどうか。
+     */
+    protected boolean fIsFieldTargetStyleProcessed = false;
+
+    /**
+     * フィールド [lineSeparator] に値がセットされたかどうか。
+     */
+    protected boolean fIsFieldLineSeparatorProcessed = false;
 
     /**
      * verboseモードで動作させるかどうか。
@@ -303,6 +304,58 @@ public class BlancoResourceBundleTask extends Task {
     }
 
     /**
+     * Antタスクの[targetStyle]アトリビュートのセッターメソッド。
+     *
+     * 項目番号: 9<br>
+     * 出力先フォルダの書式を指定します。&lt;br&gt;\nblanco: [targetdir]/main&lt;br&gt;\nmaven: [targetdir]/main/java&lt;br&gt;\nfree: [targetdir](targetdirが無指定の場合はblanco/main)<br>
+     *
+     * @param arg セットしたい値
+     */
+    public void setTargetStyle(final String arg) {
+        fInput.setTargetStyle(arg);
+        fIsFieldTargetStyleProcessed = true;
+    }
+
+    /**
+     * Antタスクの[targetStyle]アトリビュートのゲッターメソッド。
+     *
+     * 項目番号: 9<br>
+     * 出力先フォルダの書式を指定します。&lt;br&gt;\nblanco: [targetdir]/main&lt;br&gt;\nmaven: [targetdir]/main/java&lt;br&gt;\nfree: [targetdir](targetdirが無指定の場合はblanco/main)<br>
+     * デフォルト値[blanco]が設定されています。Apache Antタスク上でアトリビュートの指定が無い場合には、デフォルト値が設定されます。<br>
+     *
+     * @return このフィールドの値
+     */
+    public String getTargetStyle() {
+        return fInput.getTargetStyle();
+    }
+
+    /**
+     * Antタスクの[lineSeparator]アトリビュートのセッターメソッド。
+     *
+     * 項目番号: 10<br>
+     * 行末記号をしていします。LF=0x0a, CR=0x0d, CFLF=0x0d0x0a とします。LFがデフォルトです。<br>
+     *
+     * @param arg セットしたい値
+     */
+    public void setLineSeparator(final String arg) {
+        fInput.setLineSeparator(arg);
+        fIsFieldLineSeparatorProcessed = true;
+    }
+
+    /**
+     * Antタスクの[lineSeparator]アトリビュートのゲッターメソッド。
+     *
+     * 項目番号: 10<br>
+     * 行末記号をしていします。LF=0x0a, CR=0x0d, CFLF=0x0d0x0a とします。LFがデフォルトです。<br>
+     * デフォルト値[LF]が設定されています。Apache Antタスク上でアトリビュートの指定が無い場合には、デフォルト値が設定されます。<br>
+     *
+     * @return このフィールドの値
+     */
+    public String getLineSeparator() {
+        return fInput.getLineSeparator();
+    }
+
+    /**
      * Antタスクのメイン処理。Apache Antから このメソッドが呼び出されます。
      *
      * @throws BuildException タスクとしての例外が発生した場合。
@@ -326,6 +379,8 @@ public class BlancoResourceBundleTask extends Task {
             System.out.println("- failonmessageformaterror:[" + getFailonmessageformaterror() + "]");
             System.out.println("- log:[" + getLog() + "]");
             System.out.println("- propertieswithdirectory:[" + getPropertieswithdirectory() + "]");
+            System.out.println("- targetStyle:[" + getTargetStyle() + "]");
+            System.out.println("- lineSeparator:[" + getLineSeparator() + "]");
         }
 
         try {

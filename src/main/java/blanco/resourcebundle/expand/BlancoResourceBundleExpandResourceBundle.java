@@ -1,7 +1,7 @@
 /*
  * blanco Framework
  * Copyright (C) 2004-2007 IGA Tosiki
- * 
+ *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
  * License as published by the Free Software Foundation; either
@@ -34,12 +34,12 @@ import blanco.resourcebundle.valueobject.BlancoResourceBundleBundleStructure;
 
 /**
  * 中間XMLファイルから プロパティファイルを生成する処理の内部処理です。
- * 
+ *
  * このソースコードはblancoResourceBundleの一部です。<br>
  * XMLのDOMエレメントを入力としてファイルを出力します。 <br>
- * 
+ *
  * 動作の前提条件:BlancoResourceBundleXmlValidatorクラスで事前にチェックされているものと想定します。
- * 
+ *
  * @author IGA Tosiki
  */
 public class BlancoResourceBundleExpandResourceBundle {
@@ -64,10 +64,21 @@ public class BlancoResourceBundleExpandResourceBundle {
     private BlancoCgClass fCgClass = null;
 
     /**
+     * ソースコード生成先ディレクトリのスタイル
+     */
+    private boolean fTargetStyleAdvanced = false;
+    public void setTargetStyleAdvanced(boolean argTargetStyleAdvanced) {
+        this.fTargetStyleAdvanced = argTargetStyleAdvanced;
+    }
+    public boolean isTargetStyleAdvanced() {
+        return this.fTargetStyleAdvanced;
+    }
+
+    /**
      * 指定の情報をソースコードに展開します。
-     * 
+     *
      * ソースコード出力フラグによって、ソースコードを出力するかどうかが切り替わります。
-     * 
+     *
      * @param argStructure
      *            構造。
      * @param argDirectoryTarget
@@ -95,10 +106,19 @@ public class BlancoResourceBundleExpandResourceBundle {
         final List<java.lang.String> listKnownLocale = new ArrayList<java.lang.String>();
         final Map<java.lang.String, java.lang.String> mapBundle = new HashMap<java.lang.String, java.lang.String>();
 
-        // 従来と互換性を持たせるため、/mainサブフォルダに出力します。
-        final File fileBlancoMain = new File(argDirectoryTarget
-                .getAbsolutePath()
-                + "/main");
+        /*
+         * 出力ディレクトリはant taskのtargetStyel引数で
+         * 指定された書式で出力されます。
+         * 従来と互換性を保つために、指定がない場合は blanco/main
+         * となります。
+         * by tueda, 2019/08/30
+         */
+        String strTarget = argDirectoryTarget
+                .getAbsolutePath(); // advanced
+        if (!this.isTargetStyleAdvanced()) {
+            strTarget += "/main"; // legacy
+        }
+        final File fileBlancoMain = new File(strTarget);
 
         fCgFactory = BlancoCgObjectFactory.getInstance();
         fCgSourceFile = fCgFactory.createSourceFile(argStructure.getPackage(),

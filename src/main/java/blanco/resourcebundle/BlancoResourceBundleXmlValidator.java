@@ -1,7 +1,7 @@
 /*
  * blanco Framework
  * Copyright (C) 2004-2007 IGA Tosiki
- * 
+ *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
  * License as published by the Free Software Foundation; either
@@ -33,9 +33,9 @@ import blanco.resourcebundle.valueobject.BlancoResourceBundleBundleStructure;
 
 /**
  * 集約後の中間XMLファイルの内容妥当性チェックを行います。
- * 
+ *
  * このソースコードはblancoResourceBundleの一部です。<br>
- * 
+ *
  * @author IGA Tosiki
  */
 public class BlancoResourceBundleXmlValidator {
@@ -51,7 +51,7 @@ public class BlancoResourceBundleXmlValidator {
 
     /**
      * リソースバンドル文字列をMessageFormatによるパースを行った際に、例外が発生したら処理を中断するかどうかのフラグ。
-     * 
+     *
      * trueなら処理中断して例外を発生させます。<br>
      * falseなら処理続行し、置換文字列は無いものとみなします。<br>
      * Javaのソースコードを処理する際などに、あえて falseに設定して波括弧を扱うことができるように切り替える場合があります。<br>
@@ -59,14 +59,16 @@ public class BlancoResourceBundleXmlValidator {
      */
     private boolean fIsFailOnMessageFormatError = true;
 
+
+
     /**
      * リソースバンドル文字列をMessageFormatによるパースを行った際に、例外が発生したら処理を中断するかどうかのフラグを設定します。
-     * 
+     *
      * trueなら処理中断して例外を発生させます。<br>
      * falseなら処理続行し、置換文字列は無いものとみなします。<br>
      * Javaのソースコードを処理する際などに、あえて falseに設定して波括弧を扱うことができるように切り替える場合があります。<br>
      * デフォルト値[true]が設定されています。
-     * 
+     *
      * @param argIsFailOnMessageFormatError
      */
     public void setFailOnMessageFormatError(
@@ -75,8 +77,19 @@ public class BlancoResourceBundleXmlValidator {
     }
 
     /**
+     * ソースコード生成先ディレクトリのスタイル
+     */
+    private boolean fTargetStyleAdvanced = false;
+    public void setTargetStyleAdvanced(boolean argTargetStyleAdvanced) {
+        this.fTargetStyleAdvanced = argTargetStyleAdvanced;
+    }
+    public boolean isTargetStyleAdvanced() {
+        return this.fTargetStyleAdvanced;
+    }
+
+    /**
      * 中間XMLファイルから プロパティファイルアクセス用のJavaソースコードを生成します。
-     * 
+     *
      * @param argFileSource
      *            入力となる中間XMLファイル。
      * @param argDirectoryTarget
@@ -166,7 +179,7 @@ public class BlancoResourceBundleXmlValidator {
 
     /**
      * 集約後の中間XMLファイルの内容妥当性チェックを行います。
-     * 
+     *
      * @param argElementSheet
      *            シートのエレメント。
      * @param argElementCommon
@@ -233,7 +246,7 @@ public class BlancoResourceBundleXmlValidator {
 
     /**
      * ロケールの重複が存在しないかどうかをチェックします。
-     * 
+     *
      * @param argBaseName
      * @param argDescription
      * @param argListKnownLocale
@@ -273,9 +286,9 @@ public class BlancoResourceBundleXmlValidator {
 
     /**
      * メッセージフォーマットのパース結果がロケール間において妥当な状態であるかどうかをチェックします。
-     * 
+     *
      * ロケール間で相違がある場合には例外で処理中断します。
-     * 
+     *
      * @param argBaseName
      *            基準名。
      * @param argDescription

@@ -1,12 +1,3 @@
-/*
- * blanco Framework
- * Copyright (C) 2004-2009 IGA Tosiki
- *
- * This library is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Lesser General Public
- * License as published by the Free Software Foundation; either
- * version 2.1 of the License, or (at your option) any later version.
- */
 package blanco.resourcebundle.task.valueobject;
 
 /**
@@ -82,6 +73,22 @@ public class BlancoResourceBundleProcessInput {
      * デフォルト: [true]。
      */
     private boolean fPropertieswithdirectory = true;
+
+    /**
+     * 出力先フォルダの書式を指定します。&amp;lt;br&amp;gt;\nblanco: [targetdir]/main&amp;lt;br&amp;gt;\nmaven: [targetdir]/main/java&amp;lt;br&amp;gt;\nfree: [targetdir](targetdirが無指定の場合はblanco/main)
+     *
+     * フィールド: [targetStyle]。
+     * デフォルト: [blanco]。
+     */
+    private String fTargetStyle = "blanco";
+
+    /**
+     * 行末記号をしていします。LF=0x0a, CR=0x0d, CFLF=0x0d0x0a とします。LFがデフォルトです。
+     *
+     * フィールド: [lineSeparator]。
+     * デフォルト: [LF]。
+     */
+    private String fLineSeparator = "LF";
 
     /**
      * フィールド [verbose] の値を設定します。
@@ -289,6 +296,52 @@ public class BlancoResourceBundleProcessInput {
     }
 
     /**
+     * フィールド [targetStyle] の値を設定します。
+     *
+     * フィールドの説明: [出力先フォルダの書式を指定します。&lt;br&gt;\nblanco: [targetdir]/main&lt;br&gt;\nmaven: [targetdir]/main/java&lt;br&gt;\nfree: [targetdir](targetdirが無指定の場合はblanco/main)]。
+     *
+     * @param argTargetStyle フィールド[targetStyle]に設定する値。
+     */
+    public void setTargetStyle(final String argTargetStyle) {
+        fTargetStyle = argTargetStyle;
+    }
+
+    /**
+     * フィールド [targetStyle] の値を取得します。
+     *
+     * フィールドの説明: [出力先フォルダの書式を指定します。&lt;br&gt;\nblanco: [targetdir]/main&lt;br&gt;\nmaven: [targetdir]/main/java&lt;br&gt;\nfree: [targetdir](targetdirが無指定の場合はblanco/main)]。
+     * デフォルト: [blanco]。
+     *
+     * @return フィールド[targetStyle]から取得した値。
+     */
+    public String getTargetStyle() {
+        return fTargetStyle;
+    }
+
+    /**
+     * フィールド [lineSeparator] の値を設定します。
+     *
+     * フィールドの説明: [行末記号をしていします。LF=0x0a, CR=0x0d, CFLF=0x0d0x0a とします。LFがデフォルトです。]。
+     *
+     * @param argLineSeparator フィールド[lineSeparator]に設定する値。
+     */
+    public void setLineSeparator(final String argLineSeparator) {
+        fLineSeparator = argLineSeparator;
+    }
+
+    /**
+     * フィールド [lineSeparator] の値を取得します。
+     *
+     * フィールドの説明: [行末記号をしていします。LF=0x0a, CR=0x0d, CFLF=0x0d0x0a とします。LFがデフォルトです。]。
+     * デフォルト: [LF]。
+     *
+     * @return フィールド[lineSeparator]から取得した値。
+     */
+    public String getLineSeparator() {
+        return fLineSeparator;
+    }
+
+    /**
      * このバリューオブジェクトの文字列表現を取得します。
      *
      * <P>使用上の注意</P>
@@ -312,6 +365,8 @@ public class BlancoResourceBundleProcessInput {
         buf.append(",failonmessageformaterror=" + fFailonmessageformaterror);
         buf.append(",log=" + fLog);
         buf.append(",propertieswithdirectory=" + fPropertieswithdirectory);
+        buf.append(",targetStyle=" + fTargetStyle);
+        buf.append(",lineSeparator=" + fLineSeparator);
         buf.append("]");
         return buf.toString();
     }
@@ -361,5 +416,11 @@ public class BlancoResourceBundleProcessInput {
         // Name: fPropertieswithdirectory
         // Type: boolean
         target.fPropertieswithdirectory = this.fPropertieswithdirectory;
+        // Name: fTargetStyle
+        // Type: java.lang.String
+        target.fTargetStyle = this.fTargetStyle;
+        // Name: fLineSeparator
+        // Type: java.lang.String
+        target.fLineSeparator = this.fLineSeparator;
     }
 }

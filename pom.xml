@@ -5,7 +5,7 @@
 	<groupId>blanco.resourcebundle</groupId>
 	<artifactId>blanco-resourcebundle</artifactId>
 	<packaging>jar</packaging>
-	<version>2.0.2</version>
+	<version>2.0.3</version>
 	<name>blanco-resourcebundle</name>
 	<url>https://igapyon.github.io/blancofw-maven2</url>
 
@@ -52,6 +52,14 @@
 	</repositories>
 
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/junit/junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13</version>
+			<scope>test</scope>
+		</dependency>
+
 		<dependency>
 			<groupId>blanco.anttask</groupId>
 			<artifactId>blanco-anttask</artifactId>
