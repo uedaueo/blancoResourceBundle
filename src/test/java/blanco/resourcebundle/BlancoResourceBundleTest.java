@@ -24,7 +24,7 @@ public class BlancoResourceBundleTest {
         input.setTmpdir("tmpTest");
         input.setTargetdir("sample/blanco");
         input.setTargetStyle("maven");
-        input.setLineSeparator("LF");
+        input.setLineSeparator("CRLF");
 
         BlancoResourceBundleProcessImpl imple = new BlancoResourceBundleProcessImpl();
         try {

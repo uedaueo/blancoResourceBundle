@@ -5,7 +5,7 @@
 	<groupId>blanco.resourcebundle</groupId>
 	<artifactId>blanco-resourcebundle</artifactId>
 	<packaging>jar</packaging>
-	<version>2.0.3</version>
+	<version>2.0.4</version>
 	<name>blanco-resourcebundle</name>
 	<url>https://igapyon.github.io/blancofw-maven2</url>
 
@@ -38,7 +38,7 @@
 	<repositories>
 		<repository>
 			<id>central</id>
-			<url>http://central.maven.org/maven2/</url>
+			<url>https://repo1.maven.org/maven2/</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
@@ -304,14 +304,14 @@
 				</executions>
 			</plugin>
 
-			<!-- compile as 1.6 compatible -->
+			<!-- compile as 1.8 compatible -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.6.0</version>
 				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
+					<source>1.8</source>
+					<target>1.8</target>
 					<excludes>
 						<exclude>blanco/sample/**/*</exclude>
 					</excludes>
@@ -340,20 +340,20 @@
 			</plugin>
 
 			<!-- copy jar files into lib directory. -->
-			<plugin>
-				<artifactId>maven-dependency-plugin</artifactId>
-				<executions>
-					<execution>
-						<phase>install</phase>
-						<goals>
-							<goal>copy-dependencies</goal>
-						</goals>
-						<configuration>
-							<outputDirectory>${project.build.directory}/lib</outputDirectory>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
+<!--			<plugin>-->
+<!--				<artifactId>maven-dependency-plugin</artifactId>-->
+<!--				<executions>-->
+<!--					<execution>-->
+<!--						<phase>install</phase>-->
+<!--						<goals>-->
+<!--							<goal>copy-dependencies</goal>-->
+<!--						</goals>-->
+<!--						<configuration>-->
+<!--							<outputDirectory>${project.build.directory}/lib</outputDirectory>-->
+<!--						</configuration>-->
+<!--					</execution>-->
+<!--				</executions>-->
+<!--			</plugin>-->
 
 			<plugin>
 				<groupId>com.github.github</groupId>
