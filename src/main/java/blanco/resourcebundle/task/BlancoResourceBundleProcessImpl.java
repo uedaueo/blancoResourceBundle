@@ -208,6 +208,7 @@ public class BlancoResourceBundleProcessImpl implements
 
             return BlancoResourceBundleBatchProcess.END_SUCCESS;
         } catch (TransformerException ex) {
+            ex.printStackTrace();
             throw new IOException("XML変換の過程で例外が発生しました: " + ex.toString());
         }
     }

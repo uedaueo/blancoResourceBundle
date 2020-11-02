@@ -23,7 +23,7 @@ import org.xml.sax.helpers.AttributesImpl;
  * このクラスは解析用XMLファイルを入力として具象化SAXクラスとして生成されました。<br>
  * このソースコードはblancoIgにより機械的に自動生成されています。 このクラスは implements ContentHandler は行いません。<br>
  * 典型的な利用方法は下記のようになります。<br>
- * 
+ *
  * <pre>
  * BlancoResourceBundleXmlSerializer serializer = new BlancoResourceBundleXmlSerializer(
  *         outStream);
@@ -67,7 +67,7 @@ public class BlancoResourceBundleXmlSerializer {
 
     /**
      * startDocumentを発生させます。
-     * 
+     *
      * @throw SAXException SAX関連の例外が発生した場合。
      */
     public void startDocument() throws SAXException {
@@ -76,7 +76,7 @@ public class BlancoResourceBundleXmlSerializer {
 
     /**
      * endDocumentを発生させます。
-     * 
+     *
      * @throw SAXException SAX関連の例外が発生した場合。
      */
     public void endDocument() throws SAXException {
@@ -91,7 +91,7 @@ public class BlancoResourceBundleXmlSerializer {
 
     /**
      * endPrefixMappingを発生させます。
-     * 
+     *
      * @throw SAXException SAX関連の例外が発生した場合。
      */
     public void endPrefixMapping(final String prefix) throws SAXException {
@@ -100,7 +100,7 @@ public class BlancoResourceBundleXmlSerializer {
 
     /**
      * setDocumentLocatorを発生させます。。
-     * 
+     *
      * @param locator
      *            ロケータ
      */
@@ -110,7 +110,7 @@ public class BlancoResourceBundleXmlSerializer {
 
     /**
      * processingInstructionを発生させます。
-     * 
+     *
      * @throw SAXException SAX関連の例外が発生した場合。
      */
     public void processingInstruction(final String target, final String data)
@@ -120,7 +120,7 @@ public class BlancoResourceBundleXmlSerializer {
 
     /**
      * skippedEntityを発生させます。
-     * 
+     *
      * @throw SAXException SAX関連の例外が発生した場合。
      */
     public void skippedEntity(final String name) throws SAXException {
@@ -129,14 +129,14 @@ public class BlancoResourceBundleXmlSerializer {
 
     /**
      * charactersメソッドを呼び出します。<br>
-     * 
+     *
      * @param ch
      *            出力したい文字列
      * @param start
      *            開始位置
      * @param length
      *            文字列の長さ
-     * 
+     *
      * @throw SAXException SAX関連の例外が発生した場合。
      */
     public void characters(final char[] ch, final int start, final int length)
@@ -147,10 +147,10 @@ public class BlancoResourceBundleXmlSerializer {
     /**
      * charactersメソッドを呼び出します。<br>
      * ※簡易化のために 引数を java.lang.String化したものです。
-     * 
+     *
      * @param data
      *            出力したい文字列
-     * 
+     *
      * @throw SAXException SAX関連の例外が発生した場合。
      */
     public void characters(final String data) throws SAXException {
@@ -164,7 +164,7 @@ public class BlancoResourceBundleXmlSerializer {
 
     /**
      * ignorableWhitespaceを発生させます。
-     * 
+     *
      * @throw SAXException SAX関連の例外が発生した場合。
      */
     public void ignorableWhitespace(final char[] ch, final int start,
@@ -201,7 +201,7 @@ public class BlancoResourceBundleXmlSerializer {
      * 名前空間URI []<br>
      * ローカル名 [sheet]<br>
      * 接頭辞付きの修飾名[sheet]<br>
-     * 
+     *
      * @param attrName
      *            アトリビュート[name]の値を渡します。アトリビュートをセットしたくない場合には nullをセットしてください。
      */
@@ -342,6 +342,29 @@ public class BlancoResourceBundleXmlSerializer {
     }
 
     /**
+     * startElementを接頭辞付きの修飾名[annotation]として呼び出します。<br>
+     * ※基本的な情報はメソッド実装に含まれるので引数からは除かれています。<br>
+     * 名前空間URI []<br>
+     * ローカル名 [annotation]<br>
+     * 接頭辞付きの修飾名[annotation]<br>
+     */
+    public void startElementAnnotation() throws SAXException {
+        AttributesImpl attributes = new AttributesImpl();
+        fSaxHandler.startElement("", "annotation", "annotation", attributes);
+    }
+
+    /**
+     * endElementを接頭辞付きの修飾名[annotation]として呼び出します。<br>
+     * ※基本的な情報はメソッド実装に含まれるので引数からは除かれています。<br>
+     * 名前空間URI []<br>
+     * ローカル名 [annotation]<br>
+     * 接頭辞付きの修飾名[annotation]<br>
+     */
+    public void endElementAnnotation() throws SAXException {
+        fSaxHandler.endElement("", "annotation", "annotation");
+    }
+
+    /**
      * startElementを接頭辞付きの修飾名[description]として呼び出します。<br>
      * ※基本的な情報はメソッド実装に含まれるので引数からは除かれています。<br>
      * 名前空間URI []<br>
@@ -362,6 +385,79 @@ public class BlancoResourceBundleXmlSerializer {
      */
     public void endElementDescription() throws SAXException {
         fSaxHandler.endElement("", "description", "description");
+    }
+
+    /**
+     * startElementを接頭辞付きの修飾名[blancoresourcebundle-import]として呼び出します。<br>
+     * ※基本的な情報はメソッド実装に含まれるので引数からは除かれています。<br>
+     * 名前空間URI []<br>
+     * ローカル名 [blancoresourcebundle-import]<br>
+     * 接頭辞付きの修飾名[blancoresourcebundle-import]<br>
+     */
+    public void startElementBlancoresourcebundleImport()
+            throws SAXException {
+        AttributesImpl attributes = new AttributesImpl();
+        fSaxHandler.startElement("", "blancoresourcebundle-import",
+                "blancoresourcebundle-import", attributes);
+    }
+
+    /**
+     * endElementを接頭辞付きの修飾名[blancoresourcebundle-import]として呼び出します。<br>
+     * ※基本的な情報はメソッド実装に含まれるので引数からは除かれています。<br>
+     * 名前空間URI []<br>
+     * ローカル名 [blancoresourcebundle-import]<br>
+     * 接頭辞付きの修飾名[blancoresourcebundle-import]<br>
+     */
+    public void endElementBlancoresourcebundleImport()
+            throws SAXException {
+        fSaxHandler.endElement("", "blancoresourcebundle-import",
+                "blancoresourcebundle-import");
+    }
+
+    /**
+     * startElementを接頭辞付きの修飾名[import]として呼び出します。<br>
+     * ※基本的な情報はメソッド実装に含まれるので引数からは除かれています。<br>
+     * 名前空間URI []<br>
+     * ローカル名 [import]<br>
+     * 接頭辞付きの修飾名[import]<br>
+     */
+    public void startElementImport() throws SAXException {
+        AttributesImpl attributes = new AttributesImpl();
+        fSaxHandler.startElement("", "import", "import", attributes);
+    }
+
+    /**
+     * endElementを接頭辞付きの修飾名[import]として呼び出します。<br>
+     * ※基本的な情報はメソッド実装に含まれるので引数からは除かれています。<br>
+     * 名前空間URI []<br>
+     * ローカル名 [import]<br>
+     * 接頭辞付きの修飾名[import]<br>
+     */
+    public void endElementImport() throws SAXException {
+        fSaxHandler.endElement("", "import", "import");
+    }
+
+    /**
+     * startElementを接頭辞付きの修飾名[name]として呼び出します。<br>
+     * ※基本的な情報はメソッド実装に含まれるので引数からは除かれています。<br>
+     * 名前空間URI []<br>
+     * ローカル名 [name]<br>
+     * 接頭辞付きの修飾名[name]<br>
+     */
+    public void startElementName() throws SAXException {
+        AttributesImpl attributes = new AttributesImpl();
+        fSaxHandler.startElement("", "name", "name", attributes);
+    }
+
+    /**
+     * endElementを接頭辞付きの修飾名[name]として呼び出します。<br>
+     * ※基本的な情報はメソッド実装に含まれるので引数からは除かれています。<br>
+     * 名前空間URI []<br>
+     * ローカル名 [name]<br>
+     * 接頭辞付きの修飾名[name]<br>
+     */
+    public void endElementName() throws SAXException {
+        fSaxHandler.endElement("", "name", "name");
     }
 
     /**
@@ -466,7 +562,7 @@ public class BlancoResourceBundleXmlSerializer {
      * 名前空間URI []<br>
      * ローカル名 [resourceString]<br>
      * 接頭辞付きの修飾名[resourceString]<br>
-     * 
+     *
      * @param attrLocale
      *            アトリビュート[locale]の値を渡します。アトリビュートをセットしたくない場合には nullをセットしてください。
      */

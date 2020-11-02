@@ -148,6 +148,26 @@ public class BlancoResourceBundleExpandResourceBundle {
                     + "/" + bundleFullPathName;
         }
 
+        /* クラスのアノテーションを設定します。 */
+        {
+            List annotationList = argStructure.getAnnotationList();
+            if (annotationList != null && annotationList.size() > 0) {
+                fCgClass.getAnnotationList().addAll(argStructure.getAnnotationList());
+                /* tueda DEBUG */
+                System.out.println("/* tueda */ structure2Source : class annotation = " + argStructure.getAnnotationList().get(0));
+            }
+        }
+
+        /* import 文を作成します。 */
+        {
+            for (int index = 0; index < argStructure.getImportList()
+                    .size(); index++) {
+                final String imported = (String) argStructure.getImportList()
+                        .get(index);
+                fCgSourceFile.getImportList().add(imported);
+            }
+        }
+
         {
             final int sizeListLocale = argStructure.getListLocale().size();
             if (sizeListLocale > 0) {

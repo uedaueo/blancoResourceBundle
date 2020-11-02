@@ -26,7 +26,7 @@ public class BlancoResourceBundleBundleItemStructure {
      * フィールド: [resourceStringList]。
      * デフォルト: [new java.util.ArrayList&lt;blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure&gt;()]。
      */
-    private List<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure> fResourceStringList = new java.util.ArrayList<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure>();
+    private List<BlancoResourceBundleBundleResourceStringStructure> fResourceStringList = new java.util.ArrayList<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure>();
 
     /**
      * フィールド [no] の値を設定します。
@@ -79,7 +79,7 @@ public class BlancoResourceBundleBundleItemStructure {
      *
      * @param argResourceStringList フィールド[resourceStringList]に設定する値。
      */
-    public void setResourceStringList(final List<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure> argResourceStringList) {
+    public void setResourceStringList(final List<BlancoResourceBundleBundleResourceStringStructure> argResourceStringList) {
         fResourceStringList = argResourceStringList;
     }
 
@@ -91,7 +91,7 @@ public class BlancoResourceBundleBundleItemStructure {
      *
      * @return フィールド[resourceStringList]から取得した値。
      */
-    public List<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure> getResourceStringList() {
+    public List<BlancoResourceBundleBundleResourceStringStructure> getResourceStringList() {
         return fResourceStringList;
     }
 
@@ -143,14 +143,6 @@ public class BlancoResourceBundleBundleItemStructure {
         target.fKey = this.fKey;
         // Name: fResourceStringList
         // Type: java.util.List
-        if (this.fResourceStringList != null) {
-            final java.util.Iterator<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure> iterator = this.fResourceStringList.iterator();
-            for (; iterator.hasNext();) {
-                blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure loopSource = iterator.next();
-                blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure loopTarget = null;
-                // フィールド[generics]はサポート外の型[blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure]です。
-                target.fResourceStringList.add(loopTarget);
-            }
-        }
+        // フィールド[fResourceStringList]はサポート外の型[java.util.Listblanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure]です。
     }
 }

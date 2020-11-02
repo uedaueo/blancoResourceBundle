@@ -17,10 +17,25 @@
         <propertykey name="suffix" waitX="2">
           <value>サフィックス</value>
         </propertykey>
+        <propertykey name="annotation" waitX="2">
+          <value>アノテーション</value>
+        </propertykey>
         <propertykey name="description" waitX="2">
           <value>説明</value>
         </propertykey>
       </propertyblock>
+
+      <tableblock name="blancoresourcebundle-import" waitY="2" titleheight="2" rowname="import">
+        <startstring>リソースバンドル定義・インポート</startstring>
+
+        <tablecolumn name="no">
+          <value>No.</value>
+        </tablecolumn>
+        <tablecolumn name="name">
+          <value>インポートクラス名</value>
+        </tablecolumn>
+
+      </tableblock>
 
       <tableblock name="blancoresourcebundle-resourceList" waitY="2" titleheight="3" rowname="resource">
         <startstring>リソースバンドル定義・一覧</startstring>

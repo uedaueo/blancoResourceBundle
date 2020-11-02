@@ -1,33 +1,13 @@
 /*
  * blanco Framework
  * Copyright (C) 2004-2007 IGA Tosiki
- * 
+ *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
  * License as published by the Free Software Foundation; either
  * version 2.1 of the License, or (at your option) any later version.
  */
 package blanco.resourcebundle;
-
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerConfigurationException;
-import javax.xml.transform.TransformerException;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.sax.SAXResult;
-import javax.xml.transform.stream.StreamSource;
-
-import org.xml.sax.SAXException;
 
 import blanco.commons.util.BlancoStringUtil;
 import blanco.resourcebundle.concretesax.BlancoResourceBundleXmlHandler;
@@ -36,12 +16,23 @@ import blanco.resourcebundle.message.BlancoResourceBundleMessage;
 import blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure;
 import blanco.resourcebundle.valueobject.BlancoResourceBundleBundleResourceStringStructure;
 import blanco.resourcebundle.valueobject.BlancoResourceBundleBundleStructure;
+import org.xml.sax.SAXException;
+
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.sax.SAXResult;
+import javax.xml.transform.stream.StreamSource;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 中間XMLファイルから 集約された中間XMLファイルを生成します。
- * 
+ *
  * このソースコードはblancoResourceBundleの一部です。<br>
- * 
+ *
  * @author IGA Tosiki
  */
 public class BlancoResourceBundleXml2CombinedXml {
@@ -52,7 +43,7 @@ public class BlancoResourceBundleXml2CombinedXml {
 
     /**
      * 中間XMLファイルから 集約された中間XMLファイルを生成します。
-     * 
+     *
      * @param argFileXmlSource
      *            入力となる中間XMLファイル。
      * @param argFileCombinedXmlTarget
@@ -148,12 +139,42 @@ public class BlancoResourceBundleXml2CombinedXml {
                         serializer.characters(resourceBaseCurrent.getSuffix());
                         serializer.endElementSuffix();
                         serializer.characters("\n");
+                        serializer.characters("      ");
+                        serializer.startElementAnnotation();
+                        serializer.characters(resourceBaseCurrent.getAnnotation());
+                        serializer.endElementAnnotation();
+                        serializer.characters("\n");
                         serializer.characters("    ");
                         serializer.endElementBlancoresourcebundleCommon();
                         serializer.characters("\n");
                         serializer.characters("    ");
-                        serializer
-                                .startElementBlancoresourcebundleResourceList();
+                        serializer.startElementBlancoresourcebundleImport();
+                        serializer.characters("\n");
+                        serializer.characters("      ");
+                        serializer.startElementImport();
+                        for (int index = 0; index < resourceBaseCurrent.getImportList().size(); index++) {
+                            serializer.characters("\n");
+                            serializer.characters("    ");
+                            serializer.characters("    ");
+                            serializer.startElementNo();
+                            serializer.characters(String.valueOf(index + 1));
+                            serializer.endElementNo();
+                            serializer.characters("\n");
+                            serializer.characters("    ");
+                            serializer.characters("    ");
+                            serializer.startElementName();
+                            serializer.characters(resourceBaseCurrent.getImportList().get(index));
+                            serializer.endElementName();
+                        }
+                        serializer.characters("\n");
+                        serializer.characters("      ");
+                        serializer.endElementImport();
+                        serializer.characters("\n");
+                        serializer.characters("    ");
+                        serializer.endElementBlancoresourcebundleImport();
+                        serializer.characters("\n");
+                        serializer.characters("  ");
+                        serializer.startElementBlancoresourcebundleResourceList();
                         serializer.characters("\n");
                         for (int index = 0; index < resourceBaseCurrent
                                 .getItemList().size(); index++) {
@@ -375,6 +396,102 @@ public class BlancoResourceBundleXml2CombinedXml {
 
             public void ignorableWhitespaceSuffix(char[] ch, int start,
                     int length) throws SAXException {
+            }
+
+            public void startElementAnnotation(String uri, String localName, String qName) throws SAXException {
+            }
+
+            public void endElementAnnotation(String uri, String localName, String qName) throws SAXException {
+            }
+
+            public void charactersAnnotation(char[] ch, int start, int length) throws SAXException {
+                if (resourceBase != null) {
+                    resourceBase.setAnnotation(new String(ch, start, length));
+                }
+            }
+
+            public void ignorableWhitespaceAnnotation(char[] ch, int start, int length) throws SAXException {
+            }
+
+            public void startElementBlancoresourcebundleImport(
+                    String uri, String localName, String qName)
+                    throws SAXException {
+            }
+
+            public void endElementBlancoresourcebundleImport(String uri, String localName, String qName) throws SAXException {
+            }
+
+            public void charactersBlancoresourcebundleImport(char[] ch, int start, int length) throws SAXException {
+            }
+
+            public void ignorableWhitespaceBlancoresourcebundleImport(char[] ch, int start, int length) throws SAXException {
+            }
+
+            public void startElementImport(String uri, String localName, String qName) throws SAXException {
+            }
+
+            public void endElementImport(String uri, String localName, String qName) throws SAXException {
+            }
+
+            public void charactersImport(char[] ch, int start, int length) throws SAXException {
+            }
+
+            public void ignorableWhitespaceImport(char[] ch, int start, int length) throws SAXException {
+            }
+
+            /**
+             * startElementが接頭辞付きの修飾名[name]で呼び出されました。<br>
+             * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
+             *
+             * @param uri       名前空間URI
+             * @param localName ローカル名
+             * @param qName
+             */
+            @Override
+            public void startElementName(String uri, String localName, String qName) throws SAXException {
+
+            }
+
+            /**
+             * endElementが接頭辞付きの修飾名[name]で呼び出されました。<br>
+             * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
+             *
+             * @param uri       名前空間URI
+             * @param localName ローカル名
+             * @param qName
+             */
+            @Override
+            public void endElementName(String uri, String localName, String qName) throws SAXException {
+
+            }
+
+            /**
+             * charactersが接頭辞付きの修飾名[name]で呼び出されました。<br>
+             * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
+             *
+             * @param ch     XML文書の文字
+             * @param start  配列内の開始位置
+             * @param length
+             */
+            @Override
+            public void charactersName(char[] ch, int start, int length) throws SAXException {
+                if (resourceBase != null
+                        && resourceBase.getImportList() != null) {
+                    resourceBase.getImportList().add(new String(ch, start, length));
+                }
+            }
+
+            /**
+             * ignorableWhitespaceが接頭辞付きの修飾名[name]で呼び出されました。<br>
+             * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
+             *
+             * @param ch     XML文書の文字
+             * @param start  配列内の開始位置
+             * @param length
+             */
+            @Override
+            public void ignorableWhitespaceName(char[] ch, int start, int length) throws SAXException {
+
             }
 
             public void startElementBlancoresourcebundleResourceList(

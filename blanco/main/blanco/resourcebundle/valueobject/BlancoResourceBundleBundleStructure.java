@@ -19,7 +19,7 @@ public class BlancoResourceBundleBundleStructure {
      * フィールド: [listLocale]。
      * デフォルト: [new java.util.ArrayList&lt;java.lang.String&gt;()]。
      */
-    private List<java.lang.String> fListLocale = new java.util.ArrayList<java.lang.String>();
+    private List<String> fListLocale = new java.util.ArrayList<java.lang.String>();
 
     /**
      * パッケージ名。
@@ -34,6 +34,22 @@ public class BlancoResourceBundleBundleStructure {
      * フィールド: [suffix]。
      */
     private String fSuffix;
+
+    /**
+     * クラスのアノテーションを指定します。
+     *
+     * フィールド: [annotationList]。
+     * デフォルト: [new java.util.ArrayList&lt;java.lang.String&gt;()]。
+     */
+    private List<String> fAnnotationList = new java.util.ArrayList<java.lang.String>();
+
+    /**
+     * importを指定します。
+     *
+     * フィールド: [importList]。
+     * デフォルト: [new java.util.ArrayList&lt;java.lang.String&gt;()]。
+     */
+    private List<String> fImportList = new java.util.ArrayList<java.lang.String>();
 
     /**
      * このリソースバンドルに対する説明。
@@ -56,7 +72,7 @@ public class BlancoResourceBundleBundleStructure {
      * フィールド: [itemList]。
      * デフォルト: [new java.util.ArrayList&lt;blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure&gt;()]。
      */
-    private List<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure> fItemList = new java.util.ArrayList<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure>();
+    private List<BlancoResourceBundleBundleItemStructure> fItemList = new java.util.ArrayList<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure>();
 
     /**
      * ワークに利用されるフィールド。
@@ -78,6 +94,14 @@ public class BlancoResourceBundleBundleStructure {
      * フィールド: [currentResourceString]。
      */
     private String fCurrentResourceString;
+
+    /**
+     * ワークに利用されるフィールド。
+     *
+     * フィールド: [annotation]。
+     * デフォルト: [&quot;&quot;]。
+     */
+    private String fAnnotation = "";
 
     /**
      * フィールド [name] の値を設定します。
@@ -108,7 +132,7 @@ public class BlancoResourceBundleBundleStructure {
      *
      * @param argListLocale フィールド[listLocale]に設定する値。
      */
-    public void setListLocale(final List<java.lang.String> argListLocale) {
+    public void setListLocale(final List<String> argListLocale) {
         fListLocale = argListLocale;
     }
 
@@ -120,7 +144,7 @@ public class BlancoResourceBundleBundleStructure {
      *
      * @return フィールド[listLocale]から取得した値。
      */
-    public List<java.lang.String> getListLocale() {
+    public List<String> getListLocale() {
         return fListLocale;
     }
 
@@ -166,6 +190,52 @@ public class BlancoResourceBundleBundleStructure {
      */
     public String getSuffix() {
         return fSuffix;
+    }
+
+    /**
+     * フィールド [annotationList] の値を設定します。
+     *
+     * フィールドの説明: [クラスのアノテーションを指定します。]。
+     *
+     * @param argAnnotationList フィールド[annotationList]に設定する値。
+     */
+    public void setAnnotationList(final List<String> argAnnotationList) {
+        fAnnotationList = argAnnotationList;
+    }
+
+    /**
+     * フィールド [annotationList] の値を取得します。
+     *
+     * フィールドの説明: [クラスのアノテーションを指定します。]。
+     * デフォルト: [new java.util.ArrayList&lt;java.lang.String&gt;()]。
+     *
+     * @return フィールド[annotationList]から取得した値。
+     */
+    public List<String> getAnnotationList() {
+        return fAnnotationList;
+    }
+
+    /**
+     * フィールド [importList] の値を設定します。
+     *
+     * フィールドの説明: [importを指定します。]。
+     *
+     * @param argImportList フィールド[importList]に設定する値。
+     */
+    public void setImportList(final List<String> argImportList) {
+        fImportList = argImportList;
+    }
+
+    /**
+     * フィールド [importList] の値を取得します。
+     *
+     * フィールドの説明: [importを指定します。]。
+     * デフォルト: [new java.util.ArrayList&lt;java.lang.String&gt;()]。
+     *
+     * @return フィールド[importList]から取得した値。
+     */
+    public List<String> getImportList() {
+        return fImportList;
     }
 
     /**
@@ -220,7 +290,7 @@ public class BlancoResourceBundleBundleStructure {
      *
      * @param argItemList フィールド[itemList]に設定する値。
      */
-    public void setItemList(final List<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure> argItemList) {
+    public void setItemList(final List<BlancoResourceBundleBundleItemStructure> argItemList) {
         fItemList = argItemList;
     }
 
@@ -232,7 +302,7 @@ public class BlancoResourceBundleBundleStructure {
      *
      * @return フィールド[itemList]から取得した値。
      */
-    public List<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure> getItemList() {
+    public List<BlancoResourceBundleBundleItemStructure> getItemList() {
         return fItemList;
     }
 
@@ -303,6 +373,29 @@ public class BlancoResourceBundleBundleStructure {
     }
 
     /**
+     * フィールド [annotation] の値を設定します。
+     *
+     * フィールドの説明: [ワークに利用されるフィールド。]。
+     *
+     * @param argAnnotation フィールド[annotation]に設定する値。
+     */
+    public void setAnnotation(final String argAnnotation) {
+        fAnnotation = argAnnotation;
+    }
+
+    /**
+     * フィールド [annotation] の値を取得します。
+     *
+     * フィールドの説明: [ワークに利用されるフィールド。]。
+     * デフォルト: [&quot;&quot;]。
+     *
+     * @return フィールド[annotation]から取得した値。
+     */
+    public String getAnnotation() {
+        return fAnnotation;
+    }
+
+    /**
      * このバリューオブジェクトの文字列表現を取得します。
      *
      * <P>使用上の注意</P>
@@ -321,12 +414,15 @@ public class BlancoResourceBundleBundleStructure {
         buf.append(",listLocale=" + fListLocale);
         buf.append(",package=" + fPackage);
         buf.append(",suffix=" + fSuffix);
+        buf.append(",annotationList=" + fAnnotationList);
+        buf.append(",importList=" + fImportList);
         buf.append(",description=" + fDescription);
         buf.append(",access=" + fAccess);
         buf.append(",itemList=" + fItemList);
         buf.append(",resourceItem=" + fResourceItem);
         buf.append(",currentLocale=" + fCurrentLocale);
         buf.append(",currentResourceString=" + fCurrentResourceString);
+        buf.append(",annotation=" + fAnnotation);
         buf.append("]");
         return buf.toString();
     }
@@ -354,21 +450,19 @@ public class BlancoResourceBundleBundleStructure {
         target.fName = this.fName;
         // Name: fListLocale
         // Type: java.util.List
-        if (this.fListLocale != null) {
-            final java.util.Iterator<java.lang.String> iterator = this.fListLocale.iterator();
-            for (; iterator.hasNext();) {
-                java.lang.String loopSource = iterator.next();
-                java.lang.String loopTarget = null;
-                loopTarget = loopSource;
-                target.fListLocale.add(loopTarget);
-            }
-        }
+        // フィールド[fListLocale]はサポート外の型[java.util.Listjava.lang.String]です。
         // Name: fPackage
         // Type: java.lang.String
         target.fPackage = this.fPackage;
         // Name: fSuffix
         // Type: java.lang.String
         target.fSuffix = this.fSuffix;
+        // Name: fAnnotationList
+        // Type: java.util.List
+        // フィールド[fAnnotationList]はサポート外の型[java.util.Listjava.lang.String]です。
+        // Name: fImportList
+        // Type: java.util.List
+        // フィールド[fImportList]はサポート外の型[java.util.Listjava.lang.String]です。
         // Name: fDescription
         // Type: java.lang.String
         target.fDescription = this.fDescription;
@@ -377,15 +471,7 @@ public class BlancoResourceBundleBundleStructure {
         target.fAccess = this.fAccess;
         // Name: fItemList
         // Type: java.util.List
-        if (this.fItemList != null) {
-            final java.util.Iterator<blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure> iterator = this.fItemList.iterator();
-            for (; iterator.hasNext();) {
-                blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure loopSource = iterator.next();
-                blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure loopTarget = null;
-                // フィールド[generics]はサポート外の型[blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure]です。
-                target.fItemList.add(loopTarget);
-            }
-        }
+        // フィールド[fItemList]はサポート外の型[java.util.Listblanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure]です。
         // Name: fResourceItem
         // Type: blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure
         // フィールド[fResourceItem]はサポート外の型[blanco.resourcebundle.valueobject.BlancoResourceBundleBundleItemStructure]です。
@@ -395,5 +481,8 @@ public class BlancoResourceBundleBundleStructure {
         // Name: fCurrentResourceString
         // Type: java.lang.String
         target.fCurrentResourceString = this.fCurrentResourceString;
+        // Name: fAnnotation
+        // Type: java.lang.String
+        target.fAnnotation = this.fAnnotation;
     }
 }

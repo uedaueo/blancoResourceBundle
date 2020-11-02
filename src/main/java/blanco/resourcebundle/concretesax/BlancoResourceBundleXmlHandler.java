@@ -17,7 +17,7 @@ import org.xml.sax.SAXException;
  * このクラスは解析用XMLファイルを入力として具象化SAXクラスとして生成されました。<br>
  * このソースコードはblancoIgにより機械的に自動生成されています。<br>
  * 典型的な利用方法は下記のようになります。<br>
- * 
+ *
  * <pre>
  * TransformerFactory tf = TransformerFactory.newInstance();
  * Transformer transformer = tf.newTransformer();
@@ -84,7 +84,31 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
      * charactersに渡すためのキャッシュです<br>
      * 文字列データを蓄積します。
      */
+    private CharArrayWriter fWriterAnnotation = new CharArrayWriter();
+
+    /**
+     * charactersに渡すためのキャッシュです<br>
+     * 文字列データを蓄積します。
+     */
     private CharArrayWriter fWriterDescription = new CharArrayWriter();
+
+    /**
+     * charactersに渡すためのキャッシュです<br>
+     * 文字列データを蓄積します。
+     */
+    private CharArrayWriter fWriterBlancoresourcebundleImport = new CharArrayWriter();
+
+    /**
+     * charactersに渡すためのキャッシュです<br>
+     * 文字列データを蓄積します。
+     */
+    private CharArrayWriter fWriterImport = new CharArrayWriter();
+
+    /**
+     * charactersに渡すためのキャッシュです<br>
+     * 文字列データを蓄積します。
+     */
+    private CharArrayWriter fWriterName = new CharArrayWriter();
 
     /**
      * charactersに渡すためのキャッシュです<br>
@@ -119,7 +143,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * startElementが接頭辞付きの修飾名[workbook]で呼び出されました。<br>
      * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
-     * 
+     *
      * @param uri
      *            名前空間URI
      * @param localName
@@ -133,7 +157,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * endElementが接頭辞付きの修飾名[workbook]で呼び出されました。<br>
      * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
-     * 
+     *
      * @param uri
      *            名前空間URI
      * @param localName
@@ -147,7 +171,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * charactersが接頭辞付きの修飾名[workbook]で呼び出されました。<br>
      * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
-     * 
+     *
      * @param ch
      *            XML文書の文字
      * @param start
@@ -161,7 +185,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * ignorableWhitespaceが接頭辞付きの修飾名[workbook]で呼び出されました。<br>
      * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
-     * 
+     *
      * @param ch
      *            XML文書の文字
      * @param start
@@ -175,7 +199,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * startElementが接頭辞付きの修飾名[sheet]で呼び出されました。<br>
      * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
-     * 
+     *
      * @param uri
      *            名前空間URI
      * @param localName
@@ -192,7 +216,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * endElementが接頭辞付きの修飾名[sheet]で呼び出されました。<br>
      * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
-     * 
+     *
      * @param uri
      *            名前空間URI
      * @param localName
@@ -206,7 +230,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * charactersが接頭辞付きの修飾名[sheet]で呼び出されました。<br>
      * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
-     * 
+     *
      * @param ch
      *            XML文書の文字
      * @param start
@@ -220,7 +244,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * ignorableWhitespaceが接頭辞付きの修飾名[sheet]で呼び出されました。<br>
      * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
-     * 
+     *
      * @param ch
      *            XML文書の文字
      * @param start
@@ -234,7 +258,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * startElementが接頭辞付きの修飾名[blancoresourcebundle-common]で呼び出されました。<br>
      * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
-     * 
+     *
      * @param uri
      *            名前空間URI
      * @param localName
@@ -249,7 +273,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * endElementが接頭辞付きの修飾名[blancoresourcebundle-common]で呼び出されました。<br>
      * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
-     * 
+     *
      * @param uri
      *            名前空間URI
      * @param localName
@@ -263,7 +287,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * charactersが接頭辞付きの修飾名[blancoresourcebundle-common]で呼び出されました。<br>
      * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
-     * 
+     *
      * @param ch
      *            XML文書の文字
      * @param start
@@ -277,7 +301,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * ignorableWhitespaceが接頭辞付きの修飾名[blancoresourcebundle-common]で呼び出されました。<br>
      * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
-     * 
+     *
      * @param ch
      *            XML文書の文字
      * @param start
@@ -292,7 +316,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * startElementが接頭辞付きの修飾名[baseName]で呼び出されました。<br>
      * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
-     * 
+     *
      * @param uri
      *            名前空間URI
      * @param localName
@@ -306,7 +330,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * endElementが接頭辞付きの修飾名[baseName]で呼び出されました。<br>
      * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
-     * 
+     *
      * @param uri
      *            名前空間URI
      * @param localName
@@ -320,7 +344,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * charactersが接頭辞付きの修飾名[baseName]で呼び出されました。<br>
      * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
-     * 
+     *
      * @param ch
      *            XML文書の文字
      * @param start
@@ -334,7 +358,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * ignorableWhitespaceが接頭辞付きの修飾名[baseName]で呼び出されました。<br>
      * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
-     * 
+     *
      * @param ch
      *            XML文書の文字
      * @param start
@@ -348,7 +372,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * startElementが接頭辞付きの修飾名[locale]で呼び出されました。<br>
      * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
-     * 
+     *
      * @param uri
      *            名前空間URI
      * @param localName
@@ -362,7 +386,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * endElementが接頭辞付きの修飾名[locale]で呼び出されました。<br>
      * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
-     * 
+     *
      * @param uri
      *            名前空間URI
      * @param localName
@@ -376,7 +400,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * charactersが接頭辞付きの修飾名[locale]で呼び出されました。<br>
      * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
-     * 
+     *
      * @param ch
      *            XML文書の文字
      * @param start
@@ -390,7 +414,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * ignorableWhitespaceが接頭辞付きの修飾名[locale]で呼び出されました。<br>
      * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
-     * 
+     *
      * @param ch
      *            XML文書の文字
      * @param start
@@ -404,7 +428,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * startElementが接頭辞付きの修飾名[packageName]で呼び出されました。<br>
      * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
-     * 
+     *
      * @param uri
      *            名前空間URI
      * @param localName
@@ -418,7 +442,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * endElementが接頭辞付きの修飾名[packageName]で呼び出されました。<br>
      * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
-     * 
+     *
      * @param uri
      *            名前空間URI
      * @param localName
@@ -432,7 +456,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * charactersが接頭辞付きの修飾名[packageName]で呼び出されました。<br>
      * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
-     * 
+     *
      * @param ch
      *            XML文書の文字
      * @param start
@@ -446,7 +470,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * ignorableWhitespaceが接頭辞付きの修飾名[packageName]で呼び出されました。<br>
      * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
-     * 
+     *
      * @param ch
      *            XML文書の文字
      * @param start
@@ -460,7 +484,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * startElementが接頭辞付きの修飾名[suffix]で呼び出されました。<br>
      * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
-     * 
+     *
      * @param uri
      *            名前空間URI
      * @param localName
@@ -474,7 +498,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * endElementが接頭辞付きの修飾名[suffix]で呼び出されました。<br>
      * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
-     * 
+     *
      * @param uri
      *            名前空間URI
      * @param localName
@@ -488,7 +512,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * charactersが接頭辞付きの修飾名[suffix]で呼び出されました。<br>
      * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
-     * 
+     *
      * @param ch
      *            XML文書の文字
      * @param start
@@ -502,7 +526,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * ignorableWhitespaceが接頭辞付きの修飾名[suffix]で呼び出されました。<br>
      * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
-     * 
+     *
      * @param ch
      *            XML文書の文字
      * @param start
@@ -514,9 +538,61 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
             final int start, final int length) throws SAXException;
 
     /**
+     * startElementが接頭辞付きの修飾名[annotation]で呼び出されました。<br>
+     * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
+     *
+     * @param uri
+     *            名前空間URI
+     * @param localName
+     *            ローカル名
+     * @param qName
+     *            接頭辞付きの修飾名
+     */
+    public abstract void startElementAnnotation(final String uri, final String localName, final String qName) throws SAXException;
+
+    /**
+     * endElementが接頭辞付きの修飾名[annotation]で呼び出されました。<br>
+     * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
+     *
+     * @param uri
+     *            名前空間URI
+     * @param localName
+     *            ローカル名
+     * @param qName
+     *            接頭辞付きの修飾名
+     */
+    public abstract void endElementAnnotation(final String uri, final String localName, final String qName) throws SAXException;
+
+    /**
+     * charactersが接頭辞付きの修飾名[annotation]で呼び出されました。<br>
+     * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
+     *
+     * @param ch
+     *            XML文書の文字
+     * @param start
+     *            配列内の開始位置
+     * @param length
+     *            配列から読み取る文字数
+     */
+    public abstract void charactersAnnotation(final char[] ch, final int start, final int length) throws SAXException;
+
+    /**
+     * ignorableWhitespaceが接頭辞付きの修飾名[annotation]で呼び出されました。<br>
+     * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
+     *
+     * @param ch
+     *            XML文書の文字
+     * @param start
+     *            配列内の開始位置
+     * @param length
+     *            配列から読み取る文字数
+     */
+    public abstract void ignorableWhitespaceAnnotation(final char[] ch, final int start, final int length) throws SAXException;
+
+    /**
      * startElementが接頭辞付きの修飾名[description]で呼び出されました。<br>
      * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
-     * 
+     *
      * @param uri
      *            名前空間URI
      * @param localName
@@ -530,7 +606,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * endElementが接頭辞付きの修飾名[description]で呼び出されました。<br>
      * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
-     * 
+     *
      * @param uri
      *            名前空間URI
      * @param localName
@@ -544,7 +620,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * charactersが接頭辞付きの修飾名[description]で呼び出されました。<br>
      * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
-     * 
+     *
      * @param ch
      *            XML文書の文字
      * @param start
@@ -558,7 +634,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * ignorableWhitespaceが接頭辞付きの修飾名[description]で呼び出されました。<br>
      * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
-     * 
+     *
      * @param ch
      *            XML文書の文字
      * @param start
@@ -570,9 +646,176 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
             final int start, final int length) throws SAXException;
 
     /**
+     * startElementが接頭辞付きの修飾名[blancoresourcebundle-import]で呼び出されました。<br>
+     * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
+     *
+     * @param uri
+     *            名前空間URI
+     * @param localName
+     *            ローカル名
+     * @param qName
+     *            接頭辞付きの修飾名
+     */
+    public abstract void startElementBlancoresourcebundleImport(
+            final String uri, final String localName, final String qName)
+            throws SAXException;
+
+    /**
+     * endElementが接頭辞付きの修飾名[blancoresourcebundle-import]で呼び出されました。<br>
+     * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
+     *
+     * @param uri
+     *            名前空間URI
+     * @param localName
+     *            ローカル名
+     * @param qName
+     *            接頭辞付きの修飾名
+     */
+    public abstract void endElementBlancoresourcebundleImport(
+            final String uri, final String localName, final String qName)
+            throws SAXException;
+
+    /**
+     * charactersが接頭辞付きの修飾名[blancoresourcebundle-import]で呼び出されました。<br>
+     * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
+     *
+     * @param ch
+     *            XML文書の文字
+     * @param start
+     *            配列内の開始位置
+     * @param length
+     *            配列から読み取る文字数
+     */
+    public abstract void charactersBlancoresourcebundleImport(
+            final char[] ch, final int start, final int length)
+            throws SAXException;
+
+    /**
+     * ignorableWhitespaceが接頭辞付きの修飾名[blancoresourcebundle-import]で呼び出されました
+     * 。<br>
+     * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
+     *
+     * @param ch
+     *            XML文書の文字
+     * @param start
+     *            配列内の開始位置
+     * @param length
+     *            配列から読み取る文字数
+     */
+    public abstract void ignorableWhitespaceBlancoresourcebundleImport(
+            final char[] ch, final int start, final int length)
+            throws SAXException;
+
+    /**
+     * startElementが接頭辞付きの修飾名[import]で呼び出されました。<br>
+     * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
+     *
+     * @param uri
+     *            名前空間URI
+     * @param localName
+     *            ローカル名
+     * @param qName
+     *            接頭辞付きの修飾名
+     */
+    public abstract void startElementImport(final String uri,
+                                              final String localName, final String qName) throws SAXException;
+
+    /**
+     * endElementが接頭辞付きの修飾名[import]で呼び出されました。<br>
+     * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
+     *
+     * @param uri
+     *            名前空間URI
+     * @param localName
+     *            ローカル名
+     * @param qName
+     *            接頭辞付きの修飾名
+     */
+    public abstract void endElementImport(final String uri,
+                                            final String localName, final String qName) throws SAXException;
+
+    /**
+     * charactersが接頭辞付きの修飾名[import]で呼び出されました。<br>
+     * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
+     *
+     * @param ch
+     *            XML文書の文字
+     * @param start
+     *            配列内の開始位置
+     * @param length
+     *            配列から読み取る文字数
+     */
+    public abstract void charactersImport(final char[] ch, final int start, final int length) throws SAXException;
+
+    /**
+     * ignorableWhitespaceが接頭辞付きの修飾名[import]で呼び出されました。<br>
+     * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
+     *
+     * @param ch
+     *            XML文書の文字
+     * @param start
+     *            配列内の開始位置
+     * @param length
+     *            配列から読み取る文字数
+     */
+    public abstract void ignorableWhitespaceImport(final char[] ch, final int start, final int length) throws SAXException;
+
+    /**
+     * startElementが接頭辞付きの修飾名[name]で呼び出されました。<br>
+     * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
+     *
+     * @param uri
+     *            名前空間URI
+     * @param localName
+     *            ローカル名
+     * @param qName
+     *            接頭辞付きの修飾名
+     */
+    public abstract void startElementName(final String uri, final String localName, final String qName) throws SAXException;
+
+    /**
+     * endElementが接頭辞付きの修飾名[name]で呼び出されました。<br>
+     * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
+     *
+     * @param uri
+     *            名前空間URI
+     * @param localName
+     *            ローカル名
+     * @param qName
+     *            接頭辞付きの修飾名
+     */
+    public abstract void endElementName(final String uri, final String localName, final String qName) throws SAXException;
+
+    /**
+     * charactersが接頭辞付きの修飾名[name]で呼び出されました。<br>
+     * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
+     *
+     * @param ch
+     *            XML文書の文字
+     * @param start
+     *            配列内の開始位置
+     * @param length
+     *            配列から読み取る文字数
+     */
+    public abstract void charactersName(final char[] ch, final int start, final int length) throws SAXException;
+
+    /**
+     * ignorableWhitespaceが接頭辞付きの修飾名[name]で呼び出されました。<br>
+     * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
+     *
+     * @param ch
+     *            XML文書の文字
+     * @param start
+     *            配列内の開始位置
+     * @param length
+     *            配列から読み取る文字数
+     */
+    public abstract void ignorableWhitespaceName(final char[] ch, final int start, final int length) throws SAXException;
+
+    /**
      * startElementが接頭辞付きの修飾名[blancoresourcebundle-resourceList]で呼び出されました。<br>
      * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
-     * 
+     *
      * @param uri
      *            名前空間URI
      * @param localName
@@ -587,7 +830,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * endElementが接頭辞付きの修飾名[blancoresourcebundle-resourceList]で呼び出されました。<br>
      * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
-     * 
+     *
      * @param uri
      *            名前空間URI
      * @param localName
@@ -602,7 +845,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * charactersが接頭辞付きの修飾名[blancoresourcebundle-resourceList]で呼び出されました。<br>
      * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
-     * 
+     *
      * @param ch
      *            XML文書の文字
      * @param start
@@ -618,7 +861,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
      * ignorableWhitespaceが接頭辞付きの修飾名[blancoresourcebundle-resourceList]で呼び出されました
      * 。<br>
      * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
-     * 
+     *
      * @param ch
      *            XML文書の文字
      * @param start
@@ -633,7 +876,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * startElementが接頭辞付きの修飾名[resource]で呼び出されました。<br>
      * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
-     * 
+     *
      * @param uri
      *            名前空間URI
      * @param localName
@@ -647,7 +890,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * endElementが接頭辞付きの修飾名[resource]で呼び出されました。<br>
      * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
-     * 
+     *
      * @param uri
      *            名前空間URI
      * @param localName
@@ -661,7 +904,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * charactersが接頭辞付きの修飾名[resource]で呼び出されました。<br>
      * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
-     * 
+     *
      * @param ch
      *            XML文書の文字
      * @param start
@@ -675,7 +918,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * ignorableWhitespaceが接頭辞付きの修飾名[resource]で呼び出されました。<br>
      * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
-     * 
+     *
      * @param ch
      *            XML文書の文字
      * @param start
@@ -689,7 +932,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * startElementが接頭辞付きの修飾名[no]で呼び出されました。<br>
      * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
-     * 
+     *
      * @param uri
      *            名前空間URI
      * @param localName
@@ -703,7 +946,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * endElementが接頭辞付きの修飾名[no]で呼び出されました。<br>
      * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
-     * 
+     *
      * @param uri
      *            名前空間URI
      * @param localName
@@ -717,7 +960,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * charactersが接頭辞付きの修飾名[no]で呼び出されました。<br>
      * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
-     * 
+     *
      * @param ch
      *            XML文書の文字
      * @param start
@@ -731,7 +974,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * ignorableWhitespaceが接頭辞付きの修飾名[no]で呼び出されました。<br>
      * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
-     * 
+     *
      * @param ch
      *            XML文書の文字
      * @param start
@@ -745,7 +988,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * startElementが接頭辞付きの修飾名[resourceKey]で呼び出されました。<br>
      * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
-     * 
+     *
      * @param uri
      *            名前空間URI
      * @param localName
@@ -759,7 +1002,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * endElementが接頭辞付きの修飾名[resourceKey]で呼び出されました。<br>
      * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
-     * 
+     *
      * @param uri
      *            名前空間URI
      * @param localName
@@ -773,7 +1016,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * charactersが接頭辞付きの修飾名[resourceKey]で呼び出されました。<br>
      * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
-     * 
+     *
      * @param ch
      *            XML文書の文字
      * @param start
@@ -787,7 +1030,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * ignorableWhitespaceが接頭辞付きの修飾名[resourceKey]で呼び出されました。<br>
      * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
-     * 
+     *
      * @param ch
      *            XML文書の文字
      * @param start
@@ -801,7 +1044,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * startElementが接頭辞付きの修飾名[resourceString]で呼び出されました。<br>
      * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
-     * 
+     *
      * @param uri
      *            名前空間URI
      * @param localName
@@ -818,7 +1061,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * endElementが接頭辞付きの修飾名[resourceString]で呼び出されました。<br>
      * ※接頭辞付きの修飾名はメソッド名に含まれるものと同等のものが与えられます。
-     * 
+     *
      * @param uri
      *            名前空間URI
      * @param localName
@@ -832,7 +1075,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * charactersが接頭辞付きの修飾名[resourceString]で呼び出されました。<br>
      * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
-     * 
+     *
      * @param ch
      *            XML文書の文字
      * @param start
@@ -846,7 +1089,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
     /**
      * ignorableWhitespaceが接頭辞付きの修飾名[resourceString]で呼び出されました。<br>
      * もとのcharactersメソッドを集約した上でメソッドが呼び出されます。
-     * 
+     *
      * @param ch
      *            XML文書の文字
      * @param start
@@ -859,7 +1102,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
 
     /**
      * オリジナルのstartElementが呼び出されたので、具象メソッドに呼びわけます
-     * 
+     *
      * @param uri
      *            名前空間URI
      * @param localName
@@ -894,6 +1137,15 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
                     charactersPackageName(wrk, 0, wrk.length);
                 }
 
+            } else if (previousElementUriOnStack.equals("")
+                    && previousElementLocalNameOnStack.equals("annotation")) {
+                fWriterAnnotation.flush();
+                char[] wrk = fWriterAnnotation.toCharArray();
+                fWriterAnnotation.reset();
+                System.out.println("/** tueda ***/ " + wrk.length);
+                if (wrk.length > 0) {
+                    charactersAnnotation(wrk, 0, wrk.length);
+                }
             } else if (previousElementUriOnStack.equals("")
                     && previousElementLocalNameOnStack.equals("resource")) {
                 fWriterResource.flush();
@@ -1030,6 +1282,14 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
             startElementSuffix(uri, localName, qName);
         } else if (uri.equals("") && localName.equals("workbook")) {
             startElementWorkbook(uri, localName, qName);
+        } else if (uri.equals("") && localName.equals("annotation")) {
+            startElementAnnotation(uri, localName, qName);
+        } else if (uri.equals("") && localName.equals("import")) {
+            startElementImport(uri, localName, qName);
+        } else if (uri.equals("") && localName.equals("blancoresourcebundle-import")) {
+            startElementBlancoresourcebundleImport(uri, localName, qName);
+        } else if (uri.equals("") && localName.equals("name")) {
+            startElementName(uri, localName, qName);
         } else {
             throw new SAXException("XML異常。startElement: 処理されないエレメント 名前空間URI["
                     + uri + "], ローカル名[" + localName + "]が検知されました.");
@@ -1038,7 +1298,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
 
     /**
      * オリジナルのendElementが呼び出されたので、具象メソッドに呼びわけます
-     * 
+     *
      * @param uri
      *            名前空間URI
      * @param localName
@@ -1168,6 +1428,38 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
                 charactersWorkbook(wrk, 0, wrk.length);
             }
             endElementWorkbook(uri, localName, qName);
+        } else if (uri.equals("") && localName.equals("annotation")) {
+            fWriterAnnotation.flush();
+            char[] wrk = fWriterAnnotation.toCharArray();
+            fWriterAnnotation.reset();
+            if (wrk.length > 0) {
+                charactersAnnotation(wrk, 0, wrk.length);
+            }
+            endElementAnnotation(uri, localName, qName);
+        } else if (uri.equals("") && localName.equals("blancoresourcebundle-import")) {
+            fWriterBlancoresourcebundleImport.flush();
+            char[] wrk = fWriterBlancoresourcebundleImport.toCharArray();
+            fWriterBlancoresourcebundleImport.reset();
+            if (wrk.length > 0) {
+                charactersBlancoresourcebundleImport(wrk, 0, wrk.length);
+            }
+            endElementBlancoresourcebundleImport(uri, localName, qName);
+        } else if (uri.equals("") && localName.equals("import")) {
+            fWriterImport.flush();
+            char[] wrk = fWriterImport.toCharArray();
+            fWriterImport.reset();
+            if (wrk.length > 0) {
+                charactersImport(wrk, 0, wrk.length);
+            }
+            endElementImport(uri, localName, qName);
+        } else if (uri.equals("") && localName.equals("name")) {
+            fWriterName.flush();
+            char[] wrk = fWriterName.toCharArray();
+            fWriterName.reset();
+            if (wrk.length > 0) {
+                charactersName(wrk, 0, wrk.length);
+            }
+            endElementName(uri, localName, qName);
         } else {
             throw new SAXException("XML異常。endElement: 処理されないエレメント 名前空間URI["
                     + uri + "], ローカル名[" + localName + "]が検知されました.");
@@ -1179,7 +1471,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
 
     /**
      * オリジナルのcharactersが呼び出されたので、具象メソッドに呼びわけます 集約した上で呼びわけを行います。
-     * 
+     *
      * @param ch
      *            XML文書の文字
      * @param start
@@ -1244,6 +1536,18 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
             // charactersSuffix(ch, start, length);
             fWriterSuffix.write(ch, start, length);
         } else if (currentElementUriOnStack.equals("")
+                && currentElementLocalNameOnStack.equals("annotation")) {
+            fWriterAnnotation.write(ch, start, length);
+        } else if (currentElementUriOnStack.equals("")
+                && currentElementLocalNameOnStack.equals("blancoresourcebundle-import")) {
+            fWriterBlancoresourcebundleImport.write(ch, start, length);
+        } else if (currentElementUriOnStack.equals("")
+                && currentElementLocalNameOnStack.equals("import")) {
+            fWriterImport.write(ch, start, length);
+        } else if (currentElementUriOnStack.equals("")
+                && currentElementLocalNameOnStack.equals("name")) {
+            fWriterName.write(ch, start, length);
+        } else if (currentElementUriOnStack.equals("")
                 && currentElementLocalNameOnStack.equals("workbook")) {
             // charactersWorkbook(ch, start, length);
             fWriterWorkbook.write(ch, start, length);
@@ -1252,7 +1556,7 @@ public abstract class BlancoResourceBundleXmlHandler implements ContentHandler {
 
     /**
      * オリジナルのignorableWhitespaceが呼び出されたので、具象メソッドに呼びわけます 集約した上で呼びわけを行います。
-     * 
+     *
      * @param ch
      *            XML文書の文字
      * @param start
